@@ -4,20 +4,21 @@ import { apiService, TradeAnalysis } from '../services/api';
 import '../App.css';
 
 const TradeAnalyzer: React.FC = () => {
-  const { leagueId } = useParams<{ leagueId: string }>();
+  const { leagueKey } = useParams<{ leagueKey: string }>();
   const [analysis, setAnalysis] = useState<TradeAnalysis | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (leagueId) {
-      loadAnalysis(parseInt(leagueId));
+    if (leagueKey) {
+      const decodedKey = decodeURIComponent(leagueKey);
+      loadAnalysis(decodedKey);
     }
-  }, [leagueId]);
+  }, [leagueKey]);
 
-  const loadAnalysis = async (id: number) => {
+  const loadAnalysis = async (key: string) => {
     try {
       setLoading(true);
-      const data = await apiService.getTradeAnalysis(id);
+      const data = await apiService.getTradeAnalysis(key);
       setAnalysis(data);
     } catch (error) {
       console.error('Failed to load trade analysis:', error);

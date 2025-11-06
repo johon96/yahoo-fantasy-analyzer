@@ -78,215 +78,264 @@ async def auth_callback(
         raise HTTPException(status_code=400, detail=error_detail)
 
 
-@router.get("/leagues", response_model=List[LeagueResponse])
+@router.get("/leagues")
 async def get_leagues(
     user: User = Depends(get_current_user),
-    db: Session = Depends(get_db),
-    game_code: str = Query("nhl", description="Game code (nhl, nfl, nba, mlb)")
+    game_code: Optional[str] = Query(None, description="Game code (nhl, nfl, nba, mlb). If not specified, returns all leagues.")
 ):
-    """Get all leagues for the authenticated user."""
+    """Get all leagues for the authenticated user (proxied from Yahoo API)."""
     client = YahooAPIClient(user)
     
-    # Get game key for the sport
-    games = client.get_user_games()
-    # Find the current game for the sport
-    game_keys = []
-    for game in games:
-        if game.get("code") == game_code:
-            if "game_keys" not in locals():
-                game_keys = []
-            game_keys.append(game.get("game_key"))
-            break
+    # Get all leagues for the user across all games
+    all_leagues_data = client.get_user_leagues()
     
-    # Get leagues for this game
-    leagues_data = client.get_user_leagues(game_keys)
-    leagues = []
+    # Filter leagues by game_code if specified
+    if game_code:
+        leagues_data = [league for league in all_leagues_data if league.get("game_code") == game_code]
+    else:
+        leagues_data = all_leagues_data
+    
+    # Convert season to int for consistency
     for league in leagues_data:
-        league_key = league.get("league_key")
-        league_data = client.get_league_info(league_key)
-        league = League(
-            user_id=user.id,
-            league_key=league_key,
-            league_id=league_data.get("league_id"),
-        )
-        db.add(league)
-        db.commit()
-        db.refresh(league)
-        leagues.append(league)
-
-    return [LeagueResponse.model_validate(league) for league in leagues]
+        if league.get("season"):
+            try:
+                league["season"] = int(league["season"])
+            except (ValueError, TypeError):
+                pass
+    
+    return leagues_data
 
 
-@router.get("/league/{league_id}", response_model=LeagueResponse)
-async def get_league(
-    league_id: int,
-    user: User = Depends(get_current_user),
-    db: Session = Depends(get_db)
+# IMPORTANT: More specific routes must come BEFORE the generic /league/{league_key:path} route
+# because :path matches slashes and will catch everything
+
+@router.get("/league/{league_key:path}/teams")
+async def get_league_teams(
+    league_key: str,
+    user: User = Depends(get_current_user)
 ):
-    """Get league details."""
-    league = db.query(League).filter(
-        League.id == league_id,
-        League.user_id == user.id
-    ).first()
+    """Get all teams in a league (proxied from Yahoo API)."""
+    client = YahooAPIClient(user)
     
-    if not league:
-        raise HTTPException(status_code=404, detail="League not found")
-    
-    return LeagueResponse.model_validate(league)
+    try:
+        # Use standings endpoint for team data
+        print(f"Fetching teams for league: {league_key}")
+        teams_data = client.get_league_standings(league_key)
+        print(f"Teams data received: {teams_data}")
+        return teams_data
+    except Exception as e:
+        print(f"Error fetching teams: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"Failed to fetch teams: {str(e)}")
 
 
-@router.post("/league/{league_key}/sync")
+@router.get("/league/{league_key:path}/players")
+async def get_league_players(
+    league_key: str,
+    start: int = Query(0, ge=0),
+    count: int = Query(25, ge=1, le=100),
+    user: User = Depends(get_current_user)
+):
+    """Get players in a league (proxied from Yahoo API)."""
+    client = YahooAPIClient(user)
+    
+    try:
+        # Use YFPY if available
+        league_id = league_key.split('.')[-1]
+        game_code = "nhl"  # TODO: detect from league_key
+        
+        yfpy_query = client.get_yfpy_query(league_id, game_code)
+        if yfpy_query:
+            try:
+                players_data = yfpy_query.get_league_players()
+                return players_data
+            except Exception as e:
+                print(f"YFPY failed, falling back to direct API: {e}")
+        
+        # Fallback to direct API
+        players_data = client.get_league_players(league_key, start, count)
+        return players_data
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to fetch players: {str(e)}")
+
+
+@router.get("/league/{league_key:path}/analysis/trades")
+async def get_trade_analysis(
+    league_key: str,
+    user: User = Depends(get_current_user)
+):
+    """Get trade analysis for a league using YFPY."""
+    client = YahooAPIClient(user)
+    
+    try:
+        # Use YFPY for rich transaction data
+        league_id = league_key.split('.')[-1]
+        game_code = "nhl"  # TODO: detect from league_key
+        
+        yfpy_query = client.get_yfpy_query(league_id, game_code)
+        if yfpy_query:
+            try:
+                # Get transactions (trades, adds, drops)
+                transactions = yfpy_query.get_league_transactions()
+                return {
+                    "transactions": transactions,
+                    "overperformers": [],
+                    "underperformers": [],
+                    "recommendations": []
+                }
+            except Exception as e:
+                print(f"YFPY failed: {e}")
+        
+        # Fallback: basic response
+        return {
+            "transactions": [],
+            "overperformers": [],
+            "underperformers": [],
+            "recommendations": []
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to analyze trades: {str(e)}")
+
+
+@router.get("/league/{league_key:path}/analysis/draft")
+async def get_draft_analysis(
+    league_key: str,
+    user: User = Depends(get_current_user)
+):
+    """Get draft analysis for a league using YFPY."""
+    client = YahooAPIClient(user)
+    
+    try:
+        # Use YFPY for draft results
+        league_id = league_key.split('.')[-1]
+        game_code = "nhl"  # TODO: detect from league_key
+        
+        yfpy_query = client.get_yfpy_query(league_id, game_code)
+        if yfpy_query:
+            try:
+                draft_results = yfpy_query.get_league_draft_results()
+                return {
+                    "draft_results": draft_results,
+                    "best_picks": [],
+                    "worst_picks": [],
+                    "draft_grades": {},
+                    "total_picks": 0
+                }
+            except Exception as e:
+                print(f"YFPY failed: {e}")
+        
+        # Fallback: basic response
+        return {
+            "draft_results": [],
+            "best_picks": [],
+            "worst_picks": [],
+            "draft_grades": {},
+            "total_picks": 0
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to analyze draft: {str(e)}")
+
+
+@router.get("/league/{league_key:path}/history")
+async def get_league_history(
+    league_key: str,
+    seasons: Optional[int] = Query(None, description="Number of seasons to retrieve"),
+    user: User = Depends(get_current_user)
+):
+    """Get historical data for a league across multiple seasons using YFPY."""
+    client = YahooAPIClient(user)
+    
+    try:
+        # Use YFPY for historical data
+        league_id = league_key.split('.')[-1]
+        game_code = "nhl"  # TODO: detect from league_key
+        
+        yfpy_query = client.get_yfpy_query(league_id, game_code)
+        if yfpy_query:
+            try:
+                # Get league metadata that might include historical references
+                metadata = yfpy_query.get_league_metadata()
+                return {
+                    "metadata": metadata,
+                    "seasons": []
+                }
+            except Exception as e:
+                print(f"YFPY failed: {e}")
+        
+        # Fallback: basic response
+        return []
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to fetch history: {str(e)}")
+
+
+# Generic league routes - MUST come after all specific /league/{key}/... routes
+@router.get("/league/{league_key:path}")
+async def get_league(
+    league_key: str,
+    user: User = Depends(get_current_user)
+):
+    """Get league details by league_key (proxied from Yahoo API)."""
+    client = YahooAPIClient(user)
+    
+    try:
+        # For now, just use direct API call (YFPY is complex and requires proper setup)
+        print(f"Fetching league info for: {league_key}")
+        league_data = client.get_league_info(league_key)
+        print(f"League data received: {league_data}")
+        return league_data
+    except Exception as e:
+        print(f"Error fetching league: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=404, detail=f"League not found: {str(e)}")
+
+
+@router.post("/league/{league_key:path}/sync")
 async def sync_league(
     league_key: str,
     user: User = Depends(get_current_user)
 ):
-    """Sync league data from Yahoo API to database."""
-    client = YahooAPIClient(user)
-    try:
-        league = client.sync_league_to_db(league_key)
-        return {"message": "League synced successfully", "league_id": league.id}
-    except Exception as e:
-        raise HTTPException(status_code=400, detail=f"Sync failed: {str(e)}")
+    """Refresh league data from Yahoo API (no-op since we proxy everything)."""
+    return {"message": "League data is always fresh (proxied from Yahoo)", "league_key": league_key}
 
 
-@router.get("/league/{league_id}/teams", response_model=List[TeamResponse])
-async def get_league_teams(
-    league_id: int,
-    user: User = Depends(get_current_user),
-    db: Session = Depends(get_db)
-):
-    """Get all teams in a league."""
-    league = db.query(League).filter(
-        League.id == league_id,
-        League.user_id == user.id
-    ).first()
-    
-    if not league:
-        raise HTTPException(status_code=404, detail="League not found")
-    
-    teams = db.query(Team).filter(Team.league_id == league_id).all()
-    return [TeamResponse.model_validate(team) for team in teams]
-
-
-@router.get("/league/{league_id}/players", response_model=List[PlayerResponse])
-async def get_league_players(
-    league_id: int,
-    start: int = Query(0, ge=0),
-    count: int = Query(25, ge=1, le=100),
-    user: User = Depends(get_current_user),
-    db: Session = Depends(get_db)
-):
-    """Get players in a league."""
-    league = db.query(League).filter(
-        League.id == league_id,
-        League.user_id == user.id
-    ).first()
-    
-    if not league:
-        raise HTTPException(status_code=404, detail="League not found")
-    
-    players = db.query(Player).filter(
-        Player.league_id == league_id
-    ).offset(start).limit(count).all()
-    
-    return [PlayerResponse.model_validate(player) for player in players]
-
-
-@router.get("/league/{league_id}/analysis/trades", response_model=TradeAnalysisResponse)
-async def get_trade_analysis(
-    league_id: int,
-    user: User = Depends(get_current_user),
-    db: Session = Depends(get_db)
-):
-    """Get trade analysis for a league."""
-    league = db.query(League).filter(
-        League.id == league_id,
-        League.user_id == user.id
-    ).first()
-    
-    if not league:
-        raise HTTPException(status_code=404, detail="League not found")
-    
-    client = YahooAPIClient(user)
-    analyzer = TradeAnalyzer(client, league)
-    
-    overperformers = analyzer.get_overperformers()
-    underperformers = analyzer.get_underperformers()
-    
-    return TradeAnalysisResponse(
-        overperformers=overperformers,
-        underperformers=underperformers,
-        recommendations=[]
-    )
-
-
-@router.get("/league/{league_id}/analysis/draft", response_model=DraftAnalysisResponse)
-async def get_draft_analysis(
-    league_id: int,
-    user: User = Depends(get_current_user),
-    db: Session = Depends(get_db)
-):
-    """Get draft analysis for a league."""
-    league = db.query(League).filter(
-        League.id == league_id,
-        League.user_id == user.id
-    ).first()
-    
-    if not league:
-        raise HTTPException(status_code=404, detail="League not found")
-    
-    client = YahooAPIClient(user)
-    analyzer = DraftAnalyzer(client, league)
-    analysis = analyzer.analyze_draft()
-    
-    return DraftAnalysisResponse(
-        best_picks=analysis.get("best_picks", []),
-        worst_picks=analysis.get("worst_picks", []),
-        draft_grades=analysis.get("draft_grades", {}),
-        total_picks=analysis.get("total_picks", 0)
-    )
-
-
-@router.get("/league/{league_id}/history", response_model=List[HistoricalDataResponse])
-async def get_league_history(
-    league_id: int,
-    seasons: Optional[int] = Query(None, description="Number of seasons to retrieve"),
-    user: User = Depends(get_current_user),
-    db: Session = Depends(get_db)
-):
-    """Get historical data for a league across multiple seasons."""
-    league = db.query(League).filter(
-        League.id == league_id,
-        League.user_id == user.id
-    ).first()
-    
-    if not league:
-        raise HTTPException(status_code=404, detail="League not found")
-    
-    # This would fetch historical data from database or API
-    # Placeholder implementation
-    return []
-
-
-@router.get("/player/{player_key}/performance", response_model=PerformanceAnalysisResponse)
+@router.get("/player/{player_key}/performance")
 async def get_player_performance(
     player_key: str,
-    league_id: int,
-    user: User = Depends(get_current_user),
-    db: Session = Depends(get_db)
+    league_key: str = Query(..., description="League key for context"),
+    user: User = Depends(get_current_user)
 ):
-    """Get performance analysis for a specific player."""
-    league = db.query(League).filter(
-        League.id == league_id,
-        League.user_id == user.id
-    ).first()
-    
-    if not league:
-        raise HTTPException(status_code=404, detail="League not found")
-    
+    """Get performance analysis for a specific player using YFPY."""
     client = YahooAPIClient(user)
-    analyzer = PerformanceAnalyzer(client, league)
-    analysis = analyzer.compare_projection_to_actual(player_key)
     
-    return PerformanceAnalysisResponse(**analysis)
+    try:
+        # Use YFPY for player stats
+        league_id = league_key.split('.')[-1]
+        game_code = "nhl"  # TODO: detect from league_key
+        
+        yfpy_query = client.get_yfpy_query(league_id, game_code)
+        if yfpy_query:
+            try:
+                player_stats = yfpy_query.get_player_stats_by_week(player_key)
+                return {
+                    "player_key": player_key,
+                    "stats": player_stats,
+                    "projection": {},
+                    "actual": {},
+                    "comparison": {}
+                }
+            except Exception as e:
+                print(f"YFPY failed: {e}")
+        
+        # Fallback: basic response
+        return {
+            "player_key": player_key,
+            "stats": {},
+            "projection": {},
+            "actual": {},
+            "comparison": {}
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to fetch player performance: {str(e)}")
 

@@ -18,8 +18,10 @@ app.add_middleware(
         "http://localhost:3000",
         "https://localhost:3000",
         "http://localhost:3001",
-        "https://localhost:3001"
-    ],  # React dev server (both HTTP and HTTPS)
+        "https://localhost:3001",
+        "http://localhost:5173",
+        "https://localhost:5173"
+    ],  # React/Vite dev server (both HTTP and HTTPS)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

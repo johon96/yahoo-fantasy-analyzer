@@ -1,0 +1,20 @@
+
+> fantasy-hockey-analyzer-frontend@1.0.0 dev
+> vite
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.4.21  ready in 138 ms
+
+  ➜  Local:   https://localhost:3000/
+  ➜  Network: use --host to expose
+10:49:32 PM [vite] vite.config.ts changed, restarting server...
+10:49:32 PM [vite] server restarted.
+10:50:12 PM [vite] hmr update /src/pages/Login.tsx
+10:50:17 PM [vite] hmr update /src/pages/Login.tsx
+10:50:26 PM [vite] hmr update /src/pages/Login.tsx
+10:50:51 PM [vite] hmr update /src/pages/Login.tsx
+10:52:29 PM [vite] hmr update /src/pages/Login.tsx
+10:52:34 PM [vite] hmr update /src/pages/Login.tsx
+10:53:16 PM [vite] hmr update /src/pages/Login.tsx
+10:53:24 PM [vite] hmr update /src/pages/Login.tsx

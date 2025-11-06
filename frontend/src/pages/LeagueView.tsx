@@ -4,28 +4,36 @@ import { apiService, League, Team, Player } from '../services/api';
 import '../App.css';
 
 const LeagueView: React.FC = () => {
-  const { leagueId } = useParams<{ leagueId: string }>();
+  const { leagueKey } = useParams<{ leagueKey: string }>();
   const [league, setLeague] = useState<League | null>(null);
   const [teams, setTeams] = useState<Team[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (leagueId) {
-      loadLeagueData(parseInt(leagueId));
+    if (leagueKey) {
+      const decodedKey = decodeURIComponent(leagueKey);
+      console.log('Loading league with key:', decodedKey);
+      loadLeagueData(decodedKey);
     }
-  }, [leagueId]);
+  }, [leagueKey]);
 
-  const loadLeagueData = async (id: number) => {
+  const loadLeagueData = async (key: string) => {
     try {
       setLoading(true);
+      setError(null);
+      console.log('Fetching league data for:', key);
       const [leagueData, teamsData] = await Promise.all([
-        apiService.getLeague(id),
-        apiService.getLeagueTeams(id),
+        apiService.getLeague(key),
+        apiService.getLeagueTeams(key),
       ]);
+      console.log('League data received:', leagueData);
+      console.log('Teams data received:', teamsData);
       setLeague(leagueData);
-      setTeams(teamsData);
-    } catch (error) {
-      console.error('Failed to load league data:', error);
+      setTeams(Array.isArray(teamsData) ? teamsData : []);
+    } catch (err: any) {
+      console.error('Failed to load league data:', err);
+      setError(err?.message || 'Failed to load league data');
     } finally {
       setLoading(false);
     }
@@ -35,24 +43,30 @@ const LeagueView: React.FC = () => {
     return <div className="container"><div className="loading">Loading league...</div></div>;
   }
 
+  if (error) {
+    return <div className="container"><div className="error">Error: {error}</div></div>;
+  }
+
   if (!league) {
     return <div className="container"><div className="error">League not found</div></div>;
   }
 
+  const encodedKey = leagueKey ? encodeURIComponent(leagueKey) : '';
+
   return (
     <div className="container">
-      <h1>{league.name || `League ${league.league_id}`}</h1>
+      <h1>{league.name || `League ${league.league_key}`}</h1>
       <p>Season: {league.season || 'N/A'}</p>
 
       <div style={{ marginBottom: '20px', display: 'flex', gap: '10px' }}>
         <Link
-          to={`/league/${leagueId}/trades`}
+          to={`/league/${encodedKey}/trades`}
           className="btn btn-primary"
         >
           Trade Analyzer
         </Link>
         <Link
-          to={`/league/${leagueId}/history`}
+          to={`/league/${encodedKey}/history`}
           className="btn btn-primary"
         >
           Historical Data

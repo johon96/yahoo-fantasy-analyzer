@@ -52,13 +52,13 @@ const Dashboard: React.FC = () => {
       ) : (
         <div className="leagues-grid">
           {leagues.map((league) => (
-            <div key={league.id} className="card">
-              <h2>{league.name || `League ${league.league_id}`}</h2>
+            <div key={league.league_key} className="card">
+              <h2>{league.name || `League ${league.league_key}`}</h2>
               <p><strong>Season:</strong> {league.season || 'N/A'}</p>
               <p><strong>Game:</strong> {league.game_code.toUpperCase()}</p>
               <div style={{ marginTop: '15px', display: 'flex', gap: '10px' }}>
                 <Link
-                  to={`/league/${league.id}`}
+                  to={`/league/${encodeURIComponent(league.league_key)}`}
                   className="btn btn-primary"
                 >
                   View League

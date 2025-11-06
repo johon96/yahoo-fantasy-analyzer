@@ -25,9 +25,19 @@ function App() {
   };
 
   const handleLogout = () => {
+    // Clear all authentication data
     localStorage.removeItem('access_token');
     localStorage.removeItem('user_id');
+    
+    // Clear debug data
+    localStorage.removeItem('login_attempt');
+    localStorage.removeItem('last_auth_url');
+    localStorage.removeItem('last_login_error');
+    
     setIsAuthenticated(false);
+    
+    // Show helpful message
+    alert('Logged out successfully! If you want to switch Yahoo accounts, please also log out at login.yahoo.com');
   };
 
   if (loading) {
@@ -62,9 +72,9 @@ function App() {
           {isAuthenticated ? (
             <>
               <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/league/:leagueId" element={<LeagueView />} />
-              <Route path="/league/:leagueId/trades" element={<TradeAnalyzer />} />
-              <Route path="/league/:leagueId/history" element={<HistoricalView />} />
+              <Route path="/league/:leagueKey/trades" element={<TradeAnalyzer />} />
+              <Route path="/league/:leagueKey/history" element={<HistoricalView />} />
+              <Route path="/league/:leagueKey" element={<LeagueView />} />
               <Route path="/" element={<Navigate to="/dashboard" />} />
             </>
           ) : (
