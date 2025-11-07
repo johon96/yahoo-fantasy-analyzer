@@ -1,0 +1,71 @@
+# User tokens and credentials
+backend/data/user_tokens.json
+backend/data/temp_oauth.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+ENV/
+env/
+.venv
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.pid
+
+# Test/Debug files
+test_*.csv
+debug_*.xml
+*_test.csv
+temp_*.json
+
+# CSV exports (optional - uncomment if you don't want to commit CSVs)
+# *.csv
+
