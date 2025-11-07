@@ -1,0 +1,27 @@
+INFO:     Will watch for changes in these directories: ['/Users/jvangorp/dev_git/yahoo-fantasy-analyzer/backend']
+INFO:     Uvicorn running on https://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [654] using WatchFiles
+INFO:     Started server process [674]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:56336 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56338 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57244 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58095 - "GET /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58476 - "GET /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58641 - "GET /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58690 - "GET /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58976 - "GET /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58992 - "GET /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59222 - "GET /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59311 - "GET /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59417 - "GET /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59566 - "GET /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59707 - "GET /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59764 - "GET /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59864 - "GET /api/auth/login HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [674]
+INFO:     Stopping reloader process [654]

@@ -6,10 +6,11 @@ A comprehensive trade analyzer and league analytics dashboard for Yahoo Fantasy 
 
 - **OAuth Authentication**: Secure login with Yahoo Fantasy Sports API
 - **Trade Analysis**: Identify players who are over/under performing relative to projections
-- **Draft Analysis**: Evaluate draft picks and identify best/worst selections
+- **Draft Analysis**: Evaluate draft picks and identify best/worst selections with comprehensive player data
 - **Historical Analysis**: View team records and performance across multiple seasons
 - **Player Performance**: Compare actual stats vs. projections
 - **League Dashboard**: Visualize league standings, team records, and trends
+- **CSV Export**: Standalone script to export comprehensive player data to CSV for external analysis
 
 ## Tech Stack
 
@@ -101,6 +102,10 @@ YAHOO_CLIENT_SECRET=your_client_secret
 YAHOO_REDIRECT_URI=http://localhost:3000/auth/callback
 DATABASE_URL=sqlite:///./fantasy_hockey.db
 SECRET_KEY=your_secret_key_here
+
+# Optional: YFPY library also looks for these (set automatically from YAHOO_CLIENT_ID/SECRET)
+# YAHOO_CONSUMER_KEY=your_client_id
+# YAHOO_CONSUMER_SECRET=your_client_secret
 ```
 
 ## Usage
@@ -121,6 +126,38 @@ SECRET_KEY=your_secret_key_here
 - `GET /api/league/{league_id}/analysis/trades` - Trade analysis
 - `GET /api/league/{league_id}/analysis/draft` - Draft analysis
 - `GET /api/league/{league_id}/history` - Historical data
+
+## CSV Export Tool
+
+Export comprehensive player data to CSV for external analysis, spreadsheets, or data science projects.
+
+### Usage
+
+```bash
+cd backend
+source venv/bin/activate
+python export_players.py <league_key> --output <filename.csv>
+```
+
+### Example
+
+```bash
+python export_players.py 465.l.34948 --output draft_analysis.csv
+```
+
+### Exported Data
+
+- Player Rank (Yahoo's draft ranking)
+- Player Name, Position, NHL Team
+- Fantasy Points (season total)
+- Rostered Team & Owner
+- Draft Round & Pick Number
+- Player Stats (Goals, Assists, Points, +/-, PIM, PPG, PPP, SOG)
+- Ownership Percentage
+
+### Documentation
+
+See [`backend/EXPORT_PLAYERS.md`](backend/EXPORT_PLAYERS.md) for detailed usage, examples, and troubleshooting.
 
 ## License
 

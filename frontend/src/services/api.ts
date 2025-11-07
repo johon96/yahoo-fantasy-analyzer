@@ -80,10 +80,14 @@ export interface TradeAnalysis {
 }
 
 export interface DraftAnalysis {
+  draft_results: any[];
   best_picks: any[];
   worst_picks: any[];
   draft_grades: Record<string, any>;
   total_picks: number;
+  page?: number;
+  page_size?: number;
+  total_pages?: number;
 }
 
 export const apiService = {
@@ -112,8 +116,8 @@ export const apiService = {
     return response.data;
   },
 
-  async getLeague(leagueId: number) {
-    const response = await api.get(`/league/${leagueId}`);
+  async getLeague(leagueKey: string) {
+    const response = await api.get(`/league/${leagueKey}`);
     return response.data;
   },
 
@@ -123,40 +127,42 @@ export const apiService = {
   },
 
   // Teams
-  async getLeagueTeams(leagueId: number) {
-    const response = await api.get(`/league/${leagueId}/teams`);
+  async getLeagueTeams(leagueKey: string) {
+    const response = await api.get(`/league/${leagueKey}/teams`);
     return response.data;
   },
 
   // Players
-  async getLeaguePlayers(leagueId: number, start: number = 0, count: number = 25) {
-    const response = await api.get(`/league/${leagueId}/players`, {
+  async getLeaguePlayers(leagueKey: string, start: number = 0, count: number = 25) {
+    const response = await api.get(`/league/${leagueKey}/players`, {
       params: { start, count },
     });
     return response.data;
   },
 
   // Analysis
-  async getTradeAnalysis(leagueId: number): Promise<TradeAnalysis> {
-    const response = await api.get(`/league/${leagueId}/analysis/trades`);
+  async getTradeAnalysis(leagueKey: string): Promise<TradeAnalysis> {
+    const response = await api.get(`/league/${leagueKey}/analysis/trades`);
     return response.data;
   },
 
-  async getDraftAnalysis(leagueId: number): Promise<DraftAnalysis> {
-    const response = await api.get(`/league/${leagueId}/analysis/draft`);
+  async getDraftAnalysis(leagueKey: string, page: number = 1, pageSize: number = 100): Promise<DraftAnalysis> {
+    const response = await api.get(`/league/${leagueKey}/analysis/draft`, {
+      params: { page, page_size: pageSize }
+    });
     return response.data;
   },
 
-  async getLeagueHistory(leagueId: number, seasons?: number) {
-    const response = await api.get(`/league/${leagueId}/history`, {
+  async getLeagueHistory(leagueKey: string, seasons?: number) {
+    const response = await api.get(`/league/${leagueKey}/history`, {
       params: { seasons },
     });
     return response.data;
   },
 
-  async getPlayerPerformance(playerKey: string, leagueId: number) {
+  async getPlayerPerformance(playerKey: string, leagueKey: string) {
     const response = await api.get(`/player/${playerKey}/performance`, {
-      params: { league_id: leagueId },
+      params: { league_key: leagueKey },
     });
     return response.data;
   },

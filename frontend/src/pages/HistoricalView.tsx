@@ -5,20 +5,21 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 import '../App.css';
 
 const HistoricalView: React.FC = () => {
-  const { leagueId } = useParams<{ leagueId: string }>();
+  const { leagueKey } = useParams<{ leagueKey: string }>();
   const [history, setHistory] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (leagueId) {
-      loadHistory(parseInt(leagueId));
+    if (leagueKey) {
+      const decodedKey = decodeURIComponent(leagueKey);
+      loadHistory(decodedKey);
     }
-  }, [leagueId]);
+  }, [leagueKey]);
 
-  const loadHistory = async (id: number) => {
+  const loadHistory = async (key: string) => {
     try {
       setLoading(true);
-      const data = await apiService.getLeagueHistory(id);
+      const data = await apiService.getLeagueHistory(key);
       setHistory(data);
     } catch (error) {
       console.error('Failed to load historical data:', error);

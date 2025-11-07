@@ -1,7 +1,7 @@
 """FastAPI application entry point."""
+from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.database import init_db
 from app.api import routes
 
 # Initialize FastAPI app
@@ -18,8 +18,10 @@ app.add_middleware(
         "http://localhost:3000",
         "https://localhost:3000",
         "http://localhost:3001",
-        "https://localhost:3001"
-    ],  # React dev server (both HTTP and HTTPS)
+        "https://localhost:3001",
+        "http://localhost:5173",
+        "https://localhost:5173"
+    ],  # React/Vite dev server (both HTTP and HTTPS)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -31,8 +33,9 @@ app.include_router(routes.router)
 
 @app.on_event("startup")
 async def startup_event():
-    """Initialize database on startup."""
-    init_db()
+    """Initialize data directory on startup."""
+    data_dir = Path(__file__).parent.parent / "data"
+    data_dir.mkdir(parents=True, exist_ok=True)
 
 
 @app.get("/")
