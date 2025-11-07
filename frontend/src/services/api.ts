@@ -80,10 +80,14 @@ export interface TradeAnalysis {
 }
 
 export interface DraftAnalysis {
+  draft_results: any[];
   best_picks: any[];
   worst_picks: any[];
   draft_grades: Record<string, any>;
   total_picks: number;
+  page?: number;
+  page_size?: number;
+  total_pages?: number;
 }
 
 export const apiService = {
@@ -142,8 +146,10 @@ export const apiService = {
     return response.data;
   },
 
-  async getDraftAnalysis(leagueKey: string): Promise<DraftAnalysis> {
-    const response = await api.get(`/league/${leagueKey}/analysis/draft`);
+  async getDraftAnalysis(leagueKey: string, page: number = 1, pageSize: number = 100): Promise<DraftAnalysis> {
+    const response = await api.get(`/league/${leagueKey}/analysis/draft`, {
+      params: { page, page_size: pageSize }
+    });
     return response.data;
   },
 

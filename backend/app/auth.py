@@ -1,14 +1,51 @@
 """OAuth authentication for Yahoo Fantasy Sports API."""
 import base64
+import json
+import os
 import secrets
 from datetime import datetime, timedelta
+from pathlib import Path
 from typing import Optional
 from urllib.parse import urlencode
 import requests
 from requests_oauthlib import OAuth2Session
 from app.config import settings
-from app.database import SessionLocal
-from app.models import User
+
+# Path to store user tokens
+TOKEN_STORAGE_PATH = Path(__file__).parent.parent / "data" / "user_tokens.json"
+
+
+class User:
+    """Simple User class for storing OAuth tokens."""
+    
+    def __init__(self, yahoo_guid: str, access_token: str, refresh_token: str, 
+                 token_expires_at: datetime, id: Optional[str] = None):
+        self.id = id or yahoo_guid
+        self.yahoo_guid = yahoo_guid
+        self.access_token = access_token
+        self.refresh_token = refresh_token
+        self.token_expires_at = token_expires_at
+    
+    def to_dict(self) -> dict:
+        """Convert user to dictionary for JSON serialization."""
+        return {
+            "id": self.id,
+            "yahoo_guid": self.yahoo_guid,
+            "access_token": self.access_token,
+            "refresh_token": self.refresh_token,
+            "token_expires_at": self.token_expires_at.isoformat()
+        }
+    
+    @classmethod
+    def from_dict(cls, data: dict) -> "User":
+        """Create user from dictionary."""
+        return cls(
+            yahoo_guid=data["yahoo_guid"],
+            access_token=data["access_token"],
+            refresh_token=data["refresh_token"],
+            token_expires_at=datetime.fromisoformat(data["token_expires_at"]),
+            id=data.get("id")
+        )
 
 
 class YahooOAuth:
@@ -108,31 +145,48 @@ class YahooOAuth:
         return response.json()
 
 
-def get_or_create_user(token_data: dict, user_info: dict) -> User:
-    """Get or create user from database."""
-    db = SessionLocal()
+def _load_users() -> dict:
+    """Load users from JSON file."""
+    if not TOKEN_STORAGE_PATH.exists():
+        TOKEN_STORAGE_PATH.parent.mkdir(parents=True, exist_ok=True)
+        return {}
+    
     try:
-        yahoo_guid = user_info.get("sub")
-        user = db.query(User).filter(User.yahoo_guid == yahoo_guid).first()
-        
-        if not user:
-            user = User(
-                yahoo_guid=yahoo_guid,
-                access_token=token_data.get("access_token"),
-                refresh_token=token_data.get("refresh_token"),
-                token_expires_at=datetime.now() + timedelta(seconds=token_data.get("expires_in", 3600))
-            )
-            db.add(user)
-        else:
-            user.access_token = token_data.get("access_token")
-            user.refresh_token = token_data.get("refresh_token")
-            user.token_expires_at = datetime.now() + timedelta(seconds=token_data.get("expires_in", 3600))
-        
-        db.commit()
-        db.refresh(user)
-        return user
-    finally:
-        db.close()
+        with open(TOKEN_STORAGE_PATH, 'r') as f:
+            data = json.load(f)
+            return {guid: User.from_dict(user_data) for guid, user_data in data.items()}
+    except (json.JSONDecodeError, KeyError):
+        return {}
+
+
+def _save_users(users: dict):
+    """Save users to JSON file."""
+    TOKEN_STORAGE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with open(TOKEN_STORAGE_PATH, 'w') as f:
+        json.dump({guid: user.to_dict() for guid, user in users.items()}, f, indent=2)
+
+
+def get_or_create_user(token_data: dict, user_info: dict) -> User:
+    """Get or create user from JSON storage."""
+    yahoo_guid = user_info.get("sub")
+    users = _load_users()
+    
+    if yahoo_guid in users:
+        user = users[yahoo_guid]
+        user.access_token = token_data.get("access_token")
+        user.refresh_token = token_data.get("refresh_token")
+        user.token_expires_at = datetime.now() + timedelta(seconds=token_data.get("expires_in", 3600))
+    else:
+        user = User(
+            yahoo_guid=yahoo_guid,
+            access_token=token_data.get("access_token"),
+            refresh_token=token_data.get("refresh_token"),
+            token_expires_at=datetime.now() + timedelta(seconds=token_data.get("expires_in", 3600))
+        )
+    
+    users[yahoo_guid] = user
+    _save_users(users)
+    return user
 
 
 def get_valid_access_token(user: User) -> str:
@@ -144,15 +198,17 @@ def get_valid_access_token(user: User) -> str:
     oauth = YahooOAuth()
     try:
         token_data = oauth.refresh_token(user.refresh_token)
-        db = SessionLocal()
-        try:
-            user.access_token = token_data.get("access_token")
-            user.refresh_token = token_data.get("refresh_token", user.refresh_token)
-            user.token_expires_at = datetime.now() + timedelta(seconds=token_data.get("expires_in", 3600))
-            db.commit()
-            db.refresh(user)
-        finally:
-            db.close()
+        
+        # Update user object
+        user.access_token = token_data.get("access_token")
+        user.refresh_token = token_data.get("refresh_token", user.refresh_token)
+        user.token_expires_at = datetime.now() + timedelta(seconds=token_data.get("expires_in", 3600))
+        
+        # Save to JSON
+        users = _load_users()
+        users[user.yahoo_guid] = user
+        _save_users(users)
+        
         return user.access_token
     except Exception as e:
         raise Exception(f"Failed to refresh token: {e}")

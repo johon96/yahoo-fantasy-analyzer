@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Dashboard from './pages/Dashboard';
 import LeagueView from './pages/LeagueView';
 import TradeAnalyzer from './pages/TradeAnalyzer';
+import DraftAnalyzer from './pages/DraftAnalyzer';
 import HistoricalView from './pages/HistoricalView';
 import Login from './pages/Login';
 import Navbar from './components/Navbar';
@@ -73,6 +74,7 @@ function App() {
             <>
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/league/:leagueKey/trades" element={<TradeAnalyzer />} />
+              <Route path="/league/:leagueKey/draft" element={<DraftAnalyzer />} />
               <Route path="/league/:leagueKey/history" element={<HistoricalView />} />
               <Route path="/league/:leagueKey" element={<LeagueView />} />
               <Route path="/" element={<Navigate to="/dashboard" />} />

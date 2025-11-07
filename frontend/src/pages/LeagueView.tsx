@@ -58,12 +58,18 @@ const LeagueView: React.FC = () => {
       <h1>{league.name || `League ${league.league_key}`}</h1>
       <p>Season: {league.season || 'N/A'}</p>
 
-      <div style={{ marginBottom: '20px', display: 'flex', gap: '10px' }}>
+      <div style={{ marginBottom: '20px', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
         <Link
           to={`/league/${encodedKey}/trades`}
           className="btn btn-primary"
         >
           Trade Analyzer
+        </Link>
+        <Link
+          to={`/league/${encodedKey}/draft`}
+          className="btn btn-primary"
+        >
+          Draft Analyzer
         </Link>
         <Link
           to={`/league/${encodedKey}/history`}

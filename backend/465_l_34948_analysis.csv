@@ -1,0 +1,1501 @@
+﻿Player Name,Position,NHL Team,Fantasy Points,Current Team,Current Owner,Drafted Team,Drafted By,Draft Round,Draft Pick,ADP,Pct Drafted,Goals,Assists,Points,PIM,SOG,Hits,Blocks,Wins,Saves,Save %,GA,Shutouts,Pct Owned
+Nathan MacKinnon,C,COL,85.2,Kiril’s KaprizHog,Eric,Kiril’s KaprizHog,Eric,1,1,2.4,1.0,10.0,10.0,20.0,8.0,61.0,13.0,9.0,,,,,,100.0
+David Pastrnak,RW,BOS,79.2,Sure Would,Johnathan,Sure Would,Johnathan,1,6,8.2,1.0,7.0,11.0,18.0,12.0,51.0,28.0,4.0,,,,,,100.0
+Macklin Celebrini,C,SJ,75.6,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,2,18,44.0,1.0,8.0,13.0,21.0,8.0,40.0,10.0,9.0,,,,,,99.0
+Adrian Kempe,RW,LA,75.4,Powerplay Papi,Cooper,Powerplay Papi,Cooper,4,49,50.0,1.0,6.0,10.0,16.0,12.0,44.0,34.0,8.0,,,,,,99.0
+Cutter Gauthier,LW,ANA,74.1,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,12,159,173.0,0.34,10.0,6.0,16.0,10.0,58.0,12.0,4.0,,,,,,85.0
+Tom Wilson,RW,WSH,74.05,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,4,46,93.4,1.0,8.0,7.0,15.0,29.0,29.0,37.0,6.0,,,,,,91.0
+Kiefer Sherwood,RW,VAN,72.4,Sure Would,Johnathan,Sure Would,Johnathan,6,79,107.4,0.95,9.0,0.0,9.0,12.0,30.0,67.0,9.0,,,,,,55.0
+Auston Matthews,C,TOR,71.9,Powerplay Papi,Cooper,Powerplay Papi,Cooper,1,8,8.7,1.0,8.0,4.0,12.0,6.0,57.0,12.0,27.0,,,,,,100.0
+Matthew Knies,LW,TOR,71.0,The Leon King,cam,The Leon King,cam,6,82,83.3,1.0,5.0,13.0,18.0,8.0,29.0,33.0,8.0,,,,,,94.0
+Jack Eichel,C,VGK,70.4,Eichel Power,Bruce,Eichel Power,Bruce,2,16,15.8,1.0,8.0,11.0,19.0,0.0,50.0,4.0,7.0,,,,,,100.0
+Cale Makar,D,COL,69.9,Cale of Two Cities,Jared,Cale of Two Cities,Jared,1,4,5.2,1.0,4.0,14.0,18.0,6.0,35.0,10.0,26.0,,,,,,100.0
+Connor Bedard,"C,RW",CHI,68.9,Cale of Two Cities,Jared,Cale of Two Cities,Jared,5,60,53.9,1.0,7.0,11.0,18.0,14.0,46.0,5.0,5.0,,,,,,99.0
+Sidney Crosby,C,PIT,68.5,Sure Would,Johnathan,Sure Would,Johnathan,3,34,36.4,1.0,9.0,8.0,17.0,22.0,29.0,14.0,7.0,,,,,,100.0
+Martin Necas,RW,COL,67.4,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,5,61,46.9,1.0,9.0,9.0,18.0,8.0,31.0,16.0,4.0,,,,,,98.0
+Connor McDavid,C,EDM,67.0,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,1,2,1.4,1.0,4.0,17.0,21.0,4.0,45.0,2.0,3.0,,,,,,100.0
+Dylan Larkin,C,DET,66.8,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,8,103,82.1,1.0,8.0,10.0,18.0,8.0,40.0,6.0,6.0,,,,,,97.0
+Nick Schmaltz,"C,RW",UTA,66.2,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,18,243,178.3,0.15,8.0,10.0,18.0,4.0,43.0,2.0,8.0,,,,,,89.0
+Kirill Kaprizov,LW,MIN,66.1,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,1,10,7.3,1.0,8.0,10.0,18.0,2.0,47.0,2.0,5.0,,,,,,100.0
+Mark Scheifele,C,WPG,66.0,Cale of Two Cities,Jared,Cale of Two Cities,Jared,4,53,56.7,1.0,9.0,11.0,20.0,4.0,34.0,3.0,3.0,,,,,,99.0
+John Tavares,C,TOR,65.9,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,4,52,78.7,1.0,7.0,11.0,18.0,2.0,38.0,14.0,4.0,,,,,,95.0
+Kyle Connor,LW,WPG,65.8,Ryan is Aho,Mitchell,Ryan is Aho,Mitchell,2,17,15.9,1.0,8.0,9.0,17.0,4.0,49.0,6.0,2.0,,,,,,100.0
+Mikko Rantanen,"LW,RW",DAL,65.7,Bangers and Mash,conor,Bangers and Mash,conor,1,7,10.5,1.0,7.0,10.0,17.0,14.0,32.0,14.0,7.0,,,,,,100.0
+Leon Draisaitl,"C,LW",EDM,65.4,The Leon King,cam,The Leon King,cam,1,3,3.0,1.0,10.0,7.0,17.0,4.0,40.0,7.0,4.0,,,,,,100.0
+Cole Caufield,"LW,RW",MTL,65.1,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,5,67,55.2,1.0,10.0,6.0,16.0,6.0,35.0,14.0,5.0,,,,,,99.0
+Filip Forsberg,LW,NSH,63.4,Geek Squad,Nick,Geek Squad,Nick,2,20,27.0,1.0,6.0,5.0,11.0,4.0,47.0,32.0,7.0,,,,,,99.0
+Jack Hughes,"C,LW",NJ,63.2,DubJ,John,DubJ,John,2,15,17.4,1.0,10.0,6.0,16.0,0.0,44.0,1.0,8.0,,,,,,100.0
+Bo Horvat,C,NYI,62.9,Sure Would,Johnathan,Sure Would,Johnathan,10,135,166.3,0.58,9.0,6.0,15.0,6.0,45.0,8.0,3.0,,,,,,83.0
+Evgeni Malkin,"C,LW",PIT,62.4,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,17,234,181.4,0.02,3.0,16.0,19.0,12.0,36.0,7.0,3.0,,,,,,83.0
+Kirill Marchenko,RW,CBJ,61.1,Geek Squad,Nick,Geek Squad,Nick,10,132,87.7,0.98,6.0,7.0,13.0,6.0,47.0,12.0,10.0,,,,,,94.0
+Tim Stutzle,"C,LW",OTT,61.1,Ryan is Aho,Mitchell,Ryan is Aho,Mitchell,4,45,42.2,1.0,6.0,8.0,14.0,6.0,40.0,16.0,8.0,,,,,,99.0
+Tage Thompson,"C,RW",BUF,60.7,DubJ,John,DubJ,John,3,42,37.0,1.0,5.0,5.0,10.0,10.0,55.0,19.0,9.0,,,,,,98.0
+Wyatt Johnston,"C,RW",DAL,60.4,The Leon King,cam,The Leon King,cam,7,87,63.2,1.0,7.0,7.0,14.0,4.0,43.0,5.0,13.0,,,,,,97.0
+Darnell Nurse,D,EDM,60.2,Ryan is Aho,Mitchell,Ryan is Aho,Mitchell,5,68,148.1,0.97,3.0,4.0,7.0,8.0,35.0,27.0,41.0,,,,,,74.0
+Nick Suzuki,C,MTL,59.9,Bangers and Mash,conor,Bangers and Mash,conor,5,63,52.6,1.0,3.0,16.0,19.0,2.0,29.0,7.0,10.0,,,,,,99.0
+Dylan Cozens,C,OTT,59.8,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,10,136,166.3,0.67,6.0,4.0,10.0,4.0,31.0,44.0,7.0,,,,,,52.0
+Leo Carlsson,C,ANA,59.65,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,13,173,173.1,0.07,5.0,13.0,18.0,17.0,28.0,1.0,7.0,,,,,,72.0
+Morgan Geekie,"C,LW,RW",BOS,59.6,Geek Squad,Nick,Geek Squad,Nick,14,188,162.4,0.91,9.0,3.0,12.0,4.0,32.0,26.0,6.0,,,,,,69.0
+Evander Kane,LW,VAN,59.6,Sure Would,Johnathan,Sure Would,Johnathan,7,90,164.8,0.63,3.0,5.0,8.0,28.0,44.0,31.0,9.0,,,,,,30.0
+Dylan Guenther,RW,UTA,59.1,Kiril’s KaprizHog,Eric,Kiril’s KaprizHog,Eric,6,84,88.2,1.0,6.0,7.0,13.0,6.0,46.0,13.0,5.0,,,,,,92.0
+Alex DeBrincat,"LW,RW",DET,58.0,Cale of Two Cities,Jared,Cale of Two Cities,Jared,6,81,69.3,1.0,4.0,11.0,15.0,0.0,55.0,1.0,4.0,,,,,,95.0
+Matt Boldy,"LW,RW",MIN,57.7,Powerplay Papi,Cooper,Powerplay Papi,Cooper,3,36,33.1,1.0,5.0,8.0,13.0,6.0,48.0,9.0,6.0,,,,,,99.0
+Alex Tuch,RW,BUF,57.45,Ryan is Aho,Mitchell,Ryan is Aho,Mitchell,7,96,133.6,1.0,5.0,7.0,12.0,29.0,32.0,4.0,17.0,,,,,,84.0
+Brad Marchand,"LW,RW",FLA,57.4,Sure Would,Johnathan,Sure Would,Johnathan,11,146,148.2,0.95,7.0,6.0,13.0,16.0,37.0,12.0,2.0,,,,,,86.0
+William Nylander,"C,RW",TOR,57.4,Eichel Power,Bruce,Eichel Power,Bruce,1,13,14.9,1.0,6.0,14.0,20.0,4.0,20.0,2.0,4.0,,,,,,100.0
+Shane Pinto,C,OTT,57.3,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,16,214,,,8.0,4.0,12.0,10.0,38.0,10.0,9.0,,,,,,58.0
+Dawson Mercer,"C,RW",NJ,57.1,DubJ,John,,,,,,,8.0,6.0,14.0,6.0,24.0,10.0,15.0,,,,,,67.0
+Seth Jarvis,"C,LW,RW",CAR,56.6,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,6,75,62.5,1.0,8.0,4.0,12.0,4.0,44.0,8.0,7.0,,,,,,97.0
+Charlie McAvoy,D,BOS,56.4,DubJ,John,DubJ,John,5,70,99.8,1.0,0.0,11.0,11.0,24.0,21.0,24.0,26.0,,,,,,92.0
+Emil Heineman,"LW,RW",NYI,55.7,Powerplay Papi,Cooper,,,,,,,5.0,3.0,8.0,6.0,27.0,51.0,5.0,,,,,,24.0
+Will Cuylle,"LW,RW",NYR,54.6,Sure Would,Johnathan,Sure Would,Johnathan,9,118,140.5,0.88,2.0,4.0,6.0,12.0,33.0,50.0,11.0,,,,,,38.0
+Zach Werenski,D,CBJ,54.4,DubJ,John,DubJ,John,1,14,20.2,1.0,4.0,6.0,10.0,0.0,47.0,8.0,21.0,,,,,,100.0
+Jason Robertson,"LW,RW",DAL,54.2,Bangers and Mash,conor,Bangers and Mash,conor,3,35,31.8,1.0,3.0,8.0,11.0,0.0,56.0,8.0,9.0,,,,,,99.0
+Joel Eriksson Ek,C,MIN,54.0,DubJ,John,DubJ,John,6,71,119.1,0.99,2.0,7.0,9.0,8.0,42.0,28.0,10.0,,,,,,71.0
+Trevor Zegras,"C,LW",PHI,53.7,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,17,229,168.5,0.05,4.0,11.0,15.0,18.0,28.0,6.0,4.0,,,,,,62.0
+Blake Coleman,"C,LW,RW",CGY,53.5,DubJ,John,DubJ,John,13,182,182.3,0.07,6.0,1.0,7.0,6.0,40.0,31.0,9.0,,,,,,26.0
+Dmitri Voronkov,LW,CBJ,53.1,Cooley as a Cucumber,Ryan,,,,,,,5.0,5.0,10.0,18.0,28.0,30.0,1.0,,,,,,35.0
+Logan Cooley,C,UTA,53.1,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,11,150,146.2,0.98,8.0,4.0,12.0,6.0,28.0,15.0,6.0,,,,,,88.0
+Timo Meier,"LW,RW",NJ,53.0,Kiril’s KaprizHog,Eric,Kiril’s KaprizHog,Eric,4,56,91.9,1.0,3.0,7.0,10.0,8.0,36.0,25.0,9.0,,,,,,88.0
+Travis Konecny,"LW,RW",PHI,52.75,Kiril’s KaprizHog,Eric,Kiril’s KaprizHog,Eric,5,57,86.5,1.0,4.0,6.0,10.0,11.0,33.0,22.0,10.0,,,,,,89.0
+Nazem Kadri,C,CGY,52.4,DubJ,John,DubJ,John,7,98,144.4,0.96,4.0,7.0,11.0,8.0,44.0,11.0,6.0,,,,,,75.0
+Drake Batherson,"LW,RW",OTT,52.4,Ryan is Aho,Mitchell,Ryan is Aho,Mitchell,8,101,93.8,1.0,5.0,10.0,15.0,4.0,22.0,16.0,3.0,,,,,,90.0
+Elias Pettersson,"C,LW",VAN,52.3,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,5,58,76.4,1.0,3.0,7.0,10.0,2.0,23.0,18.0,31.0,,,,,,90.0
+Kevin Fiala,LW,LA,52.0,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,9,117,95.9,1.0,6.0,4.0,10.0,8.0,46.0,9.0,5.0,,,,,,89.0
+Matthew Schaefer,D,NYI,52.0,Powerplay Papi,Cooper,Powerplay Papi,Cooper,13,176,166.3,0.83,5.0,6.0,11.0,4.0,41.0,6.0,13.0,,,,,,89.0
+Frank Nazar,C,CHI,51.7,Dartmouth Mustard Tigers 🌭🐅,Cameron,,,,,164.8,0.04,5.0,6.0,11.0,6.0,31.0,11.0,16.0,,,,,,59.0
+Ryan Nugent-Hopkins,"C,LW",EDM,51.6,Bangers and Mash,conor,Bangers and Mash,conor,13,175,151.0,0.97,5.0,11.0,16.0,4.0,23.0,7.0,4.0,,,,,,76.0
+Clayton Keller,"LW,RW",UTA,51.2,Eichel Power,Bruce,Eichel Power,Bruce,3,41,39.6,1.0,5.0,9.0,14.0,4.0,37.0,1.0,5.0,,,,,,99.0
+Juraj Slafkovský,"LW,RW",MTL,51.0,Powerplay Papi,Cooper,Powerplay Papi,Cooper,7,92,117.4,1.0,6.0,2.0,8.0,12.0,28.0,24.0,13.0,,,,,,85.0
+Adam Fox,D,NYR,50.9,The Leon King,cam,The Leon King,cam,3,31,47.4,1.0,3.0,8.0,11.0,6.0,30.0,8.0,23.0,,,,,,99.0
+Evan Bouchard,D,EDM,50.8,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,2,24,20.4,1.0,2.0,8.0,10.0,8.0,40.0,6.0,21.0,,,,,,100.0
+Jesper Bratt,"LW,RW",NJ,50.7,Cale of Two Cities,Jared,Cale of Two Cities,Jared,3,32,39.8,1.0,4.0,9.0,13.0,6.0,27.0,17.0,4.0,,,,,,98.0
+Nikita Zadorov,D,BOS,50.6,Sure Would,Johnathan,Sure Would,Johnathan,12,163,173.0,0.44,1.0,3.0,4.0,24.0,11.0,56.0,22.0,,,,,,45.0
+J.T. Miller,"C,RW",NYR,50.5,Kiril’s KaprizHog,Eric,Kiril’s KaprizHog,Eric,2,28,34.7,1.0,3.0,5.0,8.0,6.0,41.0,29.0,5.0,,,,,,96.0
+Pavel Zacha,"C,LW",BOS,50.4,Eichel Power,Bruce,,,,,,,3.0,10.0,13.0,12.0,22.0,17.0,7.0,,,,,,39.0
+Justin Brazeau,RW,PIT,50.4,Bangers and Mash,conor,,,,,,,6.0,6.0,12.0,0.0,22.0,17.0,12.0,,,,,,26.0
+Vasily Podkolzin,"LW,RW",EDM,50.1,Powerplay Papi,Cooper,,,,,,,2.0,4.0,6.0,2.0,26.0,50.0,13.0,,,,,,8.0
+Artturi Lehkonen,"LW,RW",COL,50.0,Bangers and Mash,conor,Bangers and Mash,conor,17,231,163.2,0.82,4.0,8.0,12.0,0.0,34.0,7.0,14.0,,,,,,75.0
+Mikhail Sergachev,D,UTA,49.9,The Leon King,cam,The Leon King,cam,5,59,83.3,1.0,3.0,8.0,11.0,10.0,26.0,4.0,26.0,,,,,,97.0
+Jacob Trouba,D,ANA,49.4,Ryan is Aho,Mitchell,Ryan is Aho,Mitchell,10,129,158.9,0.08,3.0,5.0,8.0,0.0,17.0,34.0,25.0,,,,,,60.0
+Jakob Chychrun,D,WSH,49.3,Eichel Power,Bruce,Eichel Power,Bruce,5,69,65.7,1.0,3.0,7.0,10.0,6.0,38.0,13.0,11.0,,,,,,99.0
+Will Smith,"C,RW",SJ,49.0,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,17,226,172.4,0.38,5.0,8.0,13.0,8.0,28.0,6.0,6.0,,,,,,43.0
+Connor Hellebuyck,G,WPG,48.8,Ryan is Aho,Mitchell,Ryan is Aho,Mitchell,1,12,8.9,1.0,,,,,,,,6.0,269.0,0.9212328767123288,23.0,0.0,100.0
+Dmitry Orlov,D,SJ,48.7,Bangers and Mash,conor,,,,,172.3,0.09,0.0,10.0,10.0,14.0,21.0,24.0,18.0,,,,,,54.0
+Victor Olofsson,"LW,RW",COL,48.7,,,,,,,,,5.0,7.0,12.0,2.0,42.0,3.0,3.0,,,,,,17.0
+Kyle Palmieri,RW,NYI,48.7,,,,,,,,,4.0,6.0,10.0,6.0,39.0,12.0,7.0,,,,,,15.0
+MacKenzie Weegar,D,CGY,48.6,Sure Would,Johnathan,Sure Would,Johnathan,2,23,46.3,1.0,0.0,4.0,4.0,20.0,23.0,38.0,28.0,,,,,,91.0
+Sebastian Aho,C,CAR,48.6,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,6,74,65.3,1.0,4.0,8.0,12.0,4.0,24.0,19.0,6.0,,,,,,95.0
+Pavel Dorofeyev,"LW,RW",VGK,48.5,Kiril’s KaprizHog,Eric,Kiril’s KaprizHog,Eric,12,168,133.9,0.96,9.0,1.0,10.0,6.0,35.0,5.0,5.0,,,,,,90.0
+Jake Guentzel,LW,TB,48.4,The Leon King,cam,The Leon King,cam,2,26,30.7,1.0,5.0,7.0,12.0,4.0,37.0,3.0,6.0,,,,,,99.0
+Owen Tippett,"LW,RW",PHI,48.3,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,10,139,173.8,0.45,5.0,1.0,6.0,18.0,38.0,23.0,6.0,,,,,,33.0
+Moritz Seider,D,DET,48.3,Kiril’s KaprizHog,Eric,Kiril’s KaprizHog,Eric,3,29,53.5,1.0,1.0,5.0,6.0,10.0,32.0,29.0,21.0,,,,,,97.0
+Dylan Holloway,"C,LW",STL,48.2,Powerplay Papi,Cooper,Powerplay Papi,Cooper,10,133,102.9,0.98,2.0,4.0,6.0,4.0,33.0,41.0,9.0,,,,,,65.0
+Jake Sanderson,D,OTT,48.2,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,4,47,60.3,1.0,3.0,8.0,11.0,0.0,31.0,5.0,22.0,,,,,,99.0
+Jaden Schwartz,"C,LW",SEA,47.9,Geek Squad,Nick,,,,,,,4.0,6.0,10.0,6.0,24.0,19.0,13.0,,,,,,25.0
+Spencer Knight,G,CHI,47.8,Eichel Power,Bruce,Eichel Power,Bruce,16,212,173.8,0.36,,,,,,,,5.0,294.0,0.91875,26.0,0.0,67.0
+Anders Lee,LW,NYI,47.8,Ryan is Aho,Mitchell,Sure Would,Johnathan,13,174,167.4,0.12,2.0,7.0,9.0,12.0,40.0,12.0,10.0,,,,,,17.0
+Ryan Donato,"C,LW,RW",CHI,47.6,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,14,192,178.2,0.25,6.0,4.0,10.0,8.0,29.0,17.0,3.0,,,,,,32.0
+Troy Terry,RW,ANA,47.4,DubJ,John,,,,,172.7,0.03,5.0,10.0,15.0,0.0,30.0,0.0,1.0,,,,,,51.0
+Scott Wedgewood,G,COL,47.4,Ryan is Aho,Mitchell,,,,,163.0,0.64,,,,,,,,8.0,257.0,0.9017543859649123,28.0,0.0,71.0
+Josh Morrissey,D,WPG,47.3,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,3,38,45.7,1.0,1.0,10.0,11.0,6.0,23.0,7.0,27.0,,,,,,99.0
+Tyler Bertuzzi,"LW,RW",CHI,47.3,Ryan is Aho,Mitchell,,,,,,,6.0,4.0,10.0,18.0,27.0,15.0,0.0,,,,,,13.0
+William Eklund,"LW,RW",SJ,47.1,Pond Hockey Stars,PIERRE,The Leon King,cam,16,222,182.9,0.15,5.0,6.0,11.0,2.0,31.0,8.0,10.0,,,,,,40.0
+Mika Zibanejad,"C,RW",NYR,47.0,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,10,130,136.3,0.95,4.0,2.0,6.0,4.0,43.0,23.0,9.0,,,,,,69.0
+Tomas Hertl,"C,LW",VGK,47.0,Eichel Power,Bruce,Eichel Power,Bruce,9,125,117.1,1.0,5.0,6.0,11.0,8.0,27.0,15.0,3.0,,,,,,89.0
+Jordan Eberle,RW,SEA,46.9,,,,,,,,,5.0,5.0,10.0,6.0,31.0,15.0,5.0,,,,,,14.0
+Sam Reinhart,"C,RW",FLA,46.5,Powerplay Papi,Cooper,Powerplay Papi,Cooper,2,21,22.7,1.0,6.0,1.0,7.0,2.0,38.0,17.0,10.0,,,,,,99.0
+Dougie Hamilton,D,NJ,46.4,Powerplay Papi,Cooper,Powerplay Papi,Cooper,6,77,74.8,1.0,4.0,3.0,7.0,8.0,34.0,15.0,17.0,,,,,,96.0
+Quinton Byfield,"C,LW",LA,46.4,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,13,178,140.1,0.99,2.0,9.0,11.0,8.0,32.0,14.0,5.0,,,,,,78.0
+Gabriel Vilardi,"C,RW",WPG,46.3,The Leon King,cam,The Leon King,cam,13,171,126.3,1.0,5.0,8.0,13.0,2.0,29.0,4.0,4.0,,,,,,78.0
+Rasmus Dahlin,D,BUF,46.3,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,2,19,25.6,1.0,1.0,8.0,9.0,10.0,35.0,11.0,16.0,,,,,,99.0
+Anthony Cirelli,C,TB,46.1,DubJ,John,,,,,,,7.0,4.0,11.0,6.0,21.0,8.0,10.0,,,,,,41.0
+Elias Lindholm,C,BOS,46.0,The Leon King,cam,The Leon King,cam,15,199,182.2,0.02,4.0,5.0,9.0,8.0,22.0,19.0,14.0,,,,,,36.0
+Alex Laferriere,RW,LA,46.0,Pond Hockey Stars,PIERRE,Kiril’s KaprizHog,Eric,16,224,173.9,0.15,3.0,3.0,6.0,4.0,29.0,34.0,12.0,,,,,,9.0
+Nico Hischier,C,NJ,46.0,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,9,114,86.9,1.0,3.0,8.0,11.0,4.0,27.0,7.0,16.0,,,,,,93.0
+Lukas Dostal,G,ANA,46.0,Kiril’s KaprizHog,Eric,Kiril’s KaprizHog,Eric,15,197,130.3,0.98,,,,,,,,6.0,270.0,0.9121621621621622,26.0,0.0,77.0
+Valeri Nichushkin,"LW,RW",COL,45.9,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,13,170,84.1,0.99,5.0,4.0,9.0,2.0,39.0,14.0,3.0,,,,,,85.0
+Mathieu Olivier,RW,CBJ,45.65,DubJ,John,Sure Would,Johnathan,16,219,160.9,0.1,1.0,4.0,5.0,17.0,20.0,46.0,10.0,,,,,,11.0
+Alexander Nikishin,D,CAR,45.6,Kiril’s KaprizHog,Eric,Kiril’s KaprizHog,Eric,8,112,109.8,1.0,2.0,4.0,6.0,8.0,21.0,35.0,18.0,,,,,,84.0
+Conor Garland,RW,VAN,45.6,DubJ,John,,,,,,,3.0,8.0,11.0,4.0,35.0,8.0,6.0,,,,,,37.0
+Adam Klapka,RW,CGY,45.55,,,,,,,,,2.0,2.0,4.0,27.0,15.0,47.0,10.0,,,,,,3.0
+Bryan Rust,RW,PIT,45.5,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,10,131,152.0,0.85,4.0,7.0,11.0,6.0,27.0,2.0,16.0,,,,,,71.0
+Brandon Hagel,"LW,RW",TB,45.3,Geek Squad,Nick,Geek Squad,Nick,4,48,56.0,1.0,4.0,5.0,9.0,10.0,36.0,9.0,7.0,,,,,,95.0
+Anthony Mantha,"LW,RW",PIT,45.2,Bangers and Mash,conor,,,,,,,6.0,5.0,11.0,0.0,27.0,6.0,10.0,,,,,,18.0
+Tyler Toffoli,"LW,RW",SJ,45.1,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,11,142,169.4,0.72,5.0,4.0,9.0,2.0,33.0,11.0,10.0,,,,,,44.0
+Marcus Johansson,LW,MIN,44.9,The Leon King,cam,,,,,,,6.0,6.0,12.0,2.0,24.0,7.0,5.0,,,,,,17.0
+Boone Jenner,"C,LW",CBJ,44.85,DubJ,John,DubJ,John,14,183,176.2,0.23,2.0,6.0,8.0,13.0,23.0,26.0,10.0,,,,,,26.0
+Emmitt Finnie,"C,LW",DET,44.8,Bangers and Mash,conor,,,,,,,4.0,4.0,8.0,0.0,25.0,28.0,9.0,,,,,,23.0
+Joey Daccord,G,SEA,44.8,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,15,206,137.8,0.97,,,,,,,,6.0,269.0,0.8996655518394648,30.0,1.0,82.0
+Mike Matheson,D,MTL,44.7,Sure Would,Johnathan,Sure Would,Johnathan,14,191,175.8,0.19,3.0,4.0,7.0,10.0,18.0,14.0,31.0,,,,,,67.0
+Mitch Marner,RW,VGK,44.7,Bangers and Mash,conor,Bangers and Mash,conor,2,22,19.5,1.0,3.0,11.0,14.0,2.0,20.0,6.0,7.0,,,,,,100.0
+Mackie Samoskevich,RW,FLA,44.3,Kiril’s KaprizHog,Eric,Kiril’s KaprizHog,Eric,17,225,,,2.0,7.0,9.0,6.0,31.0,22.0,4.0,,,,,,11.0
+Josh Doan,"LW,RW",BUF,44.2,Bangers and Mash,conor,,,,,,,4.0,5.0,9.0,4.0,37.0,13.0,3.0,,,,,,16.0
+Lane Hutson,D,MTL,44.2,Powerplay Papi,Cooper,Powerplay Papi,Cooper,5,64,49.4,1.0,1.0,12.0,13.0,0.0,16.0,8.0,19.0,,,,,,99.0
+Logan Thompson,G,WSH,44.2,The Leon King,cam,Geek Squad,Nick,13,177,69.2,1.0,,,,,,,,6.0,196.0,0.937799043062201,13.0,0.0,96.0
+Alex Lyon,G,BUF,44.2,Pond Hockey Stars,PIERRE,,,,,,,,,,,,,,3.0,301.0,0.9148936170212766,28.0,1.0,29.0
+Igor Shesterkin,G,NYR,44.0,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,2,27,26.9,1.0,,,,,,,,4.0,270.0,0.9152542372881356,25.0,1.0,99.0
+Juuse Saros,G,NSH,44.0,DubJ,John,DubJ,John,9,126,100.4,1.0,,,,,,,,5.0,325.0,0.9002770083102493,36.0,0.0,91.0
+John Carlson,D,WSH,43.9,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,7,95,107.8,1.0,3.0,6.0,9.0,2.0,30.0,6.0,20.0,,,,,,91.0
+Artem Zub,D,OTT,43.9,Pond Hockey Stars,PIERRE,,,,,,,2.0,7.0,9.0,6.0,20.0,19.0,17.0,,,,,,15.0
+Filip Hronek,D,VAN,43.9,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,12,167,170.5,0.69,0.0,7.0,7.0,6.0,19.0,30.0,22.0,,,,,,39.0
+Victor Hedman,D,TB,43.7,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,3,30,35.7,1.0,0.0,10.0,10.0,2.0,23.0,7.0,28.0,,,,,,99.0
+Marco Rossi,C,MIN,43.5,Kiril’s KaprizHog,Eric,,,,,179.7,0.12,3.0,9.0,12.0,2.0,23.0,10.0,7.0,,,,,,33.0
+Bobby Brink,RW,PHI,43.5,,,,,,,,,5.0,4.0,9.0,10.0,24.0,17.0,4.0,,,,,,3.0
+Erik Haula,"C,LW",NSH,43.5,,,,,,,,,3.0,5.0,8.0,18.0,22.0,22.0,6.0,,,,,,4.0
+Jake McCabe,D,TOR,43.45,Bangers and Mash,conor,Powerplay Papi,Cooper,16,217,178.4,0.05,2.0,6.0,8.0,9.0,10.0,17.0,31.0,,,,,,17.0
+Justin Faulk,D,STL,43.4,Cale of Two Cities,Jared,Cale of Two Cities,Jared,15,200,174.8,0.12,2.0,4.0,6.0,4.0,25.0,14.0,32.0,,,,,,31.0
+Colton Dach,"C,LW",CHI,43.4,,,,,,,,,1.0,2.0,3.0,8.0,18.0,59.0,9.0,,,,,,5.0
+Thomas Harley,D,DAL,43.3,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,4,55,65.9,1.0,1.0,8.0,9.0,6.0,16.0,6.0,35.0,,,,,,97.0
+Jake Oettinger,G,DAL,43.2,Eichel Power,Bruce,Eichel Power,Bruce,4,44,18.3,1.0,,,,,,,,5.0,241.0,0.9128787878787878,23.0,1.0,100.0
+Aliaksei Protas,"LW,RW",WSH,43.1,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,18,248,159.8,0.82,5.0,5.0,10.0,2.0,30.0,6.0,8.0,,,,,,73.0
+Brenden Dillon,D,NJ,43.0,Kiril’s KaprizHog,Eric,,,,,,,2.0,4.0,6.0,4.0,12.0,33.0,25.0,,,,,,21.0
+Brock Faber,D,MIN,42.6,Sure Would,Johnathan,Bangers and Mash,conor,12,162,163.3,0.78,1.0,6.0,7.0,0.0,35.0,6.0,28.0,,,,,,52.0
+Mathew Barzal,"C,RW",NYI,42.4,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,9,122,146.4,0.99,3.0,7.0,10.0,12.0,27.0,4.0,10.0,,,,,,65.0
+Mattias Ekholm,D,EDM,42.4,Cale of Two Cities,Jared,Cale of Two Cities,Jared,13,172,163.6,0.83,1.0,5.0,6.0,4.0,27.0,10.0,34.0,,,,,,46.0
+Nikita Kucherov,RW,TB,42.3,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,1,5,4.5,1.0,5.0,6.0,11.0,2.0,32.0,2.0,3.0,,,,,,100.0
+Rasmus Andersson,D,CGY,42.3,DubJ,John,DubJ,John,10,127,171.4,0.4,2.0,3.0,5.0,14.0,36.0,9.0,22.0,,,,,,45.0
+Anton Lundell,C,FLA,42.2,Geek Squad,Nick,,,,,165.7,0.08,3.0,6.0,9.0,8.0,26.0,10.0,12.0,,,,,,31.0
+Simon Edvinsson,D,DET,42.2,Geek Squad,Nick,Kiril’s KaprizHog,Eric,18,252,,,3.0,2.0,5.0,16.0,15.0,14.0,34.0,,,,,,14.0
+Evan Rodrigues,"C,LW,RW",FLA,42.2,Eichel Power,Bruce,,,,,,,3.0,5.0,8.0,8.0,27.0,19.0,7.0,,,,,,10.0
+Dakota Joshua,"C,LW",TOR,42.1,,,,,,,,,2.0,3.0,5.0,2.0,14.0,48.0,12.0,,,,,,3.0
+Oliver Ekman-Larsson,D,TOR,42.1,Ross' Rink Rats,Ross,,,,,173.1,0.04,1.0,8.0,9.0,14.0,16.0,19.0,14.0,,,,,,24.0
+Ross Colton,"C,LW",COL,42.05,Powerplay Papi,Cooper,Powerplay Papi,Cooper,14,189,,,2.0,4.0,6.0,5.0,26.0,35.0,6.0,,,,,,3.0
+Filip Gustavsson,G,MIN,42.0,Cale of Two Cities,Jared,Cale of Two Cities,Jared,7,88,43.4,1.0,,,,,,,,4.0,305.0,0.8997050147492626,34.0,1.0,97.0
+Mason McTavish,C,ANA,41.9,Sure Would,Johnathan,Sure Would,Johnathan,15,202,165.1,0.43,2.0,7.0,9.0,14.0,22.0,17.0,7.0,,,,,,60.0
+Brandon Montour,D,SEA,41.85,Geek Squad,Nick,Geek Squad,Nick,6,76,99.9,1.0,3.0,5.0,8.0,5.0,27.0,11.0,16.0,,,,,,95.0
+Anthony Stolarz,G,TOR,41.8,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,8,108,59.6,1.0,,,,,,,,6.0,289.0,0.8947368421052632,34.0,0.0,91.0
+Bobby McMann,LW,TOR,41.6,Cale of Two Cities,Jared,,,,,,,3.0,2.0,5.0,4.0,22.0,41.0,6.0,,,,,,5.0
+Ivan Barbashev,LW,VGK,41.6,The Leon King,cam,,,,,169.2,0.16,4.0,7.0,11.0,0.0,17.0,20.0,2.0,,,,,,28.0
+Ryan Hartman,"C,RW",MIN,41.4,Powerplay Papi,Cooper,,,,,,,4.0,2.0,6.0,4.0,37.0,12.0,12.0,,,,,,7.0
+Logan Stanley,D,WPG,41.1,Powerplay Papi,Cooper,,,,,,,2.0,4.0,6.0,22.0,11.0,23.0,20.0,,,,,,7.0
+Yakov Trenin,"C,LW",MIN,41.0,Kiril’s KaprizHog,Eric,,,,,,,0.0,2.0,2.0,4.0,19.0,63.0,8.0,,,,,,3.0
+Noah Dobson,D,MTL,41.0,Sure Would,Johnathan,Sure Would,Johnathan,5,62,82.5,1.0,1.0,7.0,8.0,8.0,23.0,4.0,28.0,,,,,,96.0
+Morgan Rielly,D,TOR,40.9,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,8,102,131.8,1.0,2.0,8.0,10.0,2.0,26.0,7.0,13.0,,,,,,80.0
+Noah Cates,C,PHI,40.8,,,,,,,,,3.0,6.0,9.0,4.0,28.0,10.0,9.0,,,,,,4.0
+Alex Newhook,"C,LW",MTL,40.8,,,,,,,,,5.0,4.0,9.0,4.0,17.0,20.0,5.0,,,,,,6.0
+Tanner Jeannot,"LW,RW",BOS,40.75,,,,,,,,,2.0,3.0,5.0,11.0,17.0,33.0,15.0,,,,,,2.0
+Philipp Kurashev,"C,RW",SJ,40.7,Sure Would,Johnathan,,,,,,,5.0,4.0,9.0,2.0,26.0,12.0,5.0,,,,,,20.0
+Jake DeBrusk,"LW,RW",VAN,40.7,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,16,223,175.5,0.15,3.0,2.0,5.0,2.0,46.0,14.0,8.0,,,,,,22.0
+Ryan O'Reilly,C,NSH,40.6,,,,,,,,,5.0,4.0,9.0,0.0,24.0,6.0,14.0,,,,,,21.0
+Pius Suter,"C,LW",STL,40.5,,,,,,,,,5.0,4.0,9.0,6.0,24.0,10.0,6.0,,,,,,4.0
+Joel Farabee,"LW,RW",CGY,40.5,,,,,,,,,2.0,5.0,7.0,2.0,28.0,19.0,13.0,,,,,,2.0
+Lucas Raymond,RW,DET,40.5,Geek Squad,Nick,The Leon King,cam,8,110,81.2,1.0,4.0,8.0,12.0,2.0,21.0,3.0,6.0,,,,,,91.0
+Ivan Demidov,RW,MTL,40.4,Ryan is Aho,Mitchell,Ryan is Aho,Mitchell,13,180,131.6,1.0,4.0,8.0,12.0,8.0,17.0,4.0,5.0,,,,,,69.0
+Erik Karlsson,D,PIT,40.4,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,7,94,126.6,1.0,1.0,10.0,11.0,4.0,26.0,0.0,15.0,,,,,,87.0
+Brandt Clarke,D,LA,40.3,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,15,198,176.5,0.11,2.0,5.0,7.0,6.0,28.0,5.0,24.0,,,,,,32.0
+Viktor Arvidsson,"LW,RW",BOS,40.3,,,,,,,,,4.0,3.0,7.0,6.0,37.0,8.0,7.0,,,,,,2.0
+Alex Ovechkin,"LW,RW",WSH,40.3,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,3,39,42.7,1.0,3.0,5.0,8.0,2.0,30.0,22.0,0.0,,,,,,96.0
+Michael McCarron,C,NSH,40.2,,,,,,,,,1.0,3.0,4.0,16.0,16.0,39.0,13.0,,,,,,2.0
+Nino Niederreiter,"LW,RW",WPG,40.1,Kiril’s KaprizHog,Eric,,,,,,,3.0,5.0,8.0,6.0,21.0,24.0,4.0,,,,,,13.0
+Jimmy Snuggerud,RW,STL,40.1,,,,,,,175.4,0.07,4.0,4.0,8.0,2.0,30.0,11.0,8.0,,,,,,18.0
+Mario Ferraro,D,SJ,39.9,,,,,,,,,1.0,3.0,4.0,2.0,15.0,26.0,35.0,,,,,,4.0
+Connor Dewar,C,PIT,39.8,,,,,,,,,3.0,2.0,5.0,0.0,25.0,37.0,5.0,,,,,,
+Mark Kastelic,"C,RW",BOS,39.65,,,,,,,,,3.0,1.0,4.0,9.0,20.0,27.0,19.0,,,,,,5.0
+Morgan Frost,C,CGY,39.6,,,,,,,,,3.0,5.0,8.0,12.0,25.0,10.0,9.0,,,,,,5.0
+Brock Boeser,RW,VAN,39.6,The Leon King,cam,The Leon King,cam,14,194,168.9,0.42,6.0,3.0,9.0,0.0,29.0,6.0,4.0,,,,,,38.0
+Eetu Luostarinen,LW,FLA,39.5,,,,,,,,,2.0,3.0,5.0,6.0,20.0,33.0,12.0,,,,,,1.0
+Jeremy Lauzon,D,VGK,39.45,,,Sure Would,Johnathan,17,230,173.1,0.43,0.0,3.0,3.0,17.0,9.0,43.0,21.0,,,,,,15.0
+Mattias Samuelsson,D,BUF,39.4,,,,,,,,,2.0,4.0,6.0,4.0,16.0,19.0,26.0,,,,,,5.0
+Thatcher Demko,G,VAN,39.4,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,11,151,103.9,1.0,,,,,,,,5.0,237.0,0.9115384615384615,23.0,0.0,89.0
+Lawson Crouse,"LW,RW",UTA,39.3,,,,,,,,,2.0,2.0,4.0,2.0,26.0,37.0,9.0,,,,,,2.0
+Sean Walker,D,CAR,39.2,The Leon King,cam,,,,,,,2.0,1.0,3.0,8.0,28.0,26.0,19.0,,,,,,4.0
+Jonathan Marchessault,RW,NSH,39.0,Eichel Power,Bruce,Eichel Power,Bruce,11,153,169.6,0.45,4.0,2.0,6.0,4.0,31.0,23.0,1.0,,,,,,33.0
+Dustin Wolf,G,CGY,39.0,Geek Squad,Nick,Geek Squad,Nick,7,93,70.1,1.0,,,,,,,,4.0,325.0,0.8953168044077136,38.0,0.0,87.0
+Nathan Walker,LW,STL,38.9,,,,,,,,,1.0,3.0,4.0,6.0,17.0,45.0,9.0,,,,,,1.0
+Thomas Chabot,D,OTT,38.8,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,11,145,157.6,0.96,2.0,5.0,7.0,8.0,17.0,7.0,28.0,,,,,,73.0
+Mark Stone,RW,VGK,38.8,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,14,186,155.3,0.91,2.0,11.0,13.0,0.0,19.0,3.0,5.0,,,,,,80.0
+Brent Burns,D,COL,38.8,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,12,158,169.5,0.31,1.0,5.0,6.0,12.0,34.0,4.0,19.0,,,,,,38.0
+Karel Vejmelka,G,UTA,38.8,Cale of Two Cities,Jared,Cale of Two Cities,Jared,14,193,127.5,0.99,,,,,,,,7.0,219.0,0.8938775510204081,26.0,0.0,77.0
+Martin Fehervary,D,WSH,38.8,Eichel Power,Bruce,,,,,,,1.0,5.0,6.0,4.0,17.0,22.0,23.0,,,,,,7.0
+Tyler Myers,D,VAN,38.7,,,,,,,,,1.0,2.0,3.0,10.0,23.0,18.0,32.0,,,,,,7.0
+Ian Cole,D,UTA,38.6,,,,,,,,,1.0,5.0,6.0,8.0,10.0,18.0,31.0,,,,,,12.0
+Brayden Schenn,C,STL,38.4,Geek Squad,Nick,Geek Squad,Nick,12,160,,,2.0,4.0,6.0,16.0,14.0,32.0,5.0,,,,,,14.0
+Alexis Lafreniere,"LW,RW",NYR,38.4,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,14,187,177.7,0.26,1.0,5.0,6.0,4.0,32.0,20.0,9.0,,,,,,18.0
+Dylan Strome,C,WSH,38.4,Cale of Two Cities,Jared,Cale of Two Cities,Jared,10,137,125.5,1.0,3.0,8.0,11.0,4.0,23.0,3.0,5.0,,,,,,87.0
+Charlie Coyle,"C,RW",CBJ,38.4,,,,,,,,,2.0,7.0,9.0,0.0,20.0,17.0,9.0,,,,,,5.0
+Colton Parayko,D,STL,38.3,Geek Squad,Nick,Geek Squad,Nick,8,104,147.3,0.96,0.0,6.0,6.0,6.0,21.0,14.0,27.0,,,,,,69.0
+Nick Bjugstad,C,STL,38.2,,,,,,,,,3.0,1.0,4.0,8.0,24.0,27.0,12.0,,,,,,1.0
+Parker Wotherspoon,D,PIT,38.0,,,,,,,,,1.0,4.0,5.0,20.0,14.0,19.0,22.0,,,,,,5.0
+A.J. Greer,LW,FLA,38.0,,,,,,,,,3.0,2.0,5.0,12.0,8.0,43.0,4.0,,,,,,1.0
+Jackson Blake,RW,CAR,37.9,,,,,,,,,3.0,5.0,8.0,10.0,34.0,3.0,4.0,,,,,,10.0
+Miro Heiskanen,D,DAL,37.9,Bangers and Mash,conor,Bangers and Mash,conor,6,78,86.0,1.0,3.0,3.0,6.0,2.0,34.0,3.0,19.0,,,,,,94.0
+Fraser Minten,C,BOS,37.9,,,,,,,,,2.0,3.0,5.0,6.0,21.0,24.0,16.0,,,,,,1.0
+JJ Peterka,"LW,RW",UTA,37.8,Kiril’s KaprizHog,Eric,Kiril’s KaprizHog,Eric,13,169,124.7,1.0,4.0,6.0,10.0,4.0,26.0,2.0,4.0,,,,,,76.0
+Chris Kreider,LW,ANA,37.8,DubJ,John,DubJ,John,16,211,165.4,0.07,7.0,1.0,8.0,8.0,23.0,6.0,3.0,,,,,,36.0
+Jakub Dobes,G,MTL,37.8,Sure Would,Johnathan,,,,,,,,,,,,,,6.0,159.0,0.9298245614035088,12.0,0.0,62.0
+Michael Eyssimont,"C,LW",BOS,37.75,,,,,,,,,3.0,4.0,7.0,11.0,31.0,8.0,6.0,,,,,,
+Marco Kasper,"C,LW",DET,37.7,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,14,195,177.0,0.22,3.0,0.0,3.0,6.0,25.0,34.0,9.0,,,,,,13.0
+Josh Manson,D,COL,37.65,,,,,,,,,1.0,1.0,2.0,17.0,20.0,30.0,21.0,,,,,,5.0
+Mikael Backlund,C,CGY,37.6,,,,,,,,,3.0,4.0,7.0,4.0,35.0,11.0,3.0,,,,,,4.0
+Kris Letang,D,PIT,37.3,The Leon King,cam,Kiril’s KaprizHog,Eric,11,141,177.3,0.41,1.0,5.0,6.0,6.0,18.0,18.0,21.0,,,,,,43.0
+Sean Couturier,C,PHI,37.2,,,,,,,,,2.0,7.0,9.0,8.0,18.0,11.0,9.0,,,,,,8.0
+Zachary Bolduc,"LW,RW",MTL,37.1,,,,,,,166.8,0.04,4.0,2.0,6.0,6.0,23.0,22.0,4.0,,,,,,17.0
+Jordan Martinook,LW,CAR,36.9,,,,,,,,,2.0,5.0,7.0,2.0,18.0,22.0,11.0,,,,,,1.0
+Tristan Jarry,G,PIT,36.8,,,,,,,169.6,0.05,,,,,,,,5.0,184.0,0.9108910891089109,18.0,1.0,35.0
+Jordan Kyrou,RW,STL,36.8,Eichel Power,Bruce,Eichel Power,Bruce,7,97,88.1,1.0,4.0,4.0,8.0,0.0,32.0,2.0,8.0,,,,,,78.0
+Brayden Point,C,TB,36.8,Cale of Two Cities,Jared,Cale of Two Cities,Jared,2,25,24.2,1.0,3.0,6.0,9.0,4.0,28.0,3.0,6.0,,,,,,98.0
+Ivan Provorov,D,CBJ,36.7,,,,,,,,,2.0,3.0,5.0,6.0,31.0,8.0,19.0,,,,,,8.0
+Dylan DeMelo,D,WPG,36.7,,,,,,,,,1.0,6.0,7.0,10.0,9.0,11.0,28.0,,,,,,7.0
+Vladislav Namestnikov,"C,LW",WPG,36.6,,,,,,,,,6.0,1.0,7.0,4.0,21.0,11.0,7.0,,,,,,2.0
+Andre Burakovsky,LW,CHI,36.5,,,,,,,,,5.0,5.0,10.0,6.0,17.0,5.0,3.0,,,,,,20.0
+Jason Zucker,LW,BUF,36.2,,,,,,,,,4.0,3.0,7.0,4.0,27.0,15.0,1.0,,,,,,5.0
+Neal Pionk,D,WPG,36.1,DubJ,John,DubJ,John,8,99,123.2,1.0,0.0,2.0,2.0,10.0,30.0,24.0,20.0,,,,,,72.0
+Ryan Leonard,RW,WSH,36.1,,,,,,,158.0,0.02,3.0,4.0,7.0,6.0,21.0,19.0,4.0,,,,,,8.0
+Darcy Kuemper,G,LA,36.0,Powerplay Papi,Cooper,Powerplay Papi,Cooper,9,120,52.9,1.0,,,,,,,,4.0,235.0,0.9003831417624522,26.0,1.0,90.0
+Vladimir Tarasenko,"LW,RW",MIN,36.0,The Leon King,cam,,,,,,,2.0,7.0,9.0,0.0,24.0,10.0,6.0,,,,,,9.0
+Jeremy Swayman,G,BOS,36.0,Geek Squad,Nick,Geek Squad,Nick,11,149,111.1,1.0,,,,,,,,5.0,245.0,0.8974358974358975,28.0,0.0,80.0
+Braden Schneider,D,NYR,36.0,Cale of Two Cities,Jared,,,,,,,1.0,3.0,4.0,4.0,16.0,33.0,16.0,,,,,,7.0
+Sam Carrick,C,NYR,35.9,,,,,,,,,1.0,4.0,5.0,10.0,22.0,24.0,10.0,,,,,,2.0
+Michael Bunting,LW,NSH,35.9,,,,,,,,,4.0,5.0,9.0,6.0,20.0,5.0,6.0,,,,,,2.0
+Adam Fantilli,C,CBJ,35.9,Kiril’s KaprizHog,Eric,Kiril’s KaprizHog,Eric,10,140,158.5,0.87,2.0,4.0,6.0,6.0,28.0,17.0,6.0,,,,,,37.0
+Jake Neighbours,"LW,RW",STL,35.8,Ryan is Aho,Mitchell,Ryan is Aho,Mitchell,17,236,176.5,0.1,6.0,1.0,7.0,4.0,12.0,20.0,5.0,,,,,,19.0
+Jean-Gabriel Pageau,"C,RW",NYI,35.8,,,,,,,,,3.0,4.0,7.0,0.0,13.0,22.0,12.0,,,,,,10.0
+Akira Schmid,G,VGK,35.6,Geek Squad,Nick,,,,,170.7,0.09,,,,,,,,6.0,148.0,0.9079754601226994,15.0,1.0,34.0
+Jack Roslovic,"C,RW",EDM,35.5,Bangers and Mash,conor,,,,,,,3.0,5.0,8.0,2.0,31.0,5.0,4.0,,,,,,15.0
+Vince Dunn,D,SEA,35.5,DubJ,John,Bangers and Mash,conor,10,134,128.9,1.0,2.0,5.0,7.0,6.0,32.0,3.0,10.0,,,,,,80.0
+Ryan Shea,D,PIT,35.5,,,,,,,,,2.0,6.0,8.0,14.0,14.0,3.0,18.0,,,,,,1.0
+Stuart Skinner,G,EDM,35.4,Cooley as a Cucumber,Ryan,Cooley as a Cucumber,Ryan,16,215,133.9,0.97,,,,,,,,4.0,232.0,0.8992248062015504,26.0,1.0,63.0
+Sergei Bobrovsky,G,FLA,35.4,Bangers and Mash,conor,Bangers and Mash,conor,4,50,40.9,1.0,,,,,,,,6.0,212.0,0.8833333333333333,28.0,1.0,99.0
+Ben Chiarot,D,DET,35.2,,,,,,,,,1.0,2.0,3.0,4.0,13.0,31.0,24.0,,,,,,4.0
+Beckett Sennecke,RW,ANA,35.1,,,,,,,,,4.0,3.0,7.0,6.0,22.0,12.0,5.0,,,,,,6.0
+Matty Beniers,C,SEA,35.0,,,,,,,,,2.0,6.0,8.0,4.0,23.0,7.0,10.0,,,,,,14.0
+Tyson Foerster,"LW,RW",PHI,35.0,,,,,,,,,4.0,3.0,7.0,12.0,19.0,9.0,7.0,,,,,,4.0
+Alexander Wennberg,C,SJ,35.0,,,,,,,,,3.0,6.0,9.0,0.0,13.0,3.0,19.0,,,,,,3.0
+Ty Dellandrea,C,SJ,34.8,,,,,,,,,1.0,5.0,6.0,4.0,11.0,31.0,10.0,,,,,,
+Parker Kelly,"C,LW",COL,34.7,,,,,,,,,2.0,2.0,4.0,6.0,17.0,30.0,11.0,,,,,,
+Erik Cernak,D,TB,34.6,,,,,,,175.4,0.03,0.0,2.0,2.0,12.0,8.0,29.0,32.0,,,,,,4.0
+Jack McBain,"C,LW",UTA,34.55,,,Powerplay Papi,Cooper,15,204,175.4,0.08,1.0,0.0,1.0,19.0,24.0,35.0,8.0,,,,,,5.0
+Artemi Panarin,LW,NYR,34.5,Ryan is Aho,Mitchell,Ryan is Aho,Mitchell,3,40,27.3,1.0,2.0,5.0,7.0,2.0,41.0,2.0,2.0,,,,,,98.0
+Sam Bennett,C,FLA,34.5,Eichel Power,Bruce,Eichel Power,Bruce,8,100,124.8,0.99,2.0,2.0,4.0,10.0,25.0,25.0,5.0,,,,,,58.0
+Luke Hughes,D,NJ,34.4,Bangers and Mash,conor,Bangers and Mash,conor,11,147,106.1,1.0,0.0,7.0,7.0,16.0,23.0,7.0,11.0,,,,,,90.0
+Arseny Gritsyuk,RW,NJ,34.2,,,,,,,,,2.0,4.0,6.0,4.0,29.0,17.0,2.0,,,,,,2.0
+Dan Vladar,G,PHI,34.2,,,,,,,,,,,,,,,,5.0,186.0,0.9117647058823529,18.0,0.0,29.0
+Travis Sanheim,D,PHI,34.1,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,12,164,,,1.0,4.0,5.0,6.0,16.0,11.0,27.0,,,,,,27.0
+Joel Armia,RW,LA,34.0,,,,,,,,,2.0,5.0,7.0,8.0,17.0,15.0,8.0,,,,,,
+Andrei Kuzmenko,"LW,RW",LA,33.9,,,,,,,173.7,0.13,3.0,4.0,7.0,2.0,22.0,14.0,5.0,,,,,,15.0
+Rickard Rakell,"C,LW,RW",PIT,33.9,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,6,80,144.9,1.0,3.0,5.0,8.0,2.0,17.0,9.0,10.0,,,,,,58.0
+Nicholas Robertson,RW,TOR,33.8,,,,,,,,,3.0,4.0,7.0,0.0,26.0,14.0,2.0,,,,,,5.0
+Ryan Lomberg,LW,CGY,33.8,,,,,,,,,0.0,1.0,1.0,12.0,12.0,55.0,5.0,,,,,,1.0
+Ryan McDonagh,D,TB,33.8,,,,,,,,,3.0,3.0,6.0,0.0,15.0,8.0,24.0,,,,,,6.0
+Adam Henrique,C,EDM,33.7,,,,,,,,,2.0,4.0,6.0,2.0,24.0,6.0,18.0,,,,,,2.0
+Jackson LaCombe,D,ANA,33.7,Cale of Two Cities,Jared,Cale of Two Cities,Jared,8,109,111.3,1.0,0.0,5.0,5.0,2.0,22.0,11.0,25.0,,,,,,84.0
+Ben Kindel,C,PIT,33.6,The Leon King,cam,,,,,,,5.0,0.0,5.0,4.0,26.0,8.0,10.0,,,,,,5.0
+Elvis Merzlikins,G,CBJ,33.6,Dartmouth Mustard Tigers 🌭🐅,Cameron,,,,,,,,,,,,,,4.0,198.0,0.9166666666666666,18.0,0.0,21.0
+Carter Verhaeghe,LW,FLA,33.4,Cale of Two Cities,Jared,Cale of Two Cities,Jared,11,144,123.0,1.0,2.0,4.0,6.0,4.0,33.0,9.0,4.0,,,,,,62.0
+Cole Smith,LW,NSH,33.4,,,,,,,,,3.0,0.0,3.0,8.0,18.0,35.0,3.0,,,,,,
+William Karlsson,C,VGK,33.4,,,,,,,,,4.0,2.0,6.0,4.0,25.0,3.0,13.0,,,,,,8.0
+Louis Crevier,D,CHI,33.25,,,,,,,,,2.0,3.0,5.0,21.0,13.0,18.0,9.0,,,,,,1.0
+Andrew Peeke,D,BOS,33.2,,,,,,,,,0.0,2.0,2.0,0.0,16.0,20.0,37.0,,,,,,2.0
+Alexandre Carrier,D,MTL,33.0,,,,,,,,,1.0,4.0,5.0,8.0,11.0,7.0,32.0,,,,,,1.0
+Arturs Silovs,G,PIT,33.0,Eichel Power,Bruce,,,,,180.6,0.02,,,,,,,,3.0,200.0,0.91324200913242,19.0,1.0,28.0
+Drew Doughty,D,LA,33.0,Bangers and Mash,conor,Bangers and Mash,conor,9,119,135.2,1.0,2.0,3.0,5.0,4.0,20.0,10.0,20.0,,,,,,64.0
+Claude Giroux,"LW,RW",OTT,33.0,,,Pond Hockey Stars,PIERRE,18,242,,,2.0,6.0,8.0,4.0,22.0,11.0,2.0,,,,,,15.0
+Aatu Raty,C,VAN,32.9,,,,,,,,,1.0,4.0,5.0,6.0,9.0,36.0,6.0,,,,,,1.0
+Simon Holmstrom,RW,NYI,32.9,,,,,,,,,4.0,4.0,8.0,2.0,14.0,3.0,14.0,,,,,,2.0
+Michael Carcone,LW,UTA,32.9,,,,,,,,,3.0,1.0,4.0,14.0,25.0,17.0,4.0,,,,,,
+Frank Vatrano,"C,LW",ANA,32.85,Ryan is Aho,Mitchell,Ryan is Aho,Mitchell,6,73,167.1,0.79,1.0,1.0,2.0,9.0,24.0,32.0,8.0,,,,,,33.0
+Tony DeAngelo,D,NYI,32.8,,,,,,,173.3,0.25,1.0,4.0,5.0,4.0,28.0,10.0,14.0,,,,,,6.0
+Teuvo Teravainen,"LW,RW",CHI,32.8,Ryan is Aho,Mitchell,,,,,,,2.0,7.0,9.0,0.0,16.0,8.0,8.0,,,,,,20.0
+Seth Jones,D,FLA,32.8,Kiril’s KaprizHog,Eric,Kiril’s KaprizHog,Eric,7,85,94.3,1.0,0.0,6.0,6.0,8.0,19.0,15.0,13.0,,,,,,79.0
+Morgan Barron,C,WPG,32.8,,,,,,,,,3.0,3.0,6.0,4.0,15.0,20.0,7.0,,,,,,1.0
+Brandon Tanev,"LW,RW",UTA,32.7,,,,,,,,,0.0,1.0,1.0,6.0,13.0,52.0,8.0,,,,,,2.0
+Jake Middleton,D,MIN,32.7,,,Ryan is Aho,Mitchell,18,241,,,0.0,1.0,1.0,22.0,13.0,23.0,27.0,,,,,,4.0
+Logan Stankoven,"C,RW",CAR,32.6,Ryan is Aho,Mitchell,Ryan is Aho,Mitchell,11,152,168.9,0.3,4.0,3.0,7.0,4.0,26.0,4.0,4.0,,,,,,30.0
+Yanni Gourde,C,TB,32.6,,,,,,,,,3.0,1.0,4.0,8.0,23.0,21.0,5.0,,,,,,1.0
+Joel Edmundson,D,LA,32.5,,,,,,,,,0.0,5.0,5.0,10.0,22.0,16.0,12.0,,,,,,1.0
+Sam Rinzel,D,CHI,32.4,,,Eichel Power,Bruce,15,209,166.0,0.71,1.0,2.0,3.0,12.0,23.0,14.0,19.0,,,,,,25.0
+Mason Appleton,"C,RW",DET,32.4,,,,,,,,,3.0,3.0,6.0,12.0,13.0,14.0,9.0,,,,,,1.0
+Roope Hintz,C,DAL,32.3,Bangers and Mash,conor,Bangers and Mash,conor,7,91,105.3,1.0,1.0,7.0,8.0,2.0,28.0,4.0,5.0,,,,,,87.0
+Shane Wright,C,SEA,32.3,,,,,,,,,3.0,4.0,7.0,2.0,20.0,11.0,6.0,,,,,,6.0
+Corey Perry,RW,LA,32.3,,,,,,,,,5.0,3.0,8.0,2.0,22.0,2.0,3.0,,,,,,4.0
+Brock Nelson,C,COL,32.3,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,13,179,170.4,0.32,3.0,2.0,5.0,10.0,21.0,9.0,12.0,,,,,,31.0
+Adam Larsson,D,SEA,32.3,,,Ryan is Aho,Mitchell,16,213,,,0.0,2.0,2.0,6.0,11.0,23.0,33.0,,,,,,6.0
+Denton Mateychuk,D,CBJ,32.3,,,,,,,,,3.0,2.0,5.0,2.0,16.0,10.0,21.0,,,,,,2.0
+Marcus Foligno,LW,MIN,32.25,,,,,,,,,0.0,0.0,0.0,25.0,9.0,44.0,12.0,,,,,,2.0
+Simon Nemec,D,NJ,32.2,,,,,,,,,0.0,7.0,7.0,4.0,16.0,3.0,24.0,,,,,,4.0
+Simon Benoit,D,TOR,32.15,,,,,,,,,0.0,2.0,2.0,15.0,7.0,33.0,21.0,,,,,,2.0
+Zeev Buium,D,MIN,31.9,Kiril’s KaprizHog,Eric,Kiril’s KaprizHog,Eric,14,196,141.5,1.0,3.0,6.0,9.0,2.0,19.0,3.0,4.0,,,,,,62.0
+Sam Malinski,D,COL,31.9,,,,,,,,,1.0,5.0,6.0,2.0,26.0,4.0,16.0,,,,,,1.0
+Nick Seeler,D,PHI,31.9,,,,,,,,,0.0,2.0,2.0,6.0,18.0,26.0,22.0,,,,,,4.0
+Nick Cousins,LW,OTT,31.85,,,,,,,,,2.0,1.0,3.0,25.0,10.0,25.0,9.0,,,,,,
+Jake Allen,G,NJ,31.8,,,,,,,167.7,0.06,,,,,,,,5.0,179.0,0.9040404040404041,19.0,0.0,25.0
+Jeff Skinner,LW,SJ,31.8,,,,,,,,,4.0,3.0,7.0,4.0,24.0,5.0,3.0,,,,,,1.0
+Christian Dvorak,C,PHI,31.7,,,,,,,,,3.0,3.0,6.0,6.0,21.0,9.0,8.0,,,,,,1.0
+Pavel Buchnevich,"C,LW,RW",STL,31.4,,,Cale of Two Cities,Jared,12,165,168.4,0.79,2.0,4.0,6.0,4.0,26.0,10.0,5.0,,,,,,35.0
+Jonathan Huberdeau,"C,LW",CGY,31.4,Cale of Two Cities,Jared,Bangers and Mash,conor,15,203,177.8,0.1,4.0,4.0,8.0,4.0,17.0,3.0,6.0,,,,,,34.0
+Chandler Stephenson,C,SEA,31.4,,,,,,,,,3.0,4.0,7.0,0.0,21.0,3.0,12.0,,,,,,7.0
+Alex Iafallo,"C,LW,RW",WPG,31.4,,,,,,,,,2.0,3.0,5.0,4.0,24.0,13.0,9.0,,,,,,3.0
+Tyler Tucker,D,STL,31.35,,,,,,,,,1.0,3.0,4.0,19.0,11.0,21.0,12.0,,,,,,1.0
+Beck Malenstyn,LW,BUF,31.3,,,,,,,,,0.0,1.0,1.0,2.0,15.0,41.0,16.0,,,,,,
+Gustav Forsling,D,FLA,31.3,Powerplay Papi,Cooper,Powerplay Papi,Cooper,12,161,139.1,1.0,0.0,6.0,6.0,2.0,17.0,15.0,15.0,,,,,,53.0
+Oliver Kapanen,C,MTL,31.3,,,,,,,,,4.0,3.0,7.0,2.0,16.0,8.0,8.0,,,,,,2.0
+Quinn Hughes,D,VAN,31.0,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,1,11,12.4,1.0,1.0,7.0,8.0,0.0,25.0,1.0,9.0,,,,,,100.0
+Jared Spurgeon,D,MIN,31.0,,,,,,,,,1.0,2.0,3.0,0.0,17.0,22.0,21.0,,,,,,4.0
+Connor Brown,RW,NJ,30.7,,,,,,,,,5.0,1.0,6.0,2.0,17.0,6.0,10.0,,,,,,1.0
+Matvei Michkov,RW,PHI,30.7,Cale of Two Cities,Jared,Cale of Two Cities,Jared,9,116,89.8,1.0,1.0,5.0,6.0,10.0,25.0,10.0,3.0,,,,,,64.0
+Luke Evangelista,RW,NSH,30.7,,,,,,,,,1.0,7.0,8.0,2.0,27.0,3.0,3.0,,,,,,1.0
+Ross Johnston,LW,ANA,30.65,,,,,,,,,1.0,3.0,4.0,29.0,3.0,29.0,4.0,,,,,,1.0
+Matt Roy,D,WSH,30.6,,,,,,,,,0.0,2.0,2.0,4.0,19.0,17.0,28.0,,,,,,2.0
+Eeli Tolvanen,"LW,RW",SEA,30.5,,,Geek Squad,Nick,15,205,177.0,0.03,0.0,4.0,4.0,2.0,11.0,32.0,12.0,,,,,,5.0
+Trent Frederic,"C,LW,RW",EDM,30.5,,,,,,,169.1,0.09,1.0,0.0,1.0,6.0,15.0,46.0,4.0,,,,,,4.0
+Jiri Kulich,C,BUF,30.4,,,,,,,,,3.0,2.0,5.0,4.0,20.0,9.0,12.0,,,,,,1.0
+Ridly Greig,"C,RW",OTT,30.4,,,,,,,,,1.0,3.0,4.0,12.0,20.0,18.0,8.0,,,,,,2.0
+Cole Sillinger,"C,RW",CBJ,30.4,,,,,,,,,2.0,4.0,6.0,8.0,22.0,12.0,2.0,,,,,,1.0
+Andrew Mangiapane,"LW,RW",EDM,30.4,,,,,,,176.8,0.02,4.0,2.0,6.0,0.0,13.0,13.0,10.0,,,,,,5.0
+Casey Mittelstadt,C,BOS,30.4,,,,,,,,,4.0,5.0,9.0,0.0,13.0,2.0,6.0,,,,,,2.0
+Bowen Byram,D,BUF,30.3,,,,,,,183.9,0.03,1.0,4.0,5.0,10.0,14.0,10.0,18.0,,,,,,12.0
+Anthony Beauvillier,LW,WSH,30.3,,,,,,,,,3.0,1.0,4.0,2.0,30.0,15.0,2.0,,,,,,1.0
+Kaedan Korczak,D,VGK,30.2,,,,,,,,,1.0,1.0,2.0,8.0,14.0,24.0,20.0,,,,,,1.0
+Max Domi,"C,LW",TOR,30.2,,,,,,,,,3.0,1.0,4.0,8.0,27.0,7.0,9.0,,,,,,3.0
+Steven Stamkos,"C,LW,RW",NSH,30.2,Geek Squad,Nick,The Leon King,cam,9,115,143.8,1.0,2.0,1.0,3.0,12.0,32.0,8.0,8.0,,,,,,43.0
+Ilya Mikheyev,RW,CHI,30.0,,,,,,,,,4.0,2.0,6.0,0.0,22.0,9.0,4.0,,,,,,2.0
+Conor Timmins,D,BUF,30.0,,,,,,,,,0.0,4.0,4.0,8.0,12.0,8.0,30.0,,,,,,
+Aaron Ekblad,D,FLA,29.7,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,8,111,120.4,1.0,1.0,2.0,3.0,6.0,22.0,13.0,18.0,,,,,,70.0
+Matt Coronato,RW,CGY,29.7,,,,,,,172.9,0.1,3.0,3.0,6.0,6.0,26.0,2.0,5.0,,,,,,9.0
+Shea Theodore,D,VGK,29.7,Eichel Power,Bruce,Eichel Power,Bruce,6,72,68.1,1.0,0.0,5.0,5.0,2.0,23.0,0.0,25.0,,,,,,93.0
+David Perron,"LW,RW",OTT,29.6,,,,,,,,,2.0,4.0,6.0,8.0,14.0,16.0,4.0,,,,,,2.0
+Jamie Oleksiak,D,SEA,29.4,,,,,,,,,2.0,0.0,2.0,4.0,13.0,21.0,22.0,,,,,,
+Jack Quinn,RW,BUF,29.4,,,,,,,,,3.0,4.0,7.0,0.0,20.0,7.0,4.0,,,,,,2.0
+Jake Walman,D,EDM,29.4,Geek Squad,Nick,Geek Squad,Nick,9,121,173.0,0.5,1.0,6.0,7.0,0.0,12.0,3.0,21.0,,,,,,57.0
+Kevin Bahl,D,CGY,29.3,,,,,,,,,1.0,2.0,3.0,14.0,11.0,13.0,23.0,,,,,,
+Casey Cizikas,"C,LW",NYI,29.3,,,,,,,,,1.0,2.0,3.0,6.0,9.0,34.0,9.0,,,,,,
+Nikolaj Ehlers,"LW,RW",CAR,29.3,Powerplay Papi,Cooper,Powerplay Papi,Cooper,8,105,85.1,1.0,1.0,4.0,5.0,6.0,34.0,5.0,3.0,,,,,,77.0
+Jonathan Drouin,"LW,RW",NYI,29.25,,,,,,,,,1.0,6.0,7.0,17.0,16.0,4.0,5.0,,,,,,5.0
+Gabriel Landeskog,LW,COL,29.25,,,Ryan is Aho,Mitchell,15,208,159.0,0.82,0.0,4.0,4.0,13.0,20.0,21.0,4.0,,,,,,20.0
+Marcus Pettersson,D,VAN,29.15,,,,,,,,,0.0,3.0,3.0,19.0,10.0,10.0,26.0,,,,,,1.0
+Pontus Holmberg,RW,TB,29.1,,,,,,,,,1.0,4.0,5.0,10.0,14.0,18.0,7.0,,,,,,
+Taylor Raddysh,RW,NYR,29.1,,,,,,,,,5.0,0.0,5.0,2.0,19.0,10.0,5.0,,,,,,
+Brendan Gallagher,RW,MTL,29.1,,,,,,,,,0.0,7.0,7.0,6.0,19.0,14.0,1.0,,,,,,1.0
+Drew O'Connor,LW,VAN,29.1,,,,,,,,,2.0,3.0,5.0,6.0,18.0,11.0,10.0,,,,,,
+Nick Foligno,"C,LW",CHI,29.05,,,,,,,,,0.0,4.0,4.0,9.0,11.0,29.0,7.0,,,,,,2.0
+Jamie Drysdale,D,PHI,29.0,,,,,,,174.6,0.05,1.0,4.0,5.0,16.0,12.0,3.0,20.0,,,,,,6.0
+Mikael Granlund,"C,LW,RW",ANA,29.0,Powerplay Papi,Cooper,Powerplay Papi,Cooper,17,232,177.7,0.55,2.0,6.0,8.0,4.0,19.0,3.0,3.0,,,,,,29.0
+Jeff Malott,LW,LA,28.95,,,,,,,,,2.0,0.0,2.0,23.0,8.0,33.0,2.0,,,,,,
+Sean Kuraly,C,BOS,28.9,,,,,,,,,1.0,3.0,4.0,6.0,21.0,14.0,11.0,,,,,,
+Kirby Dach,"C,RW",MTL,28.8,,,,,,,,,3.0,2.0,5.0,4.0,15.0,12.0,10.0,,,,,,1.0
+Esa Lindell,D,DAL,28.8,,,,,,,163.9,0.07,1.0,3.0,4.0,4.0,11.0,11.0,25.0,,,,,,14.0
+Jonathan Toews,C,WPG,28.8,,,,,,,,,2.0,5.0,7.0,8.0,17.0,1.0,9.0,,,,,,6.0
+Philip Broberg,D,STL,28.7,,,,,,,181.3,0.07,1.0,4.0,5.0,2.0,23.0,6.0,14.0,,,,,,7.0
+Michael Amadio,RW,OTT,28.7,,,,,,,,,3.0,1.0,4.0,2.0,13.0,18.0,12.0,,,,,,
+Cole Koepke,LW,WPG,28.6,,,,,,,,,0.0,2.0,2.0,12.0,12.0,38.0,4.0,,,,,,
+Peyton Krebs,C,BUF,28.55,,,,,,,,,0.0,3.0,3.0,15.0,13.0,28.0,6.0,,,,,,
+Scott Mayfield,D,NYI,28.55,,,,,,,,,0.0,3.0,3.0,31.0,13.0,7.0,17.0,,,,,,1.0
+Drew Helleson,D,ANA,28.4,,,,,,,,,2.0,4.0,6.0,0.0,14.0,12.0,10.0,,,,,,1.0
+John Marino,D,UTA,28.4,,,,,,,,,1.0,6.0,7.0,4.0,15.0,3.0,13.0,,,,,,
+Trevor Moore,"LW,RW",LA,28.4,,,,,,,189.2,0.02,3.0,1.0,4.0,4.0,25.0,6.0,10.0,,,,,,3.0
+Andrei Vasilevskiy,G,TB,28.4,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,3,33,17.2,1.0,,,,,,,,3.0,217.0,0.9004149377593361,24.0,0.0,100.0
+Ryan Pulock,D,NYI,28.4,,,,,,,,,0.0,5.0,5.0,0.0,13.0,11.0,22.0,,,,,,1.0
+Cam Talbot,G,DET,28.4,,,,,,,177.9,0.07,,,,,,,,5.0,157.0,0.8971428571428571,18.0,0.0,20.0
+Sean Monahan,C,CBJ,28.3,,,The Leon King,cam,18,250,166.4,0.39,1.0,5.0,6.0,2.0,28.0,8.0,1.0,,,,,,36.0
+Jack Drury,C,COL,28.2,,,,,,,,,1.0,4.0,5.0,8.0,19.0,5.0,14.0,,,,,,
+Andrew Copp,"C,LW",DET,28.2,,,,,,,,,1.0,4.0,5.0,8.0,13.0,11.0,14.0,,,,,,
+Keegan Kolesar,RW,VGK,28.15,,,,,,,,,0.0,2.0,2.0,7.0,9.0,36.0,11.0,,,,,,1.0
+Garnet Hathaway,RW,PHI,28.15,,,,,,,,,0.0,0.0,0.0,15.0,7.0,44.0,10.0,,,,,,2.0
+Artyom Levshunov,D,CHI,28.1,,,,,,,176.1,0.04,0.0,6.0,6.0,10.0,12.0,13.0,9.0,,,,,,4.0
+Fabian Zetterlund,"LW,RW",OTT,28.1,,,Geek Squad,Nick,16,216,,,1.0,2.0,3.0,6.0,21.0,23.0,5.0,,,,,,3.0
+Lars Eller,C,OTT,28.0,,,,,,,,,2.0,4.0,6.0,0.0,15.0,12.0,8.0,,,,,,
+Jet Greaves,G,CBJ,28.0,Cale of Two Cities,Jared,Cale of Two Cities,Jared,16,221,155.0,0.9,,,,,,,,3.0,195.0,0.9069767441860465,20.0,0.0,35.0
+Zach Benson,LW,BUF,27.9,,,,,,,,,0.0,8.0,8.0,6.0,16.0,4.0,6.0,,,,,,15.0
+Lian Bichsel,D,DAL,27.9,,,Ryan is Aho,Mitchell,12,157,152.9,0.85,0.0,1.0,1.0,6.0,4.0,40.0,17.0,,,,,,12.0
+Brady Skjei,D,NSH,27.8,,,DubJ,John,17,238,,,0.0,4.0,4.0,4.0,23.0,12.0,12.0,,,,,,4.0
+Samuel Honzek,LW,CGY,27.8,,,,,,,,,1.0,2.0,3.0,0.0,20.0,28.0,4.0,,,,,,
+Anze Kopitar,C,LA,27.8,Ryan is Aho,Mitchell,Bangers and Mash,conor,16,218,169.0,0.36,0.0,6.0,6.0,4.0,14.0,11.0,12.0,,,,,,42.0
+Robert Thomas,C,STL,27.8,Geek Squad,Nick,Geek Squad,Nick,5,65,65.0,1.0,2.0,6.0,8.0,4.0,13.0,3.0,6.0,,,,,,87.0
+Alex Vlasic,D,CHI,27.8,,,,,,,,,1.0,3.0,4.0,0.0,15.0,11.0,21.0,,,,,,1.0
+Roman Josi,D,NSH,27.7,Geek Squad,Nick,Geek Squad,Nick,3,37,50.2,1.0,1.0,4.0,5.0,6.0,19.0,4.0,15.0,,,,,,92.0
+Nic Dowd,C,WSH,27.7,,,,,,,,,1.0,2.0,3.0,6.0,16.0,24.0,8.0,,,,,,1.0
+Taylor Hall,LW,CAR,27.7,,,,,,,,,2.0,4.0,6.0,10.0,15.0,8.0,5.0,,,,,,2.0
+Jordan Staal,C,CAR,27.6,,,,,,,,,3.0,1.0,4.0,4.0,11.0,21.0,7.0,,,,,,3.0
+Brandon Carlo,D,TOR,27.5,,,,,,,,,0.0,2.0,2.0,6.0,20.0,8.0,27.0,,,,,,1.0
+Nick Perbix,D,NSH,27.5,,,,,,,,,2.0,1.0,3.0,6.0,22.0,5.0,18.0,,,,,,
+Mathieu Joseph,RW,STL,27.5,,,,,,,,,1.0,2.0,3.0,2.0,17.0,26.0,7.0,,,,,,
+Ty Emberson,D,EDM,27.4,,,,,,,,,1.0,2.0,3.0,0.0,11.0,20.0,20.0,,,,,,
+Cam York,D,PHI,27.2,,,,,,,,,1.0,6.0,7.0,4.0,5.0,1.0,22.0,,,,,,5.0
+Ryan McLeod,C,BUF,27.0,,,,,,,,,3.0,4.0,7.0,0.0,16.0,3.0,6.0,,,,,,2.0
+Damon Severson,D,CBJ,26.9,,,,,,,,,1.0,2.0,3.0,6.0,16.0,16.0,14.0,,,,,,2.0
+Paul Cotter,LW,NJ,26.8,,,,,,,,,1.0,1.0,2.0,4.0,15.0,33.0,4.0,,,,,,
+Alexander Petrovic,D,DAL,26.75,,,,,,,,,0.0,2.0,2.0,19.0,10.0,22.0,13.0,,,,,,
+Tye Kartye,LW,SEA,26.7,,,,,,,,,1.0,1.0,2.0,2.0,10.0,35.0,8.0,,,,,,
+Jake Evans,C,MTL,26.7,,,,,,,,,1.0,1.0,2.0,10.0,16.0,18.0,14.0,,,,,,1.0
+Matthew Wood,RW,NSH,26.6,,,,,,,,,3.0,3.0,6.0,0.0,18.0,7.0,4.0,,,,,,1.0
+Will Borgen,D,NYR,26.6,,,,,,,,,0.0,2.0,2.0,4.0,13.0,21.0,20.0,,,,,,1.0
+Frederik Andersen,G,CAR,26.4,Powerplay Papi,Cooper,Powerplay Papi,Cooper,18,245,141.3,0.98,,,,,,,,4.0,177.0,0.8939393939393939,21.0,0.0,63.0
+John Gibson,G,DET,26.4,,,,,,,163.0,0.75,,,,,,,,4.0,187.0,0.8904761904761904,23.0,0.0,31.0
+Sam Steel,C,DAL,26.4,,,,,,,,,1.0,4.0,5.0,4.0,11.0,18.0,7.0,,,,,,
+Vladislav Gavrikov,D,NYR,26.2,,,,,,,180.6,0.04,1.0,2.0,3.0,8.0,18.0,4.0,21.0,,,,,,2.0
+Josh Mahura,D,SEA,26.2,,,,,,,,,1.0,1.0,2.0,16.0,9.0,13.0,21.0,,,,,,
+Brayden McNabb,D,VGK,26.2,,,The Leon King,cam,17,227,175.5,0.17,0.0,0.0,0.0,4.0,6.0,17.0,40.0,,,,,,17.0
+Nate Schmidt,D,UTA,26.1,,,,,,,,,0.0,3.0,3.0,2.0,21.0,16.0,12.0,,,,,,
+Ryan Reaves,RW,SJ,26.1,,,,,,,,,2.0,0.0,2.0,10.0,6.0,37.0,1.0,,,,,,
+Mason Marchment,LW,SEA,26.0,Eichel Power,Bruce,Geek Squad,Nick,18,244,176.2,0.05,1.0,4.0,5.0,4.0,15.0,14.0,6.0,,,,,,14.0
+Tyler Seguin,"C,RW",DAL,25.9,Eichel Power,Bruce,Eichel Power,Bruce,14,184,169.9,0.34,3.0,2.0,5.0,2.0,18.0,8.0,5.0,,,,,,25.0
+Owen Power,D,BUF,25.9,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,15,201,177.4,0.09,1.0,4.0,5.0,2.0,17.0,7.0,12.0,,,,,,18.0
+Justin Barron,D,NSH,25.8,,,,,,,,,0.0,4.0,4.0,4.0,11.0,11.0,20.0,,,,,,
+Axel Sandin-Pellikka,D,DET,25.7,,,,,,,,,1.0,3.0,4.0,6.0,17.0,4.0,17.0,,,,,,3.0
+Jesper Boqvist,C,FLA,25.6,,,,,,,,,1.0,0.0,1.0,4.0,12.0,34.0,8.0,,,,,,
+Mike Reilly,D,CAR,25.4,,,,,,,,,1.0,4.0,5.0,0.0,17.0,5.0,14.0,,,,,,1.0
+John Klingberg,D,SJ,25.4,The Leon King,cam,,,,,181.4,0.04,2.0,3.0,5.0,4.0,12.0,10.0,9.0,,,,,,7.0
+Jalen Chatfield,D,CAR,25.2,,,,,,,,,0.0,3.0,3.0,8.0,19.0,10.0,14.0,,,,,,
+Ryan Lindgren,D,SEA,25.15,,,,,,,,,0.0,2.0,2.0,27.0,8.0,7.0,21.0,,,,,,
+Dante Fabbro,D,CBJ,25.1,,,,,,,,,1.0,2.0,3.0,2.0,14.0,4.0,26.0,,,,,,1.0
+Nikita Nesterenko,C,ANA,25.0,,,,,,,,,1.0,5.0,6.0,0.0,9.0,17.0,4.0,,,,,,
+Joel Hanley,D,CGY,25.0,,,,,,,,,0.0,3.0,3.0,4.0,9.0,11.0,25.0,,,,,,
+Noah Laba,C,NYR,25.0,,,,,,,,,2.0,2.0,4.0,4.0,13.0,11.0,11.0,,,,,,
+Tanner Pearson,LW,WPG,24.9,,,,,,,,,2.0,1.0,3.0,10.0,12.0,14.0,10.0,,,,,,
+Jonas Brodin,D,MIN,24.9,,,,,,,,,2.0,2.0,4.0,2.0,11.0,1.0,24.0,,,,,,1.0
+Cam Fowler,D,STL,24.9,,,The Leon King,cam,10,138,152.9,0.95,0.0,5.0,5.0,2.0,24.0,2.0,10.0,,,,,,43.0
+Spencer Stastney,D,NSH,24.8,,,,,,,,,1.0,5.0,6.0,4.0,12.0,3.0,12.0,,,,,,
+Connor McMichael,"C,LW",WSH,24.8,,,,,,,168.4,0.08,1.0,3.0,4.0,4.0,26.0,5.0,6.0,,,,,,14.0
+Timothy Liljegren,D,SJ,24.7,,,,,,,,,0.0,3.0,3.0,6.0,8.0,13.0,22.0,,,,,,
+Adam Erne,LW,DAL,24.7,,,,,,,,,1.0,1.0,2.0,2.0,7.0,35.0,6.0,,,,,,
+Noel Acciari,"C,RW",PIT,24.6,,,,,,,,,0.0,3.0,3.0,12.0,11.0,18.0,10.0,,,,,,
+Emil Lilleberg,D,TB,24.55,,,,,,,,,0.0,1.0,1.0,31.0,8.0,18.0,11.0,,,,,,1.0
+Brandon Duhaime,RW,WSH,24.5,,,,,,,,,0.0,1.0,1.0,18.0,7.0,32.0,6.0,,,,,,1.0
+Ozzy Wiesblatt,RW,NSH,24.35,,,,,,,,,0.0,2.0,2.0,11.0,12.0,27.0,5.0,,,,,,
+Mikey Anderson,D,LA,24.3,,,,,,,,,1.0,1.0,2.0,2.0,8.0,18.0,21.0,,,,,,1.0
+Nick Jensen,D,OTT,24.3,,,,,,,,,0.0,3.0,3.0,6.0,12.0,14.0,16.0,,,,,,
+Tyler Kleven,D,OTT,24.25,,,,,,,,,0.0,1.0,1.0,9.0,12.0,17.0,21.0,,,,,,
+Mason Lohrei,D,BOS,24.2,,,Cale of Two Cities,Jared,17,228,,,1.0,5.0,6.0,0.0,9.0,5.0,14.0,,,,,,4.0
+Linus Ullmark,G,OTT,24.2,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,9,123,79.2,1.0,,,,,,,,5.0,236.0,0.8613138686131386,38.0,0.0,84.0
+Jonah Gadjovich,LW,FLA,24.15,,,,,,,,,0.0,3.0,3.0,7.0,8.0,30.0,3.0,,,,,,
+Anthony Duclair,LW,NYI,24.0,,,,,,,,,3.0,1.0,4.0,4.0,20.0,0.0,10.0,,,,,,2.0
+Radek Faksa,C,DAL,23.9,,,,,,,,,1.0,3.0,4.0,2.0,5.0,22.0,9.0,,,,,,
+Matias Maccelli,"LW,RW",TOR,23.8,,,Pond Hockey Stars,PIERRE,15,207,,,3.0,4.0,7.0,0.0,12.0,1.0,4.0,,,,,,5.0
+Kent Johnson,"C,LW,RW",CBJ,23.6,,,,,,,175.0,0.38,2.0,2.0,4.0,0.0,26.0,1.0,7.0,,,,,,14.0
+Connor Murphy,D,CHI,23.6,,,,,,,,,0.0,3.0,3.0,8.0,15.0,10.0,14.0,,,,,,
+Luke Glendening,C,NJ,23.3,,,,,,,,,0.0,3.0,3.0,2.0,8.0,20.0,14.0,,,,,,
+Adam Edstrom,C,NYR,23.3,,,,,,,,,0.0,2.0,2.0,2.0,10.0,29.0,8.0,,,,,,
+Olen Zellweger,D,ANA,23.2,,,,,,,,,0.0,2.0,2.0,8.0,25.0,5.0,13.0,,,,,,2.0
+K'Andre Miller,D,CAR,23.2,Eichel Power,Bruce,,,,,171.3,0.08,2.0,2.0,4.0,8.0,14.0,6.0,8.0,,,,,,25.0
+Thomas Novak,C,PIT,23.2,,,,,,,,,1.0,4.0,5.0,4.0,19.0,4.0,5.0,,,,,,
+Vincent Hinostroza,C,MIN,23.2,,,,,,,,,1.0,3.0,4.0,4.0,14.0,14.0,5.0,,,,,,
+Andrei Svechnikov,"LW,RW",CAR,23.1,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,7,86,104.6,1.0,2.0,1.0,3.0,6.0,26.0,7.0,1.0,,,,,,47.0
+Alex Killorn,"C,LW,RW",ANA,23.1,,,,,,,,,1.0,2.0,3.0,2.0,24.0,10.0,5.0,,,,,,3.0
+Cody Ceci,D,LA,23.0,,,,,,,,,1.0,2.0,3.0,0.0,17.0,7.0,16.0,,,,,,
+Zach Aston-Reese,C,CBJ,22.9,,,,,,,,,0.0,3.0,3.0,2.0,10.0,26.0,5.0,,,,,,
+Nicolas Roy,"C,RW",TOR,22.8,,,,,,,,,1.0,2.0,3.0,4.0,12.0,15.0,10.0,,,,,,1.0
+Albert Johansson,D,DET,22.8,,,,,,,,,0.0,2.0,2.0,0.0,16.0,12.0,19.0,,,,,,
+Ilya Sorokin,G,NYI,22.4,Sure Would,Johnathan,Sure Would,Johnathan,8,107,63.9,1.0,,,,,,,,3.0,217.0,0.8785425101214575,30.0,0.0,90.0
+Steven Lorentz,"LW,RW",TOR,22.4,,,,,,,,,0.0,4.0,4.0,0.0,8.0,21.0,7.0,,,,,,
+Mavrik Bourque,"C,RW",DAL,22.3,,,,,,,,,1.0,2.0,3.0,2.0,22.0,6.0,9.0,,,,,,1.0
+Collin Graf,RW,SJ,22.2,,,,,,,,,1.0,3.0,4.0,0.0,9.0,16.0,8.0,,,,,,
+Miles Wood,LW,CBJ,22.1,,,,,,,,,4.0,0.0,4.0,2.0,15.0,8.0,1.0,,,,,,
+Josh Anderson,RW,MTL,22.0,,,,,,,,,1.0,1.0,2.0,4.0,14.0,19.0,7.0,,,,,,1.0
+Jonas Siegenthaler,D,NJ,22.0,,,,,,,,,0.0,2.0,2.0,8.0,6.0,11.0,23.0,,,,,,
+Jonas Johansson,G,TB,22.0,,,,,,,,,,,,,,,,3.0,120.0,0.916030534351145,11.0,0.0,2.0
+Vincent Desharnais,D,SJ,22.0,,,,,,,,,0.0,1.0,1.0,16.0,7.0,15.0,18.0,,,,,,
+Shayne Gostisbehere,D,CAR,21.9,The Leon King,cam,The Leon King,cam,11,143,123.4,1.0,1.0,6.0,7.0,2.0,6.0,2.0,8.0,,,,,,76.0
+Easton Cowan,RW,TOR,21.8,,,,,,,,,1.0,3.0,4.0,0.0,15.0,13.0,4.0,,,,,,2.0
+J.T. Compher,C,DET,21.7,,,,,,,,,2.0,3.0,5.0,2.0,12.0,3.0,8.0,,,,,,1.0
+Radko Gudas,D,ANA,21.7,Ross' Rink Rats,Ross,Ross' Rink Rats,Ross,7,89,170.6,0.5,0.0,2.0,2.0,2.0,8.0,23.0,12.0,,,,,,20.0
+Dmitri Simashev,D,UTA,21.6,,,,,,,,,0.0,1.0,1.0,16.0,17.0,5.0,17.0,,,,,,
+Zach Whitecloud,D,VGK,21.5,,,,,,,,,0.0,1.0,1.0,6.0,7.0,23.0,15.0,,,,,,
+Filip Hallander,C,PIT,21.5,,,,,,,,,1.0,3.0,4.0,2.0,22.0,3.0,5.0,,,,,,
+Adam Gaudette,"C,RW",SJ,21.4,,,,,,,,,3.0,1.0,4.0,8.0,14.0,7.0,0.0,,,,,,
+Juuso Parssinen,C,NYR,21.3,,,,,,,,,2.0,1.0,3.0,2.0,10.0,13.0,9.0,,,,,,
+Nathan Bastian,RW,DAL,21.2,,,,,,,,,1.0,0.0,1.0,4.0,9.0,30.0,4.0,,,,,,
+Yaroslav Askarov,G,SJ,21.2,,,,,,,170.9,0.5,,,,,,,,3.0,216.0,0.8744939271255061,31.0,0.0,17.0
+Jani Nyman,RW,SEA,21.2,,,,,,,,,3.0,0.0,3.0,4.0,13.0,13.0,2.0,,,,,,
+Alexander Romanov,D,NYI,21.1,,,DubJ,John,12,155,179.7,0.06,0.0,0.0,0.0,6.0,8.0,20.0,21.0,,,,,,11.0
+Oliver Bjorkstrand,RW,TB,21.1,,,,,,,,,1.0,2.0,3.0,2.0,18.0,12.0,4.0,,,,,,5.0
+Calle Jarnkrok,C,TOR,21.0,,,,,,,,,4.0,0.0,4.0,4.0,11.0,7.0,2.0,,,,,,
+Jared McCann,"C,LW",SEA,21.0,DubJ,John,DubJ,John,15,210,172.8,0.15,3.0,1.0,4.0,0.0,14.0,7.0,4.0,,,,,,30.0
+Devon Toews,D,COL,21.0,,,Powerplay Papi,Cooper,11,148,137.5,1.0,0.0,3.0,3.0,4.0,19.0,3.0,13.0,,,,,,55.0
+Phillip Danault,C,LA,21.0,,,,,,,,,0.0,3.0,3.0,4.0,21.0,12.0,2.0,,,,,,4.0
+Conor Sheary,LW,NYR,20.9,,,,,,,,,0.0,4.0,4.0,2.0,19.0,4.0,8.0,,,,,,
+Brett Pesce,D,NJ,20.9,,,,,,,,,0.0,3.0,3.0,2.0,8.0,4.0,24.0,,,,,,1.0
+Ondrej Palat,LW,NJ,20.8,,,,,,,,,0.0,1.0,1.0,0.0,15.0,21.0,11.0,,,,,,
+Tyson Jost,C,NSH,20.8,,,,,,,,,1.0,1.0,2.0,4.0,16.0,15.0,6.0,,,,,,
+Blake Lizotte,C,PIT,20.8,,,,,,,,,2.0,0.0,2.0,0.0,16.0,13.0,8.0,,,,,,
+Matt Rempe,RW,NYR,20.75,,,,,,,,,1.0,0.0,1.0,7.0,8.0,30.0,2.0,,,,,,1.0
+Ryan Poehling,C,ANA,20.7,,,,,,,,,1.0,4.0,5.0,2.0,10.0,5.0,8.0,,,,,,
+Henri Jokiharju,D,BOS,20.6,,,,,,,,,0.0,3.0,3.0,4.0,10.0,10.0,14.0,,,,,,
+Jesperi Kotkaniemi,C,CAR,20.6,,,,,,,,,1.0,2.0,3.0,0.0,10.0,16.0,8.0,,,,,,
+Elias Pettersson,D,VAN,20.6,,,,,,,,,0.0,2.0,2.0,4.0,6.0,17.0,16.0,,,,,,
+Wyatt Kaiser,D,CHI,20.5,,,,,,,,,0.0,2.0,2.0,10.0,12.0,14.0,9.0,,,,,,
+Michael Brandsegg-Nygård,RW,DET,20.5,,,,,,,,,0.0,1.0,1.0,2.0,14.0,28.0,3.0,,,,,,1.0
+Brian Dumoulin,D,LA,20.5,,,,,,,,,0.0,1.0,1.0,2.0,15.0,11.0,19.0,,,,,,
+David Tomasek,RW,EDM,20.5,,,,,,,,,1.0,2.0,3.0,6.0,20.0,9.0,1.0,,,,,,
+Lukas Reichel,LW,VAN,20.5,,,,,,,,,2.0,2.0,4.0,2.0,15.0,3.0,7.0,,,,,,
+Gage Goncalves,C,TB,20.5,,,,,,,,,0.0,4.0,4.0,2.0,7.0,14.0,9.0,,,,,,
+Ben Hutton,D,VGK,20.45,,,,,,,,,0.0,3.0,3.0,5.0,15.0,5.0,13.0,,,,,,
+Michael Rasmussen,"C,LW",DET,20.4,,,,,,,,,1.0,2.0,3.0,4.0,11.0,11.0,9.0,,,,,,
+Yegor Sharangovich,"C,LW,RW",CGY,20.4,,,,,,,,,2.0,2.0,4.0,0.0,18.0,3.0,5.0,,,,,,2.0
+Ilya Lyubushkin,D,DAL,20.4,,,,,,,,,0.0,1.0,1.0,8.0,7.0,12.0,22.0,,,,,,
+Colin Blackwell,C,DAL,20.3,,,,,,,,,0.0,1.0,1.0,6.0,9.0,27.0,6.0,,,,,,
+Alex Nedeljkovic,G,SJ,20.2,,,,,,,,,,,,,,,,2.0,171.0,0.8952879581151832,20.0,0.0,3.0
+Max Sasson,C,VAN,20.2,,,,,,,,,3.0,0.0,3.0,0.0,10.0,6.0,12.0,,,,,,
+Haydn Fleury,D,WPG,20.2,,,,,,,,,0.0,0.0,0.0,4.0,10.0,20.0,18.0,,,,,,
+Adam Pelech,D,NYI,20.2,,,,,,,,,0.0,2.0,2.0,4.0,16.0,5.0,17.0,,,,,,
+Eric Comrie,G,WPG,20.2,,,,,,,,,,,,,,,,3.0,91.0,0.9285714285714286,7.0,0.0,3.0
+Niko Mikkola,D,FLA,20.2,,,,,,,161.4,0.09,0.0,0.0,0.0,12.0,12.0,12.0,19.0,,,,,,3.0
+Kevin Stenlund,C,UTA,20.0,,,,,,,,,1.0,1.0,2.0,4.0,13.0,9.0,13.0,,,,,,1.0
+J.J. Moser,D,TB,20.0,,,,,,,,,1.0,1.0,2.0,4.0,15.0,11.0,9.0,,,,,,
+Gustav Nyquist,"LW,RW",WPG,20.0,,,,,,,,,0.0,5.0,5.0,0.0,14.0,6.0,5.0,,,,,,2.0
+Oskar Sundqvist,C,STL,19.9,,,,,,,,,0.0,5.0,5.0,6.0,6.0,11.0,4.0,,,,,,
+Barrett Hayton,C,UTA,19.8,,,,,,,,,2.0,2.0,4.0,4.0,17.0,1.0,4.0,,,,,,4.0
+Luke Schenn,D,WPG,19.8,,,,,,,175.8,0.1,0.0,0.0,0.0,12.0,6.0,24.0,12.0,,,,,,2.0
+Zemgus Girgensons,"LW,RW",TB,19.8,,,,,,,,,2.0,1.0,3.0,4.0,7.0,15.0,5.0,,,,,,
+Jonatan Berggren,RW,DET,19.7,,,,,,,,,2.0,2.0,4.0,2.0,17.0,5.0,1.0,,,,,,
+Arshdeep Bains,LW,VAN,19.6,,,,,,,,,0.0,3.0,3.0,8.0,11.0,16.0,2.0,,,,,,
+Brandon Bussi,G,CAR,19.6,,,,,,,,,,,,,,,,3.0,98.0,0.9158878504672897,9.0,0.0,3.0
+Connor Zary,"C,LW,RW",CGY,19.4,,,,,,,,,1.0,1.0,2.0,8.0,17.0,11.0,3.0,,,,,,1.0
+Jeff Petry,D,FLA,19.4,,,,,,,,,0.0,3.0,3.0,4.0,10.0,8.0,13.0,,,,,,
+Joonas Korpisalo,G,BOS,19.4,,,,,,,,,,,,,,,,3.0,157.0,0.8820224719101124,21.0,0.0,5.0
+Arber Xhekaj,D,MTL,19.4,,,,,,,,,0.0,1.0,1.0,20.0,8.0,15.0,8.0,,,,,,2.0
+Filip Chytil,C,VAN,19.3,,,,,,,,,3.0,0.0,3.0,6.0,15.0,3.0,4.0,,,,,,2.0
+David Rittich,G,NYI,19.2,,,,,,,,,,,,,,,,3.0,111.0,0.9024390243902439,12.0,0.0,3.0
+Yegor Chinakhov,"LW,RW",CBJ,19.2,,,,,,,,,2.0,2.0,4.0,0.0,15.0,6.0,2.0,,,,,,1.0
+Jayden Struble,D,MTL,18.95,,,,,,,,,0.0,3.0,3.0,7.0,6.0,17.0,5.0,,,,,,
+Matt Grzelcyk,D,CHI,18.9,,,,,,,,,0.0,3.0,3.0,2.0,17.0,4.0,10.0,,,,,,1.0
+Linus Karlsson,C,VAN,18.9,,,,,,,,,0.0,3.0,3.0,2.0,14.0,13.0,4.0,,,,,,
+Barclay Goodrow,C,SJ,18.8,,,,,,,,,0.0,1.0,1.0,0.0,12.0,20.0,10.0,,,,,,
+Justin Sourdif,RW,WSH,18.8,,,,,,,,,1.0,0.0,1.0,4.0,11.0,22.0,4.0,,,,,,
+Ryan Winterton,C,SEA,18.8,,,,,,,,,1.0,1.0,2.0,4.0,12.0,13.0,7.0,,,,,,
+Eric Robinson,LW,CAR,18.6,,,,,,,,,3.0,1.0,4.0,0.0,9.0,9.0,1.0,,,,,,
+Nikita Grebenkin,RW,PHI,18.55,,,,,,,,,1.0,2.0,3.0,19.0,2.0,14.0,1.0,,,,,,
+Rasmus Sandin,D,WSH,18.4,,,,,,,,,0.0,3.0,3.0,0.0,4.0,16.0,11.0,,,,,,2.0
+Carson Soucy,D,NYR,18.3,,,,,,,,,1.0,1.0,2.0,2.0,9.0,14.0,9.0,,,,,,
+Noah Philp,C,EDM,18.2,,,,,,,,,2.0,1.0,3.0,4.0,7.0,15.0,1.0,,,,,,
+Pavel Mintyukov,D,ANA,18.1,,,,,,,,,0.0,3.0,3.0,2.0,7.0,9.0,13.0,,,,,,1.0
+Jordan Spence,D,OTT,18.0,,,,,,,,,0.0,5.0,5.0,0.0,10.0,7.0,3.0,,,,,,1.0
+Kaiden Guhle,D,MTL,17.95,,,DubJ,John,18,239,,,1.0,1.0,2.0,7.0,7.0,16.0,5.0,,,,,,8.0
+Jonathan Quick,G,NYR,17.8,,,,,,,,,,,,,,,,2.0,64.0,0.9411764705882353,4.0,1.0,5.0
+Justin Hryckowian,C,DAL,17.65,,,,,,,,,1.0,0.0,1.0,9.0,9.0,18.0,4.0,,,,,,
+Matt Savoie,"C,RW",EDM,17.4,,,,,,,,,1.0,1.0,2.0,0.0,18.0,4.0,9.0,,,,,,2.0
+Isaac Howard,LW,EDM,17.3,,,,,,,,,2.0,1.0,3.0,10.0,15.0,1.0,1.0,,,,,,2.0
+Brett Kulak,D,EDM,17.3,,,,,,,,,0.0,2.0,2.0,2.0,19.0,2.0,11.0,,,,,,
+Tyson Kozak,C,BUF,17.2,,,,,,,,,2.0,0.0,2.0,0.0,5.0,19.0,4.0,,,,,,
+Noah Juulsen,D,PHI,16.8,,,,,,,,,0.0,1.0,1.0,0.0,6.0,23.0,8.0,,,,,,
+Patrick Kane,RW,DET,16.8,Sure Would,Johnathan,Eichel Power,Bruce,18,240,162.8,0.36,2.0,3.0,5.0,0.0,9.0,2.0,1.0,,,,,,41.0
+Gavin Brindley,C,COL,16.7,,,,,,,,,1.0,1.0,2.0,2.0,12.0,12.0,4.0,,,,,,
+Brett Howden,"C,LW",VGK,16.6,,,,,,,,,2.0,0.0,2.0,4.0,7.0,16.0,1.0,,,,,,1.0
+Brandon Saad,LW,VGK,16.5,,,,,,,,,0.0,2.0,2.0,2.0,20.0,2.0,8.0,,,,,,
+Charle-Edouard D'Astous,D,TB,16.45,,,,,,,,,1.0,2.0,3.0,9.0,6.0,8.0,4.0,,,,,,
+Kevin Lankinen,G,VAN,16.4,,,,,,,170.4,0.13,,,,,,,,2.0,162.0,0.8804347826086957,22.0,0.0,11.0
+Brayden Pachal,D,CGY,16.4,,,,,,,,,0.0,1.0,1.0,16.0,5.0,16.0,5.0,,,,,,
+Jason Dickinson,C,CHI,16.3,,,,,,,,,1.0,2.0,3.0,2.0,10.0,6.0,6.0,,,,,,
+Luke Kunin,"C,LW,RW",FLA,16.2,,,,,,,,,0.0,1.0,1.0,4.0,5.0,16.0,12.0,,,,,,
+Jacob Markstrom,G,NJ,16.2,The Leon King,cam,The Leon King,cam,12,166,76.8,1.0,,,,,,,,3.0,126.0,0.875,18.0,0.0,83.0
+Fedor Svechkov,C,NSH,16.1,,,,,,,,,0.0,1.0,1.0,2.0,20.0,8.0,6.0,,,,,,
+Jordan Binnington,G,STL,16.0,,,Kiril’s KaprizHog,Eric,9,113,93.7,1.0,,,,,,,,3.0,195.0,0.8590308370044053,32.0,0.0,74.0
+Kyle MacLean,C,NYI,15.95,,,,,,,,,0.0,1.0,1.0,19.0,7.0,14.0,2.0,,,,,,
+William Carrier,LW,CAR,15.9,,,,,,,,,1.0,2.0,3.0,2.0,6.0,14.0,1.0,,,,,,
+Darren Raddysh,D,TB,15.9,,,,,,,,,1.0,2.0,3.0,2.0,12.0,5.0,4.0,,,,,,1.0
+Marat Khusnutdinov,C,BOS,15.8,,,,,,,,,2.0,1.0,3.0,4.0,11.0,2.0,4.0,,,,,,
+Jake Bean,D,CGY,15.8,,,,,,,,,0.0,1.0,1.0,4.0,11.0,3.0,18.0,,,,,,
+Hendrix Lapierre,C,WSH,15.8,,,,,,,,,0.0,2.0,2.0,4.0,13.0,11.0,3.0,,,,,,
+Colton Sissons,"C,LW",VGK,15.75,,,,,,,,,0.0,1.0,1.0,15.0,6.0,12.0,7.0,,,,,,
+Michael Misa,C,SJ,15.5,,,Eichel Power,Bruce,17,237,177.0,0.07,1.0,2.0,3.0,2.0,13.0,2.0,5.0,,,,,,10.0
+Sam Dickinson,D,SJ,15.3,,,,,,,187.9,0.05,1.0,0.0,1.0,6.0,13.0,7.0,7.0,,,,,,5.0
+Adam Wilsby,D,NSH,15.3,,,,,,,,,0.0,2.0,2.0,10.0,11.0,4.0,7.0,,,,,,
+Alex Turcotte,"C,LW",LA,15.05,,,,,,,,,0.0,3.0,3.0,9.0,10.0,3.0,4.0,,,,,,
+Ilya Solovyov,D,COL,15.0,,,,,,,,,0.0,0.0,0.0,4.0,9.0,11.0,15.0,,,,,,
+Anton Forsberg,G,LA,15.0,,,,,,,174.9,0.04,,,,,,,,2.0,110.0,0.8943089430894309,13.0,0.0,4.0
+Brady Tkachuk,"C,LW",OTT,15.0,Geek Squad,Nick,Geek Squad,Nick,1,9,10.7,1.0,0.0,3.0,3.0,4.0,10.0,10.0,0.0,,,,,,98.0
+Tyler Pitlick,C,MIN,14.9,,,,,,,,,0.0,0.0,0.0,2.0,6.0,24.0,6.0,,,,,,
+James van Riemsdyk,LW,DET,14.9,,,,,,,,,1.0,1.0,2.0,6.0,13.0,0.0,8.0,,,,,,
+Warren Foegele,"LW,RW",LA,14.9,,,Cale of Two Cities,Jared,18,249,177.3,0.04,1.0,0.0,1.0,6.0,13.0,12.0,1.0,,,,,,3.0
+Shakir Mukhamadullin,D,SJ,14.7,,,,,,,,,0.0,4.0,4.0,6.0,5.0,3.0,5.0,,,,,,1.0
+Elmer Soderblom,LW,DET,14.7,,,,,,,,,1.0,0.0,1.0,2.0,9.0,17.0,2.0,,,,,,
+Reilly Smith,RW,VGK,14.6,,,,,,,,,1.0,1.0,2.0,0.0,14.0,9.0,1.0,,,,,,2.0
+Nick Blankenburg,D,NSH,14.6,,,,,,,,,1.0,2.0,3.0,0.0,8.0,7.0,4.0,,,,,,
+Harrison Brunicke,D,PIT,14.5,,,,,,,,,1.0,0.0,1.0,6.0,8.0,4.0,13.0,,,,,,
+Liam O'Brien,"LW,RW",UTA,14.35,,,,,,,,,1.0,0.0,1.0,7.0,10.0,10.0,4.0,,,,,,
+Ryan Greene,C,CHI,14.3,,,,,,,,,1.0,2.0,3.0,2.0,9.0,5.0,3.0,,,,,,
+Alexey Toropchenko,RW,STL,14.2,,,,,,,,,1.0,0.0,1.0,0.0,6.0,16.0,6.0,,,,,,
+Caleb Jones,D,PIT,14.0,,,,,,,,,0.0,1.0,1.0,0.0,5.0,10.0,15.0,,,,,,
+Matthew Robertson,D,NYR,14.0,,,,,,,,,1.0,0.0,1.0,4.0,7.0,10.0,8.0,,,,,,
+Brian Halonen,LW,NJ,13.85,,,,,,,,,1.0,0.0,1.0,5.0,4.0,18.0,2.0,,,,,,
+Sam Montembeault,G,MTL,13.6,,,DubJ,John,11,154,106.1,1.0,,,,,,,,3.0,153.0,0.8547486033519553,26.0,0.0,61.0
+Trevor van Riemsdyk,D,WSH,13.6,,,,,,,,,1.0,1.0,2.0,4.0,8.0,1.0,10.0,,,,,,
+Kasperi Kapanen,RW,EDM,13.6,,,,,,,,,0.0,2.0,2.0,0.0,4.0,16.0,4.0,,,,,,
+Nicolas Hague,D,NSH,13.1,,,,,,,,,0.0,1.0,1.0,6.0,2.0,14.0,8.0,,,,,,
+Cody Glass,"C,RW",NJ,13.1,,,,,,,,,2.0,0.0,2.0,6.0,9.0,3.0,2.0,,,,,,
+Conor Geekie,C,TB,13.0,,,,,,,,,0.0,1.0,1.0,4.0,5.0,15.0,5.0,,,,,,
+Travis Hamonic,D,DET,12.95,,,,,,,,,0.0,1.0,1.0,7.0,8.0,5.0,10.0,,,,,,
+Joe Veleno,C,MTL,12.85,,,,,,,,,0.0,0.0,0.0,13.0,6.0,14.0,4.0,,,,,,
+Hampus Lindholm,D,BOS,12.8,,,,,,,,,0.0,2.0,2.0,8.0,8.0,1.0,8.0,,,,,,3.0
+Samuel Blais,LW,TOR,12.7,,,,,,,,,1.0,1.0,2.0,2.0,4.0,11.0,3.0,,,,,,
+Charlie Lindgren,G,WSH,12.6,Ryan is Aho,Mitchell,,,,,181.1,0.09,,,,,,,,1.0,103.0,0.8803418803418803,14.0,1.0,12.0
+Parker Ford,C,WPG,12.6,,,,,,,,,0.0,1.0,1.0,4.0,4.0,13.0,7.0,,,,,,
+Mitchell Chaffee,RW,TB,12.6,,,,,,,,,0.0,0.0,0.0,4.0,8.0,19.0,2.0,,,,,,
+Dominic James,C,TB,12.6,,,,,,,,,0.0,0.0,0.0,4.0,11.0,15.0,3.0,,,,,,
+Max Crozier,D,TB,12.5,,,,,,,,,0.0,3.0,3.0,2.0,5.0,8.0,2.0,,,,,,
+Stefan Noesen,"LW,RW",NJ,12.3,Ross' Rink Rats,Ross,,,,,,,1.0,0.0,1.0,2.0,8.0,9.0,5.0,,,,,,1.0
+Philippe Myers,D,TOR,12.2,,,,,,,,,0.0,0.0,0.0,4.0,12.0,6.0,10.0,,,,,,
+Max Shabanov,RW,NYI,12.2,,,,,,,,,1.0,2.0,3.0,0.0,8.0,5.0,0.0,,,,,,2.0
+Isac Lundestrom,C,CBJ,12.1,,,,,,,,,0.0,2.0,2.0,2.0,8.0,5.0,6.0,,,,,,
+Berkly Catton,C,SEA,12.0,,,,,,,,,0.0,3.0,3.0,0.0,9.0,1.0,5.0,,,,,,1.0
+Maxim Tsyplakov,"LW,RW",NYI,11.8,,,,,,,,,1.0,0.0,1.0,0.0,9.0,13.0,0.0,,,,,,
+Zakhar Bardakov,C,COL,11.8,,,,,,,,,1.0,1.0,2.0,0.0,6.0,9.0,2.0,,,,,,
+Urho Vaakanainen,D,NYR,11.6,,,,,,,,,0.0,1.0,1.0,8.0,8.0,4.0,7.0,,,,,,
+Josh Dunne,C,BUF,11.6,,,,,,,,,1.0,0.0,1.0,4.0,6.0,10.0,3.0,,,,,,
+Nils Lundkvist,D,DAL,11.5,,,,,,,,,1.0,2.0,3.0,2.0,2.0,3.0,5.0,,,,,,
+Jordan Harris,D,BOS,11.4,,,,,,,,,1.0,1.0,2.0,0.0,9.0,4.0,3.0,,,,,,
+Samuel Ersson,G,PHI,11.4,,,,,,,173.0,0.03,,,,,,,,2.0,92.0,0.8761904761904762,13.0,0.0,3.0
+Casey DeSmith,G,DAL,11.4,,,,,,,168.8,0.09,,,,,,,,2.0,92.0,0.8761904761904762,13.0,0.0,7.0
+Vitek Vanecek,G,UTA,11.4,,,,,,,,,,,,,,,,2.0,77.0,0.8850574712643678,10.0,0.0,3.0
+Cole Reinhardt,LW,VGK,11.4,,,,,,,,,1.0,1.0,2.0,0.0,1.0,15.0,0.0,,,,,,
+Nikolas Matinpalo,D,OTT,11.3,,,,,,,,,0.0,1.0,1.0,2.0,5.0,10.0,7.0,,,,,,
+Connor Clifton,D,PIT,11.3,Ryan is Aho,Mitchell,,,,,,,0.0,0.0,0.0,2.0,2.0,16.0,9.0,,,,,,2.0
+Philip Tomasino,"C,RW",PIT,11.2,,,,,,,,,0.0,1.0,1.0,0.0,8.0,8.0,7.0,,,,,,
+Pyotr Kochetkov,G,CAR,11.2,Sure Would,Johnathan,Bangers and Mash,conor,14,190,109.3,1.0,,,,,,,,1.0,26.0,1.0,0.0,1.0,66.0
+Mathew Dumba,D,PIT,11.15,,,,,,,,,0.0,1.0,1.0,11.0,3.0,9.0,4.0,,,,,,
+Danila Yurov,RW,MIN,11.0,,,,,,,,,1.0,0.0,1.0,0.0,7.0,8.0,5.0,,,,,,1.0
+Devin Cooley,G,CGY,10.8,,,,,,,,,,,,,,,,0.0,84.0,0.9333333333333333,6.0,0.0,2.0
+Kailer Yamamoto,RW,UTA,10.8,,,,,,,,,1.0,1.0,2.0,4.0,7.0,3.0,2.0,,,,,,
+Logan Mailloux,D,STL,10.6,,,,,,,,,0.0,0.0,0.0,4.0,5.0,13.0,6.0,,,,,,1.0
+Chris Tanev,D,TOR,10.4,,,,,,,,,0.0,2.0,2.0,0.0,6.0,2.0,8.0,,,,,,2.0
+Justin Kirkland,C,CGY,10.4,,,,,,,,,0.0,1.0,1.0,0.0,5.0,13.0,3.0,,,,,,
+Mark Jankowski,C,CAR,10.2,,,,,,,,,0.0,2.0,2.0,4.0,5.0,2.0,6.0,,,,,,
+Nick Leddy,D,SJ,10.2,,,,,,,,,0.0,2.0,2.0,4.0,1.0,2.0,10.0,,,,,,
+Pierre-Olivier Joseph,D,VAN,10.1,,,,,,,,,0.0,1.0,1.0,2.0,9.0,3.0,7.0,,,,,,
+Zayne Parekh,D,CGY,10.0,,,Eichel Power,Bruce,10,128,154.7,0.95,0.0,1.0,1.0,0.0,11.0,4.0,5.0,,,,,,25.0
+Sonny Milano,LW,WSH,9.8,,,,,,,,,1.0,0.0,1.0,0.0,13.0,3.0,1.0,,,,,,
+Jansen Harkins,C,ANA,9.8,,,,,,,,,1.0,0.0,1.0,0.0,4.0,11.0,2.0,,,,,,
+John Beecher,C,BOS,9.8,,,,,,,,,1.0,0.0,1.0,0.0,6.0,7.0,4.0,,,,,,
+Jacob Bernard-Docker,D,DET,9.7,,,,,,,,,0.0,1.0,1.0,2.0,10.0,4.0,4.0,,,,,,
+Uvis Balinskis,D,FLA,9.7,,,,,,,,,0.0,0.0,0.0,2.0,5.0,10.0,8.0,,,,,,
+Rodrigo Abols,C,PHI,9.65,,,,,,,,,0.0,0.0,0.0,5.0,10.0,8.0,3.0,,,,,,
+Curtis Douglas,C,TB,9.4,,,,,,,,,0.0,0.0,0.0,12.0,5.0,9.0,2.0,,,,,,
+Arvid Soderblom,G,CHI,9.4,,,,,,,,,,,,,,,,1.0,92.0,0.8846153846153846,12.0,0.0,1.0
+Jeffrey Viel,LW,BOS,9.35,,,,,,,,,0.0,0.0,0.0,7.0,4.0,14.0,1.0,,,,,,
+Sam Colangelo,RW,ANA,9.2,,,,,,,,,1.0,0.0,1.0,4.0,3.0,9.0,1.0,,,,,,
+Jordan Greenway,LW,BUF,9.05,,,,,,,,,0.0,1.0,1.0,9.0,3.0,9.0,0.0,,,,,,
+Dalibor Dvorsky,RW,STL,9.0,,,,,,,,,1.0,0.0,1.0,0.0,6.0,6.0,3.0,,,,,,1.0
+Nicolas Deslauriers,LW,PHI,8.9,,,,,,,,,0.0,0.0,0.0,10.0,2.0,13.0,1.0,,,,,,
+Egor Zamula,D,PHI,8.9,,,,,,,,,0.0,1.0,1.0,2.0,5.0,1.0,10.0,,,,,,
+Adin Hill,G,VGK,8.8,Dartmouth Mustard Tigers 🌭🐅,Cameron,Dartmouth Mustard Tigers 🌭🐅,Cameron,6,83,53.3,1.0,,,,,,,,1.0,79.0,0.8876404494382022,10.0,0.0,82.0
+Charles Alexis Legault,D,CAR,8.7,,,,,,,,,0.0,0.0,0.0,6.0,8.0,6.0,4.0,,,,,,
+Matt Duchene,"C,RW",DAL,8.6,Bangers and Mash,conor,Bangers and Mash,conor,8,106,131.3,0.99,1.0,1.0,2.0,0.0,3.0,2.0,4.0,,,,,,63.0
+Curtis Lazar,C,EDM,8.6,,,,,,,,,1.0,0.0,1.0,0.0,2.0,9.0,3.0,,,,,,
+Isak Rosen,RW,BUF,8.6,,,,,,,,,1.0,1.0,2.0,0.0,3.0,3.0,3.0,,,,,,
+Olli Maatta,D,UTA,8.4,,,,,,,,,0.0,1.0,1.0,0.0,5.0,0.0,11.0,,,,,,
+Ben Jones,C,MIN,8.4,,,,,,,,,0.0,0.0,0.0,0.0,5.0,13.0,3.0,,,,,,
+Alexandre Texier,"LW,RW",STL,8.4,,,,,,,,,0.0,1.0,1.0,0.0,7.0,8.0,1.0,,,,,,
+Matvei Gridin,RW,CGY,8.2,,,,,,,,,1.0,0.0,1.0,0.0,9.0,1.0,3.0,,,,,,
+Calvin Pickard,G,EDM,8.2,,,,,,,172.2,0.29,,,,,,,,2.0,96.0,0.8495575221238938,17.0,0.0,11.0
+Nico Daws,G,NJ,8.0,,,,,,,,,,,,,,,,1.0,30.0,0.967741935483871,1.0,0.0,1.0
+Ben Meyers,C,SEA,8.0,,,,,,,,,0.0,2.0,2.0,0.0,1.0,8.0,1.0,,,,,,
+Zach Bogosian,D,MIN,8.0,,,,,,,,,0.0,0.0,0.0,0.0,5.0,6.0,9.0,,,,,,
+Alexander Holtz,RW,VGK,7.8,,,,,,,,,0.0,0.0,0.0,4.0,12.0,2.0,3.0,,,,,,
+Pierre-Luc Dubois,"C,LW",WSH,7.7,Eichel Power,Bruce,Eichel Power,Bruce,13,181,165.9,0.67,0.0,0.0,0.0,2.0,9.0,6.0,3.0,,,,,,26.0
+Cale Fleury,D,SEA,7.65,,,,,,,,,0.0,1.0,1.0,5.0,3.0,6.0,2.0,,,,,,
+Jonathan Aspirot,D,BOS,7.6,,,,,,,,,0.0,0.0,0.0,0.0,2.0,8.0,9.0,,,,,,
+Noah Ostlund,C,BUF,7.4,,,,,,,,,1.0,0.0,1.0,0.0,7.0,1.0,3.0,,,,,,
+Jonny Brodzinski,C,NYR,7.4,,,,,,,,,1.0,1.0,2.0,0.0,5.0,0.0,1.0,,,,,,
+Olle Lycksell,RW,OTT,7.4,,,,,,,,,1.0,0.0,1.0,0.0,6.0,2.0,3.0,,,,,,
+Michael Kesselring,D,BUF,7.3,,,,,,,,,0.0,0.0,0.0,2.0,6.0,4.0,7.0,,,,,,1.0
+Mackenzie MacEachern,LW,VAN,7.2,,,,,,,,,0.0,1.0,1.0,0.0,4.0,5.0,4.0,,,,,,
+Tom Willander,D,VAN,7.2,,,,,,,,,0.0,2.0,2.0,0.0,5.0,1.0,2.0,,,,,,
+David Jiricek,D,MIN,7.1,,,,,,,,,0.0,0.0,0.0,6.0,6.0,3.0,5.0,,,,,,
+Jonathan Lekkerimäki,RW,VAN,7.0,,,,,,,,,1.0,0.0,1.0,0.0,3.0,5.0,2.0,,,,,,1.0
+Bradly Nadeau,LW,CAR,7.0,,,,,,,,,1.0,0.0,1.0,0.0,4.0,3.0,3.0,,,,,,
+Joel Nystrom,D,CAR,6.9,,,,,,,,,0.0,0.0,0.0,2.0,9.0,2.0,5.0,,,,,,
+Victor Mancini,D,VAN,6.85,,,,,,,,,0.0,0.0,0.0,5.0,3.0,6.0,5.0,,,,,,
+Colten Ellis,G,BUF,6.8,,,,,,,,,,,,,,,,1.0,29.0,0.9354838709677419,2.0,0.0,1.0
+Nikita Chibrikov,RW,WPG,6.8,,,,,,,,,0.0,0.0,0.0,8.0,2.0,7.0,3.0,,,,,,
+Cole Schwindt,RW,FLA,6.6,,,,,,,,,1.0,0.0,1.0,0.0,4.0,3.0,2.0,,,,,,
+Mason Geertsen,LW,BUF,6.6,,,,,,,,,0.0,0.0,0.0,12.0,1.0,8.0,0.0,,,,,,
+Sean Durzi,D,UTA,6.6,Sure Would,Johnathan,Ross' Rink Rats,Ross,16,220,176.8,0.05,0.0,1.0,1.0,4.0,2.0,3.0,4.0,,,,,,9.0
+Ville Koivunen,RW,PIT,6.4,,,,,,,,,0.0,1.0,1.0,0.0,7.0,1.0,3.0,,,,,,1.0
+Cayden Primeau,G,TOR,6.4,,,,,,,,,,,,,,,,2.0,67.0,0.8375,13.0,0.0,2.0
+Brad Lambert,C,WPG,6.3,,,,,,,,,1.0,0.0,1.0,2.0,3.0,3.0,1.0,,,,,,
+Kurtis MacDermid,LW,OTT,6.25,,,,,,,,,0.0,0.0,0.0,9.0,2.0,4.0,4.0,,,,,,
+Teddy Blueger,C,VAN,6.2,,,,,,,,,1.0,0.0,1.0,0.0,2.0,3.0,3.0,,,,,,
+Landon Slaggert,LW,CHI,6.1,,,,,,,,,0.0,0.0,0.0,2.0,3.0,8.0,3.0,,,,,,
+Declan Chisholm,D,WSH,6.1,,,,,,,,,0.0,1.0,1.0,2.0,3.0,3.0,3.0,,,,,,
+Jake Christiansen,D,CBJ,6.0,,,,,,,,,0.0,0.0,0.0,0.0,6.0,4.0,5.0,,,,,,
+Frederick Gaudreau,C,SEA,6.0,,,,,,,,,0.0,1.0,1.0,0.0,3.0,2.0,5.0,,,,,,
+Ukko-Pekka Luukkonen,G,BUF,6.0,Bangers and Mash,conor,Sure Would,Johnathan,18,247,172.4,0.35,,,,,,,,1.0,50.0,0.8771929824561403,7.0,0.0,30.0
+Vincent Iorio,D,SJ,5.8,,,,,,,,,0.0,0.0,0.0,4.0,3.0,3.0,6.0,,,,,,
+Ethen Frank,C,WSH,5.8,,,,,,,,,0.0,1.0,1.0,4.0,3.0,2.0,2.0,,,,,,
+Jesper Wallstedt,G,MIN,5.8,,,,,,,168.8,0.02,,,,,,,,1.0,69.0,0.8625,11.0,0.0,3.0
+Petr Mrazek,G,ANA,5.8,,,,,,,,,,,,,,,,2.0,54.0,0.8307692307692308,11.0,0.0,1.0
+Patrik Laine,"LW,RW",MTL,5.7,,,Dartmouth Mustard Tigers 🌭🐅,Cameron,18,251,172.4,0.2,0.0,1.0,1.0,2.0,6.0,2.0,0.0,,,,,,10.0
+Donovan Sebrango,D,FLA,5.65,,,,,,,,,0.0,0.0,0.0,5.0,3.0,4.0,4.0,,,,,,
+Joel Kiviranta,LW,COL,5.6,,,,,,,,,0.0,0.0,0.0,0.0,3.0,9.0,2.0,,,,,,
+Ethan Cardwell,RW,SJ,5.5,,,,,,,,,1.0,0.0,1.0,2.0,2.0,3.0,0.0,,,,,,
+Colin Miller,D,WPG,5.3,,,,,,,,,0.0,0.0,0.0,2.0,1.0,9.0,2.0,,,,,,
+Marshall Warren,D,NYI,5.3,,,,,,,,,0.0,2.0,2.0,2.0,0.0,2.0,0.0,,,,,,
+Juho Lammikko,LW,NJ,5.2,,,,,,,,,0.0,0.0,0.0,0.0,5.0,6.0,2.0,,,,,,
+Jack Ahcan,D,COL,5.2,,,,,,,,,0.0,1.0,1.0,0.0,1.0,4.0,3.0,,,,,,
+Troy Stecher,D,EDM,5.2,,,,,,,,,0.0,0.0,0.0,8.0,3.0,2.0,3.0,,,,,,
+Erik Gudbranson,D,CBJ,5.1,,,,,,,,,0.0,0.0,0.0,6.0,3.0,5.0,1.0,,,,,,
+John Hayden,C,SEA,4.9,,,,,,,,,0.0,0.0,0.0,2.0,2.0,7.0,2.0,,,,,,
+Jacob Bryson,D,BUF,4.9,,,,,,,,,0.0,1.0,1.0,2.0,1.0,1.0,4.0,,,,,,
+Liam Ohgren,LW,MIN,4.8,,,,,,,,,0.0,0.0,0.0,0.0,4.0,6.0,2.0,,,,,,
+Patrick Giles,C,SJ,4.8,,,,,,,,,0.0,1.0,1.0,0.0,2.0,3.0,2.0,,,,,,
+Samuel Helenius,C,LA,4.8,,,,,,,,,0.0,0.0,0.0,0.0,2.0,9.0,1.0,,,,,,
+Dennis Cholowski,D,NJ,4.8,,,,,,,,,0.0,1.0,1.0,0.0,1.0,0.0,6.0,,,,,,
+Ian Moore,D,ANA,4.6,,,,,,,,,0.0,0.0,0.0,4.0,5.0,1.0,3.0,,,,,,
+Carl Lindbom,G,VGK,4.6,,,,,,,,,,,,,,,,0.0,48.0,0.9056603773584906,5.0,0.0,3.0
+Michael Callahan,D,BOS,4.4,,,,,,,,,0.0,0.0,0.0,0.0,2.0,3.0,6.0,,,,,,
+Daniil Tarasov,G,FLA,4.4,,,,,,,,,,,,,,,,0.0,62.0,0.8857142857142857,8.0,0.0,2.0
+Adam Ginning,D,PHI,4.4,,,,,,,,,0.0,0.0,0.0,0.0,2.0,4.0,5.0,,,,,,
+Justin Danforth,RW,BUF,4.1,,,,,,,,,0.0,0.0,0.0,2.0,2.0,3.0,4.0,,,,,,
+Oliver Moore,C,CHI,4.0,,,,,,,,,0.0,1.0,1.0,0.0,3.0,1.0,1.0,,,,,,
+Joseph LaBate,C,VAN,4.0,,,,,,,,,0.0,0.0,0.0,0.0,2.0,6.0,2.0,,,,,,
+Trent Miner,G,COL,4.0,,,,,,,,,,,,,,,,0.0,40.0,0.9090909090909091,4.0,0.0,
+Vincent Trocheck,C,NYR,4.0,Sure Would,Johnathan,Sure Would,Johnathan,4,51,127.5,0.98,0.0,1.0,1.0,0.0,1.0,1.0,3.0,,,,,,59.0
+Oskar Back,C,DAL,3.8,,,,,,,,,1.0,0.0,1.0,0.0,1.0,1.0,0.0,,,,,,
+Jack Finley,C,TB,3.7,,,,,,,,,0.0,0.0,0.0,2.0,3.0,5.0,0.0,,,,,,
+Ethan Del Mastro,D,CHI,3.6,,,,,,,,,0.0,0.0,0.0,0.0,1.0,6.0,2.0,,,,,,
+Noah Gregor,C,FLA,3.6,,,,,,,,,0.0,0.0,0.0,0.0,5.0,4.0,0.0,,,,,,
+Brady Martin,C,NSH,3.6,,,,,,,,,0.0,1.0,1.0,0.0,2.0,0.0,2.0,,,,,,1.0
+Yan Kuznetsov,D,CGY,3.6,,,,,,,,,0.0,1.0,1.0,0.0,1.0,2.0,1.0,,,,,,
+Arthur Kaliyev,RW,OTT,3.6,,,,,,,,,0.0,1.0,1.0,0.0,4.0,0.0,0.0,,,,,,
+Justus Annunen,G,NSH,3.6,,,,,,,,,,,,,,,,0.0,68.0,0.8717948717948718,10.0,0.0,1.0
+Joel Hofer,G,STL,3.4,,,,,,,179.2,0.08,,,,,,,,1.0,112.0,0.835820895522388,22.0,0.0,7.0
+Derek Forbort,D,VAN,3.3,,,,,,,,,0.0,0.0,0.0,2.0,1.0,2.0,4.0,,,,,,
+Alec Regula,D,EDM,3.3,,,,,,,,,0.0,0.0,0.0,2.0,3.0,1.0,3.0,,,,,,
+Noah Hanifin,D,VGK,3.2,Eichel Power,Bruce,Eichel Power,Bruce,12,156,162.9,0.93,0.0,0.0,0.0,0.0,6.0,2.0,0.0,,,,,,44.0
+Marc Gatcomb,RW,NYI,3.2,,,,,,,,,0.0,0.0,0.0,0.0,1.0,7.0,0.0,,,,,,
+Aleksei Kolosov,G,PHI,3.2,,,,,,,,,,,,,,,,0.0,26.0,0.9285714285714286,2.0,0.0,1.0
+Samuel Girard,D,COL,3.2,,,,,,,,,0.0,0.0,0.0,0.0,2.0,3.0,3.0,,,,,,1.0
+Sam Lafferty,"C,RW",CHI,3.0,,,,,,,,,0.0,0.0,0.0,4.0,0.0,5.0,0.0,,,,,,
+Leevi Merilainen,G,OTT,3.0,,,,,,,166.3,0.09,,,,,,,,1.0,45.0,0.8333333333333334,9.0,0.0,2.0
+Jett Luchanko,C,PHI,2.9,,,,,,,,,0.0,0.0,0.0,2.0,1.0,2.0,3.0,,,,,,
+Kaapo Kakko,RW,SEA,2.9,,,,,,,,,0.0,0.0,0.0,2.0,4.0,1.0,1.0,,,,,,3.0
+Matthew Kessel,D,STL,2.6,,,,,,,,,0.0,0.0,0.0,4.0,3.0,0.0,1.0,,,,,,
+Ryan Johnson,D,BUF,2.5,,,,,,,,,0.0,0.0,0.0,2.0,0.0,2.0,3.0,,,,,,
+Jacob Gaucher,C,PHI,2.4,,,,,,,,,0.0,0.0,0.0,0.0,3.0,2.0,1.0,,,,,,
+Matt Murray,G,SEA,2.4,,,,,,,,,,,,,,,,0.0,32.0,0.8888888888888888,4.0,0.0,
+Adam Lowry,C,WPG,2.4,,,,,,,,,0.0,0.0,0.0,0.0,1.0,3.0,2.0,,,,,,2.0
+Domenick Fensore,D,CAR,2.4,,,,,,,,,0.0,0.0,0.0,0.0,2.0,1.0,3.0,,,,,,
+Adam Boqvist,D,NYI,2.4,,,,,,,,,0.0,0.0,0.0,0.0,1.0,1.0,4.0,,,,,,
+Joakim Kemell,RW,NSH,2.4,,,,,,,,,0.0,0.0,0.0,0.0,1.0,4.0,1.0,,,,,,
+Philipp Grubauer,G,SEA,2.2,,,,,,,,,,,,,,,,0.0,26.0,0.896551724137931,3.0,0.0,1.0
+Calum Ritchie,"C,RW",NYI,2.2,,,,,,,,,0.0,0.0,0.0,4.0,1.0,0.0,2.0,,,,,,1.0
+Owen Pickering,D,PIT,2.1,,,,,,,,,0.0,0.0,0.0,2.0,1.0,1.0,2.0,,,,,,
+Zach Metsa,D,BUF,2.1,,,,,,,,,0.0,0.0,0.0,2.0,1.0,1.0,2.0,,,,,,
+Andrew Agozzino,LW,UTA,2.0,,,,,,,,,0.0,0.0,0.0,0.0,0.0,4.0,1.0,,,,,,
+Jaccob Slavin,D,CAR,2.0,,,,,,,164.2,0.05,0.0,0.0,0.0,0.0,2.0,0.0,3.0,,,,,,7.0
+Seamus Casey,D,NJ,2.0,,,,,,,,,0.0,0.0,0.0,0.0,4.0,0.0,1.0,,,,,,
+Josh Norris,C,BUF,2.0,,,Ryan is Aho,Mitchell,14,185,180.1,0.12,0.0,0.0,0.0,0.0,4.0,1.0,0.0,,,,,,15.0
+Scott Laughton,"C,LW",TOR,1.7,,,,,,,,,0.0,0.0,0.0,2.0,0.0,3.0,0.0,,,,,,2.0
+Kyle Capobianco,D,DAL,1.7,,,,,,,,,0.0,0.0,0.0,2.0,2.0,1.0,0.0,,,,,,
+Tristen Nielsen,C,COL,1.6,,,,,,,,,0.0,0.0,0.0,0.0,0.0,4.0,0.0,,,,,,
+Evgenii Dadonov,RW,NJ,1.6,,,,,,,,,0.0,0.0,0.0,0.0,2.0,0.0,2.0,,,,,,1.0
+Zack MacEwen,RW,NJ,1.6,,,,,,,,,0.0,0.0,0.0,0.0,2.0,1.0,1.0,,,,,,
+Joshua Roy,RW,MTL,1.6,,,,,,,,,0.0,0.0,0.0,0.0,0.0,4.0,0.0,,,,,,
+Nils Aman,C,VAN,1.6,,,,,,,,,0.0,0.0,0.0,0.0,1.0,2.0,1.0,,,,,,
+Braeden Cootes,C,VAN,1.6,,,,,,,,,0.0,0.0,0.0,0.0,0.0,3.0,1.0,,,,,,
+Dysin Mayo,D,CBJ,1.2,,,,,,,,,0.0,0.0,0.0,0.0,3.0,0.0,0.0,,,,,,
+Dylan McIlrath,D,WSH,1.2,,,,,,,,,0.0,0.0,0.0,0.0,0.0,3.0,0.0,,,,,,
+Brennan Othmann,LW,NYR,1.2,,,,,,,,,0.0,0.0,0.0,0.0,1.0,2.0,0.0,,,,,,
+Dakota Mermis,D,TOR,1.2,,,,,,,,,0.0,0.0,0.0,0.0,1.0,2.0,0.0,,,,,,
+Emil Andrae,D,PHI,1.2,,,,,,,,,0.0,0.0,0.0,0.0,1.0,2.0,0.0,,,,,,
+Mackenzie Blackwood,G,COL,1.0,The Leon King,cam,The Leon King,cam,4,54,40.8,1.0,,,,,,,,0.0,20.0,0.8695652173913043,3.0,0.0,97.0
+Hunter Haight,C,MIN,0.8,,,,,,,,,0.0,0.0,0.0,0.0,0.0,2.0,0.0,,,,,,
+Daniil Miromanov,D,CGY,0.8,,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,2.0,,,,,,
+Owen Beck,C,MTL,0.8,,,,,,,,,0.0,0.0,0.0,0.0,1.0,0.0,1.0,,,,,,
+Dmitry Kulikov,D,FLA,0.8,,,,,,,,,0.0,0.0,0.0,0.0,1.0,1.0,0.0,,,,,,
+Taylor Makar,LW,COL,0.4,,,,,,,,,0.0,0.0,0.0,0.0,0.0,1.0,0.0,,,,,,
+Daniil But,LW,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Nikita Tolopilo,G,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+David Bedkowski,D,BUF,0.0,,,,,,,,,,,,,,,,,,,,,
+Ryan Ufko,D,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Ivan Miroshnichenko,LW,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Georgii Romanov,G,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Kevin Connauton,D,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Wilmer Skoog,C,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Ryan McAllister,C,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Tommy Lafreniere,RW,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Mitchell Gibson,G,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Craig Smith,C,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Cole McWard,D,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+John Farinacci,C,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Maceo Phillips,D,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Mats Zuccarello,RW,MIN,0.0,Ross' Rink Rats,Ross,,,,,173.4,0.02,,,,,,,,,,,,,13.0
+Magnus Hellberg,G,DAL,0.0,,,,,,,,,,,,,,,,,,,,,
+Joel Blomqvist,G,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Atro Leppänen,D,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Will Reynolds,D,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Sean Barnhill,D,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Jacob Fowler,G,MTL,0.0,,,,,,,,,,,,,,,,,,,,,2.0
+Matt Stienburg,C,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Jason Polin,RW,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Cade Webber,D,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+David Edstrom,C,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Paul Fischer,D,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+David Savard,D,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Travis Mitchell,D,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Teddy Mutryn,C,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Tomas Tatar,LW,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Hunter McKown,C,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+TJ Brodie,D,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Kirill Gerasimyuk,G,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Trevor Kuntar,C,BUF,0.0,,,,,,,,,,,,,,,,,,,,,
+Brett Berard,LW,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Niklas Kokko,G,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Ville Ottavainen,D,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Devon Levi,G,BUF,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Sean Farrell,C,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Laurent Brossoit,G,CHI,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Aidan McDonough,LW,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Nikita Quapp,G,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Calvin de Haan,D,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Ryan Ellis,D,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Tyler Hopkins,C,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Henry Thrun,D,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Ales Stezka,G,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Dylan Duke,LW,TB,0.0,,,,,,,,,,,,,,,,,,,,,
+Connor Murphy,G,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Matt Nieto,LW,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Carter Mazur,LW,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Daniil Misyul,D,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Jake Livingstone,D,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Akito Hirose,D,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Patrik Koch,D,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Matt Martin,LW,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Rutger McGroarty,RW,PIT,0.0,,,,,,,,,,,,,,,,,,,,,2.0
+Scott Morrow,D,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Connor Clattenburg,"C,LW",EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Cam Lund,C,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+T.J. Tynan,C,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Mateo Nobert,C,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Chase Bradley,LW,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Ryan Strome,C,ANA,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Riley Duran,C,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Cooper Simpson,LW,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Simon Wang,D,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Quinton Burns,D,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Erik Portillo,G,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Coulson Pitre,RW,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Hardy Haman Aktell,D,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Aydar Suniev,LW,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Hunter Brzustewicz,D,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Charlie Cerrato,C,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Gabe Perreault,RW,NYR,0.0,,,,,,,,,,,,,,,,,,,,,2.0
+Leo Loof,D,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Cam Atkinson,RW,TB,0.0,,,,,,,,,,,,,,,,,,,,,
+Tyson Barrie,D,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Quentin Musty,LW,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Arseni Radkov,G,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Gabriel D'Aigle,G,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Fabian Wagner,C,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Ty Mueller,C,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Jesper Fast,"C,RW",CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Nate Danielson,C,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Zach Hyman,"LW,RW",EDM,0.0,Ryan is Aho,Mitchell,Ryan is Aho,Mitchell,9,124,121.8,1.0,,,,,,,,,,,,,83.0
+David Reinbacher,D,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Tinus Luc Koblar,C,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Louis Domingue,G,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Kevin Gravel,D,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Brayden Yager,C,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Tyler Johnson,C,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Michael Sgarbossa,C,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Jani Hakanpaa,D,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Eduard Sale,LW,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Justin Holl,D,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Colby Barlow,LW,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Otto Stenberg,C,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Zach Nehring,RW,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Luca Cagnoni,D,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Drew Commesso,G,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Devin Kaplan,RW,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Chris Wagner,RW,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Kieren Dervin,C,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Yaniv Perets,G,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Sergei Murashov,G,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Jack Campbell,G,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Jaroslav Chmelar,RW,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Mike Benning,D,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Alexis Cournoyer,G,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Austin Watson,LW,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Nikolai Kovalenko,"LW,RW",SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Jarred Tinordi,D,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Kevin Hayes,C,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+John Mooney,C,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Francesco Dell'Elce,D,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Brady Peddle,D,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Noah Chadwick,D,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Mazden Leslie,D,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Jon Merrill,D,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Cameron Allen,D,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Noah Read,C,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Matthew Andonovski,D,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Felix Unger Sorum,RW,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Connor Levis,RW,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Joey Willis,C,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Artur Akhtyamov,G,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Bryce Pickford,D,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Jacob Julien,C,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Nikolas Brouillard,D,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Rasmus Kumpulainen,C,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Maxim Schafer,LW,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Blake Vanek,RW,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Cole McKinney,C,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Carter Yakemchuk,D,OTT,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Ben Kevan,RW,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Patrick Geary,D,BUF,0.0,,,,,,,,,,,,,,,,,,,,,
+Roman Bausov,D,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Bill Zonnon,RW,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Connor Hughes,G,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Jere Innala,LW,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Cole Davis,LW,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Ivan Ryabkin,C,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Kirill Zarubin,G,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Hunter St. Martin,LW,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Nikita Prishchepov,C,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Jack Williams,RW,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Trevor Lewis,C,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Carson Golder,LW,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Dylan Anhorn,D,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Gabriel Carriere,G,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Kyle Okposo,RW,BUF,0.0,,,,,,,,,,,,,,,,,,,,,
+Shane Vansaghi,RW,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Ben Steeves,LW,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Kai Uchacz,C,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Viliam Kmec,D,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Tyler Palmer,G,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Karsen Dorwart,LW,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Logan Sawyer,C,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Jack Ivankovic,G,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Tim Washe,C,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Ilya Protas,LW,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Adam Kleber,D,BUF,0.0,,,,,,,,,,,,,,,,,,,,,
+Nathan Villeneuve,C,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Ethan Procyszyn,C,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Lukas Fischer,D,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Will Skahan,D,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Jacob Battaglia,RW,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Tarin Smith,D,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Viggo Gustafsson,D,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Arttu Hyry,RW,DAL,0.0,,,,,,,,,,,,,,,,,,,,,
+Teddy Stiga,C,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Lucas Ellinas,"C,LW",OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Hiroki Gojsic,RW,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Alexis Bernier,D,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Semyon Varlamov,G,NYI,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Jack Pridham,RW,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Michal Pradel,G,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Ondrej Becher,C,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+AJ Spellacy,RW,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Joshua Ravensbergen,G,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Loke Johansson,D,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Noel Fransen,D,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Harrison Scott,LW,DAL,0.0,,,,,,,,,,,,,,,,,,,,,
+Caleb Desnoyers,C,UTA,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Cole Hutson,D,WSH,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Sascha Boumedienne,D,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Jack Johnson,D,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Cullen Potter,C,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Malcolm Spencer,LW,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Lasse Boelius,D,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Malte Vass,D,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Justin Carbonneau,RW,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Theo Stockselius,C,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Artem Gonchar,D,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Henry Brzustewicz,D,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Daniil Prokhorov,RW,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Matthew Gard,C,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Cole Reschny,C,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+William Horcoff,C,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Cameron Reid,D,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Blake Fiddler,D,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+William Moore,C,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Mason West,C,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Ryker Lee,RW,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Jack Murtagh,LW,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Stepan Hoch,LW,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Liam Pettersson,D,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Lynden Lakovic,LW,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Max Psenicka,D,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Radim Mrtka,D,BUF,0.0,,,,,,,,,,,,,,,,,,,,,
+Vojtech Cihar,LW,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Roger McQueen,C,ANA,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Hayden Paupanekis,C,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Carter Bear,LW,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Erik Johnson,D,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Jake O'Brien,C,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Kashawn Aitcheson,D,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Marc-Edouard Vlasic,D,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+James Hagens,C,BOS,0.0,,,,,,,,,,,,,,,,,,,,,2.0
+Porter Martone,RW,PHI,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Alexander Zharovsky,RW,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Anton Frondell,C,CHI,0.0,,,,,,,,,,,,,,,,,,,,,2.0
+Vaclav Nestrasil,RW,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Milton Gastrin,C,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Victor Eklund,RW,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Eddie Genborg,RW,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Eric Nilson,C,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Jackson Smith,D,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Kurban Limatov,D,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Logan Hensler,D,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Theodor Hallquisth,D,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Jakob Ihs Wozniak,RW,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Jack Nesbitt,C,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Max Plante,LW,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Colin Ralph,D,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Owen Martin,C,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Matvei Shuravin,D,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Michael Hage,C,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Ryder Ritchie,RW,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Milan Lucic,LW,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Dean Letourneau,C,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Sacha Boisvert,C,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Andrew Basha,LW,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Sam Morton,C,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Emil Hemming,RW,DAL,0.0,,,,,,,,,,,,,,,,,,,,,
+Konsta Helenius,C,BUF,0.0,,,,,,,,,,,,,,,,,,,,,
+Brendan Smith,D,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Conrad Fondrk,C,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Max Pacioretty,LW,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Adam Jiricek,D,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Anton Silayev,D,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Igor Chernyshov,LW,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Leo Sahlin Wallenius,D,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Max McCormick,LW,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Leon Muggli,D,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Nikita Artamonov,LW,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Lucas Pettersson,C,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Jesse Pulkkinen,D,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Terik Parascak,RW,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Adam Jecho,C,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Egor Surin,C,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Trevor Connelly,LW,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Ludvig Jansson,D,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Stephen Halliday,C,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Quinn Hutson,RW,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Miko Matikka,RW,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Garrett Brown,D,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Zac Funk,RW,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Dustin Tokarski,G,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Jamie Benn,"C,LW",DAL,0.0,Powerplay Papi,Cooper,Bangers and Mash,conor,18,246,,,,,,,,,,,,,,,5.0
+Alex Pietrangelo,D,VGK,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Mason Moe,C,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Kristian Epperson,LW,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Cameron Schmidt,RW,DAL,0.0,,,,,,,,,,,,,,,,,,,,,
+Cayden Lindstrom,C,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Peyton Kettles,D,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Charlton Trethewey,D,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Cole Eiserman,LW,NYI,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Liam Greentree,RW,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+James Reimer,G,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Nathan Behm,RW,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Tij Iginla,C,UTA,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Carter Amico,D,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Linus Eriksson,C,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Veeti Vaisanen,D,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+John Mustard,C,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Ondrej Kos,LW,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Pavel Moysevich,G,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Pyotr Andreyanov,G,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Kim Saarinen,G,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Juha Jaaska,LW,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Mikulas Hovorka,D,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Gabriel Eliasson,D,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Semyon Frolov,G,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Alexei Medvedev,G,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Stian Solberg,D,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Kasper Pikkarainen,RW,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Ilya Nabokov,G,COL,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Alfons Freij,D,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Aatos Koivu,C,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Herman Traff,RW,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Melvin Fernstrom,RW,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Jack Berglund,C,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+William Zellers,LW,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Tomas Lavoie,D,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Julius Miettinen,C,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Carson Wetsch,RW,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Brodie Ziemer,RW,BUF,0.0,,,,,,,,,,,,,,,,,,,,,
+Eemil Vinni,G,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Samuel Hlavaj,G,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Jacob Quillan,C,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Ben Danford,D,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Cooper Black,G,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Victor Ostman,G,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Cal Clutterbuck,RW,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Miguel Marques,RW,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Spencer Gill,D,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Maxim Masse,RW,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Marek Vanacker,LW,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Charlie Elick,D,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Cole Beaudoin,C,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Kamil Bednarik,C,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Henry Mews,D,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Evan Gardner,G,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Luca Marrelli,D,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Tanner Howe,LW,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Luca Romano,C,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+EJ Emery,D,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Sam O'Reilly,RW,TB,0.0,,,,,,,,,,,,,,,,,,,,,
+Eriks Mateiko,LW,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Carter George,G,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Jacob Rombach,D,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Mikhail Yegorov,G,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Ethan Czata,C,TB,0.0,,,,,,,,,,,,,,,,,,,,,
+Dominik Badinka,D,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Shane Bowers,C,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Travis Boyd,C,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Reese Johnson,C,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Josiah Slavin,LW,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Sam Hentges,C,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Logan O'Connor,RW,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Rafael Harvey-Pinard,LW,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Drake Caggiula,LW,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Andrew Poturalski,C,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Ryan Schmelzer,C,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Dryden Hunt,LW,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Jimmy Huntington,C,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Jacob Lucchini,C,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Jesse Puljujarvi,RW,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Joe Snively,C,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Grant Hutton,D,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Nico Sturm,C,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Brogan Rafferty,D,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Mason Jobst,C,BUF,0.0,,,,,,,,,,,,,,,,,,,,,
+Samuel Laberge,LW,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Jimmy Schuldt,D,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Connor Ingram,G,EDM,0.0,,,,,,,,,,,,,,,,,,,,,5.0
+Lane Pederson,C,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+John Leonard,LW,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Kevin Mandolese,G,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Ivan Fedotov,G,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Julien Gauthier,RW,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Boris Katchouk,LW,TB,0.0,,,,,,,,,,,,,,,,,,,,,
+Jakub Lauko,C,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Rasmus Asplund,C,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Riley Tufte,LW,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Nathan Smith,C,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Max Jones,LW,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Jonathan Gruden,C,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Luke Henman,C,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Martin Pospisil,"C,RW",CGY,0.0,,,,,,,182.5,0.11,,,,,,,,,,,,,5.0
+Jack St. Ivany,D,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Matthew Tkachuk,"LW,RW",FLA,0.0,DubJ,John,DubJ,John,4,43,82.7,1.0,,,,,,,,,,,,,91.0
+Ivan Prosvetov,G,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Mac Hollowell,D,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Kieffer Bellows,LW,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Angus Crookshank,LW,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Logan Brown,C,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Alex Nylander,LW,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Hugh McGing,LW,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Filip Kral,D,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Magnus Chrona,G,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Luke Philp,C,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Bokondji Imama,LW,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Tyler Madden,RW,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Ronnie Attard,D,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Simon Lundmark,D,TB,0.0,,,,,,,,,,,,,,,,,,,,,
+Vladislav Kolyachonok,D,DAL,0.0,,,,,,,,,,,,,,,,,,,,,
+Brett Leason,RW,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Samuel Bolduc,D,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Travis Dermott,D,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Nikita Okhotiuk,D,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Nikita Alexandrov,C,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Zac Jones,D,BUF,0.0,,,,,,,,,,,,,,,,,,,,,
+John Ludvig,D,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Nathan Légaré,RW,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Daniel Sprong,RW,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Adam Beckman,LW,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Mitchell Stephens,C,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Graeme Clarke,RW,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Mikko Kokkonen,D,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Christian Fischer,RW,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Ilya Samsonov,G,VGK,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Tyce Thompson,RW,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Colin White,C,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Matej Blumel,RW,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Samuel Fagemo,LW,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Egor Afanasyev,LW,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Cameron Hughes,C,DAL,0.0,,,,,,,,,,,,,,,,,,,,,
+Dennis Gilbert,D,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Brett Seney,LW,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Spencer Smallman,RW,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Victor Soderstrom,D,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Joseph Cecconi,D,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Ethan Bear,D,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Glenn Gawdin,C,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Christian Wolanin,D,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Anthony Richard,C,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Colton White,D,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Ville Heinola,D,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Oliver Kylington,D,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Sam Poulin,RW,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Tobias Bjornfot,D,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Felix Sandstrom,G,BUF,0.0,,,,,,,,,,,,,,,,,,,,,
+Jakob Pelletier,"LW,RW",TB,0.0,,,,,,,,,,,,,,,,,,,,,
+Nolan Foote,LW,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Ryan Suzuki,C,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Guillaume Brisebois,D,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Mads Sogaard,G,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Raphael Lavoie,C,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Nils Hoglander,LW,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Jakub Skarek,G,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Jan Jenik,C,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Hunter Skinner,D,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Sebastian Aho,D,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Mason Shaw,C,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Tye Felhaber,LW,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Eetu Makiniemi,G,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Noel Hoefenmayer,D,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Ben Gleason,D,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Kevin Rooney,C,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Emil Bemstrom,RW,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Dylan Ferguson,G,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Dylan Coghlan,D,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Jiri Patera,G,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Cameron Crotty,D,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Arvid Holm,G,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Cedric Pare,C,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Skyler Brind'Amour,C,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Carson Meyer,RW,BUF,0.0,,,,,,,,,,,,,,,,,,,,,
+Sammy Walker,C,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Philip Kemp,D,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Alexandar Georgiev,G,BUF,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Collin Delia,G,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Alex Barre-Boulet,C,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Jack Rathbone,D,BUF,0.0,,,,,,,,,,,,,,,,,,,,,
+Reilly Walsh,D,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Dominik Shine,RW,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Calle Rosen,D,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Klim Kostin,C,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Kole Lind,RW,DAL,0.0,,,,,,,,,,,,,,,,,,,,,
+Juuso Valimaki,D,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Gustav Lindstrom,D,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Erik Brannstrom,D,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Jaret Anderson-Dolan,C,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Jan Rutta,D,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Dylan Samberg,D,WPG,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Robin Salo,D,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Jack Studnicka,C,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Matthew Highmore,C,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+David Kampf,C,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Ian Mitchell,D,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Jake Leschyshyn,C,BUF,0.0,,,,,,,,,,,,,,,,,,,,,
+Nick DeSimone,D,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Michael DiPietro,G,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Jonas Rondbjerg,RW,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Vinni Lettieri,C,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+MacKenzie Entwistle,RW,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Matt Villalta,G,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Johnathan Kovacevic,D,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Zach Sawchenko,G,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Jacob MacDonald,D,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Givani Smith,RW,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+William Lockwood,RW,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Rasmus Kupari,C,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Fredrik Karlstrom,C,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Garrett Pilon,C,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Casey Fitzgerald,D,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Alexander Alexeyev,D,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Joey Anderson,RW,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Cam Dineen,D,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Jesse Ylonen,RW,TB,0.0,,,,,,,,,,,,,,,,,,,,,
+Jett Woo,D,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Joseph Woll,G,TOR,0.0,Geek Squad,Nick,Geek Squad,Nick,17,233,160.5,0.64,,,,,,,,,,,,,37.0
+Ty Smith,D,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Dylan Gambrell,C,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Scott Perunovich,D,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Carl Grundstrom,RW,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Kale Clague,D,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Akil Thomas,C,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Bo Groulx,C,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Carter Hart,G,PHI,0.0,,,,,,,,,,,,,,,,,,,,,15.0
+David Gustafsson,C,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Olivier Rodrigue,G,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Liam Foudy,C,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Grigori Denisenko,LW,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Sheldon Dries,C,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Nathan Clurman,D,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Alex Belzile,RW,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Jeremy Davies,D,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Travis Barron,LW,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Cameron Hebig,C,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Nicolas Mattinen,D,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Tanner Laczynski,C,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Filip Larsson,G,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Pavel Francouz,G,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Matthew Phillips,RW,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Michael Pezzetta,LW,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Brett Murray,LW,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Axel Jonsson-Fjallby,LW,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Joona Koppanen,LW,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Max Lajoie,D,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Riley Stillman,D,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Filip Zadina,RW,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Jacob Moverare,D,LA,0.0,,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,
+Vitali Kravtsov,RW,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Oliver Wahlstrom,RW,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Lucas Carlsson,D,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Keaton Middleton,D,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Marc Del Gaizo,D,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Nicholas Abruzzese,C,TB,0.0,,,,,,,,,,,,,,,,,,,,,
+Derrick Pouliot,D,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Marc McLaughlin,C,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Tory Dello,D,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Connor Carrick,D,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Connor Ungar,G,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+James Hamblin,LW,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Callahan Burke,C,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Nick Cicek,D,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Dominic Toninato,C,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Kyle Konin,G,TB,0.0,,,,,,,,,,,,,,,,,,,,,
+Jordan Frasca,C,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Taylor Ward,RW,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Alex Limoges,C,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Declan Carlile,D,TB,0.0,,,,,,,,,,,,,,,,,,,,,
+Brandon Scanlin,D,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Jaxson Stauber,G,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Andreas Athanasiou,C,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Clay Stevenson,G,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Erik Gustafsson,D,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Lucas Condotta,LW,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Chris Driedger,G,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Georgii Merkulov,C,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Tobie Bisson,D,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Alexander Kerfoot,"C,LW,RW",UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Wyatt Bongiovanni,LW,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Matthew Benning,D,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Troy Grosenick,G,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Ryker Evans,D,SEA,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Zack Ostapchuk,C,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Danila Klimovich,RW,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Francesco Pinelli,C,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Jaycob Megna,D,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Evan Nause,D,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Matt Tomkins,G,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Joakim Ryan,D,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Tyson Hinds,D,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Billy Sweezey,D,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Dmitry Kuzmin,D,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Cameron Whynot,D,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Tristan Lennox,G,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Jake Chiasson,RW,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Topias Vilen,D,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Jacob Melanson,RW,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+James Malatesta,LW,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Justin Robidas,C,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Bryce Montgomery,D,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Hunter Shepard,G,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Wyatt Aamodt,D,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Jimmy Vesey,LW,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Zach Dean,C,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Matt Murray,G,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Dennis Hildeby,G,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Frederic Brunet,D,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Graham Sward,D,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Sandis Vilmanis,LW,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Maksymilian Szuber,D,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Josh Davies,LW,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Domenic DiVincentiis,G,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Kirill Kudryavtsev,D,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Owen Sillinger,LW,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Ivan Ivan,C,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Tyler Brennan,G,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Joseph Abate,LW,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Christoffer Sedoff,D,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Kyle McDonald,RW,DAL,0.0,,,,,,,,,,,,,,,,,,,,,
+Marshall Rifai,D,TOR,0.0,,,,,,,,,,,,,,,,,,,,,
+Thomas Milic,G,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Kai Schwindt,LW,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Isaac Poulter,G,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Braeden Bowman,RW,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Nolan Burke,C,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Angus Booth,D,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Isaiah George,D,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Pavol Regenda,LW,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Maveric Lamoureux,D,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+Devin Shore,C,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Martin Frk,RW,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Brock McGinn,LW,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Kevin Korchinski,D,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Phillip Di Giuseppe,LW,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Oscar Dansk,G,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Justin Schultz,D,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Brendan Gaunce,C,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Nathan Gaucher,C,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Jagger Firkus,RW,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Jordan Dumais,RW,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Luca Del Bel Belluz,C,CBJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Christian Kyrou,D,DAL,0.0,,,,,,,,,,,,,,,,,,,,,
+Tristan Luneau,D,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Matthew Poitras,C,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Elias Salomonsson,D,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Adam Sykora,LW,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Danil Zhilkin,C,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Tomas Hamara,D,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Michael Milne,LW,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Marek Alscher,D,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Nolan Allan,D,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Chase Stillman,RW,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Isaiah Saville,G,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Scott Sabourin,RW,TB,0.0,,,,,,,,,,,,,,,,,,,,,
+Andreas Englund,D,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Cole Perfetti,"C,LW,RW",WPG,0.0,Pond Hockey Stars,PIERRE,Pond Hockey Stars,PIERRE,17,235,171.2,0.61,,,,,,,,,,,,,40.0
+Brendan Lemieux,LW,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Robby Fabbri,"C,LW",PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Jakub Vrana,LW,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Tomas Nosek,LW,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Patrick Brown,C,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Jordan Oesterle,D,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Pheonix Copley,G,TB,0.0,,,,,,,,,,,,,,,,,,,,,
+Justin Dowling,C,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Brandon Halverson,G,TB,0.0,,,,,,,,,,,,,,,,,,,,,
+Kyle Burroughs,D,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Dominik Kubalik,LW,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Anton Blidh,LW,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Joshua Brown,D,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Brendan Brisson,C,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Roby Jarventie,LW,EDM,0.0,,,,,,,,,,,,,,,,,,,,,
+Cal Petersen,G,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Helge Grans,D,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Thomas Bordeleau,C,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Nicolas Aube-Kubel,RW,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Mark Friedman,D,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Tyler Motte,LW,FLA,0.0,,,,,,,,,,,,,,,,,,,,,
+Nikolai Knyzhov,D,VAN,0.0,,,,,,,,,,,,,,,,,,,,,
+Henrik Rybinski,RW,WSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Joe Hicketts,D,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Hayden Hodgson,RW,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Santeri Hatakka,D,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Maxence Guenette,D,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Andre Lee,LW,LA,0.0,,,,,,,,,,,,,,,,,,,,,
+Valtteri Puustinen,RW,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Pierre Engvall,LW,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Kevin Labanc,RW,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Ben McCartney,LW,UTA,0.0,,,,,,,,,,,,,,,,,,,,,
+William Lagesson,D,DET,0.0,,,,,,,,,,,,,,,,,,,,,
+Clark Bishop,C,CGY,0.0,,,,,,,,,,,,,,,,,,,,,
+Corey Schueneman,D,STL,0.0,,,,,,,,,,,,,,,,,,,,,
+Mason Morelli,LW,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Max Willman,C,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Brandon Biro,LW,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Danton Heinen,LW,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Colton Poolman,D,BUF,0.0,,,,,,,,,,,,,,,,,,,,,
+Connor Mackey,D,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Kaapo Kahkonen,G,MTL,0.0,,,,,,,,,,,,,,,,,,,,,
+Ville Husso,G,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Tucker Poolman,D,COL,0.0,,,,,,,,,,,,,,,,,,,,,
+Vasily Ponomarev,C,PIT,0.0,,,,,,,,,,,,,,,,,,,,,
+Oskar Olausson,RW,SJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Robert Hagg,D,VGK,0.0,,,,,,,,,,,,,,,,,,,,,
+Matt Kiersted,D,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Adam Scheel,G,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Walker Duehr,RW,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Marcus Hogberg,G,NYI,0.0,,,,,,,,,,,,,,,,,,,,,
+Spencer Martin,G,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Zach Sanford,LW,CHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Justin Bailey,RW,ANA,0.0,,,,,,,,,,,,,,,,,,,,,
+Gustav Olofsson,D,SEA,0.0,,,,,,,,,,,,,,,,,,,,,
+Steven Santini,D,TB,0.0,,,,,,,,,,,,,,,,,,,,,
+Tyler Boucher,RW,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Mike Hardman,LW,NJ,0.0,,,,,,,,,,,,,,,,,,,,,
+Rasmus Ristolainen,D,PHI,0.0,,,,,,,,,,,,,,,,,,,,,
+Sebastian Cossa,G,DET,0.0,,,,,,,,,,,,,,,,,,,,,1.0
+Aleksander Barkov,C,FLA,0.0,,,Cooley as a Cucumber,Ryan,5,66,80.6,0.2,,,,,,,,,,,,,23.0
+Chaz Lucius,C,WPG,0.0,,,,,,,,,,,,,,,,,,,,,
+Fabian Lysell,RW,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Xavier Bourgault,C,OTT,0.0,,,,,,,,,,,,,,,,,,,,,
+Chad Ruhwedel,D,NYR,0.0,,,,,,,,,,,,,,,,,,,,,
+Carson Lambos,D,MIN,0.0,,,,,,,,,,,,,,,,,,,,,
+Zachary L'Heureux,LW,NSH,0.0,,,,,,,,,,,,,,,,,,,,,
+Alex Steeves,C,BOS,0.0,,,,,,,,,,,,,,,,,,,,,
+Ronan Seeley,D,CAR,0.0,,,,,,,,,,,,,,,,,,,,,
+Roni Hirvonen,C,TOR,0.0,,,,,,,,,,,,,,,,,,,,,

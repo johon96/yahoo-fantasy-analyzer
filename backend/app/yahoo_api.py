@@ -6,6 +6,7 @@ from pathlib import Path
 from app.models import User, League, Team, Player
 from app.database import SessionLocal
 from app.auth import get_valid_access_token
+from app.config import settings
 import os
 
 # YFPY imports are optional (commented out for now)
@@ -37,30 +38,57 @@ class YahooAPIClient:
             "Accept": "application/json"  # Request JSON response
         }
     
-    def get_yfpy_query(self, league_id: str, game_code: str = "nhl"):
+    def get_yfpy_query(self, league_id: str, game_code: str = "nhl", game_id: Optional[str] = None):
         """Get or create YFPY query instance for a specific league."""
         try:
             from yfpy.query import YahooFantasySportsQuery
             
+            print(f"Initializing YFPY for league {league_id}, game {game_code}, game_id {game_id}")
+            
+            # Prepare access token JSON for YFPY
+            # YFPY expects a dict with access token data to avoid doing its own OAuth
+            import time
+            access_token_json = {
+                "access_token": self.access_token,
+                "consumer_key": settings.yahoo_client_id,
+                "consumer_secret": settings.yahoo_client_secret,
+                "guid": getattr(self.user, 'yahoo_guid', None),
+                "refresh_token": getattr(self.user, 'refresh_token', None),
+                "token_time": time.time(),  # Current timestamp
+                "token_type": "Bearer"
+            }
+            
+            print(f"Passing existing access token to YFPY (guid: {access_token_json.get('guid')})")
+            
             # Create YFPY instance for this specific league
+            # Pass our existing access token so YFPY doesn't try to do OAuth
             yahoo_query = YahooFantasySportsQuery(
                 league_id=league_id,
+                game_id=game_id,
                 game_code=game_code,
                 offline=False,
-                all_output_as_json=True,
-                consumer_key=os.getenv("YAHOO_CLIENT_ID"),
-                consumer_secret=os.getenv("YAHOO_CLIENT_SECRET"),
-                browser_callback=False
+                yahoo_access_token_json=access_token_json
             )
             
-            # Inject our access token
-            if hasattr(yahoo_query, 'oauth'):
-                yahoo_query.oauth.access_token = self.access_token
-                yahoo_query.oauth.token_time = 9999999999  # Prevent refresh attempts
+            print(f"YFPY instance created: {yahoo_query}")
+            
+            # Try to inject our access token if YFPY exposes OAuth
+            try:
+                if hasattr(yahoo_query, 'oauth') and yahoo_query.oauth:
+                    print("Injecting existing access token into YFPY OAuth")
+                    yahoo_query.oauth.access_token = self.access_token
+                    yahoo_query.oauth.token_time = 9999999999  # Prevent refresh attempts
+                    print("Access token injected successfully")
+                else:
+                    print("YFPY OAuth object not accessible - YFPY will handle auth independently")
+            except Exception as oauth_error:
+                print(f"Could not inject access token (YFPY will handle OAuth): {oauth_error}")
             
             return yahoo_query
         except Exception as e:
             print(f"Could not initialize YFPY for league {league_id}: {e}")
+            import traceback
+            traceback.print_exc()
             return None
     
     def _make_request(self, endpoint: str) -> dict:

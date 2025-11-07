@@ -1,7 +1,7 @@
 """FastAPI application entry point."""
+from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.database import init_db
 from app.api import routes
 
 # Initialize FastAPI app
@@ -33,8 +33,9 @@ app.include_router(routes.router)
 
 @app.on_event("startup")
 async def startup_event():
-    """Initialize database on startup."""
-    init_db()
+    """Initialize data directory on startup."""
+    data_dir = Path(__file__).parent.parent / "data"
+    data_dir.mkdir(parents=True, exist_ok=True)
 
 
 @app.get("/")
