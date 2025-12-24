@@ -213,3 +213,72 @@ def get_valid_access_token(user: User) -> str:
     except Exception as e:
         raise Exception(f"Failed to refresh token: {e}")
 
+
+def get_authenticated_user() -> User:
+    """
+    Get an authenticated user, handling first-time OAuth if needed.
+    
+    Returns a User object with a valid access token. If no users exist,
+    initiates a browser-based OAuth flow to authenticate.
+    """
+    from yahoo_oauth import OAuth2 as YahooOAuth2
+    
+    users = _load_users()
+    
+    if not users:
+        # First-time use: initiate browser OAuth flow
+        print("No existing authentication found. Starting browser OAuth flow...")
+        
+        # Create OAuth2 credentials file for yahoo_oauth library
+        oauth_creds_file = TOKEN_STORAGE_PATH.parent / "oauth_creds.json"
+        oauth_creds_file.parent.mkdir(parents=True, exist_ok=True)
+        
+        with open(oauth_creds_file, 'w') as f:
+            json.dump({
+                "consumer_key": settings.yahoo_client_id,
+                "consumer_secret": settings.yahoo_client_secret
+            }, f)
+        
+        # This will open a browser for OAuth
+        sc = YahooOAuth2(None, None, from_file=str(oauth_creds_file))
+        
+        if not sc.token_is_valid():
+            raise Exception("OAuth authentication failed")
+        
+        # Get user info to create a user record
+        headers = {"Authorization": f"Bearer {sc.access_token}"}
+        user_info_resp = requests.get(
+            "https://api.login.yahoo.com/openid/v1/userinfo",
+            headers=headers
+        )
+        
+        if user_info_resp.ok:
+            user_info = user_info_resp.json()
+            yahoo_guid = user_info.get("sub", "unknown")
+        else:
+            yahoo_guid = "unknown"
+        
+        # Create User object and save
+        user = User(
+            yahoo_guid=yahoo_guid,
+            access_token=sc.access_token,
+            refresh_token=sc.refresh_token,
+            token_expires_at=datetime.now() + timedelta(seconds=3600)
+        )
+        users = {yahoo_guid: user}
+        _save_users(users)
+        
+        print("✅ OAuth authentication successful! Tokens saved for future use.")
+        return user
+    
+    # Existing user found - get first user and ensure token is valid
+    first_guid = list(users.keys())[0]
+    user = users[first_guid]
+    
+    # Refresh token if needed (this updates the user object and saves)
+    get_valid_access_token(user)
+    
+    # Reload user after potential refresh
+    users = _load_users()
+    return users[first_guid]
+
