@@ -18,7 +18,7 @@ import os
 import sys
 import traceback
 import xml.etree.ElementTree as ET
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 # Add parent directory to path to import app modules
@@ -867,19 +867,15 @@ if __name__ == "__main__":
         # Import settings and auth
         sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'app'))
         from config import settings
-        from auth import get_valid_access_token, _load_users
+        from auth import get_authenticated_user
         
-        # Load user and get access token
-        users = _load_users()
-        if not users:
-            print("❌ No authenticated users found. Please run the main app first to authenticate.")
+        # Get authenticated user (handles first-time OAuth if needed)
+        try:
+            user = get_authenticated_user()
+            access_token = user.access_token
+        except Exception as e:
+            print(f"❌ Authentication failed: {e}")
             sys.exit(1)
-        
-        # Get the first user (assumes single user)
-        first_guid = list(users.keys())[0]
-        user = users[first_guid]
-        
-        access_token = get_valid_access_token(user)
         
         if not access_token:
             print("❌ Failed to authenticate. Please check your credentials.")
