@@ -208,127 +208,225 @@ def get_user_leagues(yfpy_query):
 
 
 def export_standings_to_csv(league_key, output_file):
-    """Export league standings to CSV."""
+    """Export league standings with head-to-head category stats to CSV."""
     print(f"\n{'='*60}")
     print(f"Exporting standings for league: {league_key}")
     print(f"Output file: {output_file}")
     print(f"{'='*60}\n")
-    
+
     try:
         # Get credentials from settings
         sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'app'))
         from config import settings
         from auth import get_valid_access_token, _load_users
-        
+
         # Load user from storage
         users = _load_users()
         if not users:
             print("❌ No authenticated users found. Please run the main app first to authenticate.")
             sys.exit(1)
-        
+
         # Get the first user (assumes single user)
         first_guid = list(users.keys())[0]
         user = users[first_guid]
-        
+
         # Get valid access token (will refresh if needed)
         access_token = get_valid_access_token(user)
-        
+
         # Reload user after potential refresh
         users = _load_users()
         user = users[first_guid]
-        
-        # Create a temporary OAuth2 JSON file for yahoo_fantasy_api
-        oauth_json = {
-            "consumer_key": settings.yahoo_client_id,
-            "consumer_secret": settings.yahoo_client_secret,
-            "access_token": user.access_token,
-            "refresh_token": user.refresh_token,
-            "token_time": user.token_expires_at.timestamp() if user.token_expires_at else 0,
-            "token_type": "Bearer",
-            "guid": user.yahoo_guid
-        }
-        
-        # Write temp file
-        temp_oauth_file = Path(__file__).parent / "data" / "temp_oauth.json"
-        with open(temp_oauth_file, 'w') as f:
-            json.dump(oauth_json, f)
-        
-        # Create OAuth2 session
-        sc = OAuth2(None, None, from_file=str(temp_oauth_file))
-        
-        # Parse league key - yahoo_fantasy_api expects full league_key (e.g., "465.l.34948")
-        lg = yahoo_league.League(sc, league_key)
-        
-        # Get standings
-        standings = lg.standings()
-        
-        # Get teams to get manager names
-        print("  Fetching team manager information...")
-        teams_dict = lg.teams()  # Returns dict of {team_key: team_data}
-        
+
+        # Use direct API for better control over stat fetching
+        headers = {'Authorization': f'Bearer {access_token}'}
+
+        # Fetch league settings to get stat categories
+        print("  Fetching league settings...")
+        league_url = f"https://fantasysports.yahooapis.com/fantasy/v2/league/{league_key}/settings"
+        league_response = requests.get(league_url, headers=headers)
+
+        # Define namespace for XML parsing
+        ns = {'fantasy': 'http://fantasysports.yahooapis.com/fantasy/v2/base.rng'}
+
+        # Parse league settings to get stat categories
+        league_root = ET.fromstring(league_response.content)
+        stat_categories = {}
+
+        # Try both paths - stat_categories and stat_modifiers
+        stat_modifiers = league_root.find('.//fantasy:stat_categories', ns)
+        if not stat_modifiers or len(list(stat_modifiers)) == 0:
+            stat_modifiers = league_root.find('.//fantasy:stat_modifiers', ns)
+
+        if stat_modifiers is not None:
+            for stat in stat_modifiers.findall('fantasy:stats/fantasy:stat', ns):
+                stat_id = stat.find('fantasy:stat_id', ns)
+                display_name = stat.find('fantasy:display_name', ns)
+                enabled = stat.find('fantasy:enabled', ns)
+                if stat_id is not None and display_name is not None and enabled is not None:
+                    if enabled.text == '1':
+                        stat_categories[stat_id.text] = decode_if_bytes(display_name.text)
+
+            # If that didn't work, try direct stat children
+            if len(stat_categories) == 0:
+                for stat in stat_modifiers.findall('fantasy:stat', ns):
+                    stat_id = stat.find('fantasy:stat_id', ns)
+                    display_name = stat.find('fantasy:display_name', ns)
+                    enabled = stat.find('fantasy:enabled', ns)
+                    if stat_id is not None and display_name is not None and enabled is not None:
+                        if enabled.text == '1':
+                            stat_categories[stat_id.text] = decode_if_bytes(display_name.text)
+
+        print(f"  Found {len(stat_categories)} active stat categories")
+
+        # Fetch standings with team stats
+        print("  Fetching standings with category stats...")
+        standings_url = f"https://fantasysports.yahooapis.com/fantasy/v2/league/{league_key}/standings"
+        standings_response = requests.get(standings_url, headers=headers)
+        standings_root = ET.fromstring(standings_response.content)
+
+        # Parse teams and their stats
+        teams_data = []
+        teams_elem = standings_root.find('.//fantasy:teams', ns)
+        if teams_elem:
+            for team_elem in teams_elem.findall('fantasy:team', ns):
+                team_data = {}
+
+                # Extract team key
+                team_key_elem = team_elem.find('fantasy:team_key', ns)
+                if team_key_elem is not None:
+                    team_data['team_key'] = team_key_elem.text
+
+                # Extract team name
+                name_elem = team_elem.find('fantasy:name', ns)
+                if name_elem is not None:
+                    team_data['name'] = decode_if_bytes(name_elem.text)
+
+                # Extract manager name
+                managers_elem = team_elem.find('fantasy:managers', ns)
+                if managers_elem is not None:
+                    manager = managers_elem.find('fantasy:manager', ns)
+                    if manager is not None:
+                        nickname = manager.find('fantasy:nickname', ns)
+                        if nickname is not None:
+                            team_data['manager'] = decode_if_bytes(nickname.text)
+
+                # Extract team standings
+                team_standings_elem = team_elem.find('.//fantasy:team_standings', ns)
+                if team_standings_elem:
+                    rank_elem = team_standings_elem.find('fantasy:rank', ns)
+                    if rank_elem is not None:
+                        team_data['rank'] = rank_elem.text
+
+                    playoff_seed_elem = team_standings_elem.find('fantasy:playoff_seed', ns)
+                    if playoff_seed_elem is not None:
+                        team_data['playoff_seed'] = playoff_seed_elem.text
+
+                    outcome_totals = team_standings_elem.find('fantasy:outcome_totals', ns)
+                    if outcome_totals is not None:
+                        wins = outcome_totals.find('fantasy:wins', ns)
+                        losses = outcome_totals.find('fantasy:losses', ns)
+                        ties = outcome_totals.find('fantasy:ties', ns)
+                        percentage = outcome_totals.find('fantasy:percentage', ns)
+
+                        if wins is not None:
+                            team_data['wins'] = wins.text
+                        if losses is not None:
+                            team_data['losses'] = losses.text
+                        if ties is not None:
+                            team_data['ties'] = ties.text
+                        if percentage is not None:
+                            team_data['win_pct'] = percentage.text
+
+                    points_for = team_standings_elem.find('fantasy:points_for', ns)
+                    points_against = team_standings_elem.find('fantasy:points_against', ns)
+                    if points_for is not None:
+                        team_data['points_for'] = points_for.text
+                    if points_against is not None:
+                        team_data['points_against'] = points_against.text
+
+                # Extract team stats (category breakdown)
+                team_stats_elem = team_elem.find('.//fantasy:team_stats', ns)
+                if team_stats_elem:
+                    stats_elem = team_stats_elem.find('fantasy:stats', ns)
+                    if stats_elem:
+                        for stat in stats_elem.findall('fantasy:stat', ns):
+                            stat_id = stat.find('fantasy:stat_id', ns)
+                            value = stat.find('fantasy:value', ns)
+                            if stat_id is not None and value is not None:
+                                stat_name = stat_categories.get(stat_id.text, f"Stat_{stat_id.text}")
+                                team_data[f"{stat_name}"] = value.text
+
+                teams_data.append(team_data)
+
+        # Calculate rankings for each stat category
+        print("  Calculating category rankings...")
+
+        # Stats where lower is better
+        lower_is_better = ['GAA', 'Goals Against Average']
+
+        for stat_name in stat_categories.values():
+            # Determine sort direction based on stat type
+            reverse_sort = stat_name not in lower_is_better
+
+            # Get teams with this stat, handling empty/missing values
+            teams_with_stat = []
+            for t in teams_data:
+                value = t.get(stat_name, 0)
+                try:
+                    numeric_value = float(value or 0)
+                except (ValueError, TypeError):
+                    numeric_value = 0
+                teams_with_stat.append((t, numeric_value))
+
+            # Sort teams (descending for most stats, ascending for GAA)
+            teams_with_stat.sort(key=lambda x: x[1], reverse=reverse_sort)
+
+            # Assign ranks
+            for rank, (team, value) in enumerate(teams_with_stat, 1):
+                team[f"{stat_name}_Rank"] = rank
+
+        # Build CSV headers dynamically
+        csv_headers = [
+            'Rank', 'Team Name', 'Manager', 'Wins', 'Losses', 'Ties',
+            'Win %', 'Points For', 'Points Against', 'Playoff Seed'
+        ]
+
+        # Add stat categories and their ranks
+        for stat_name in sorted(stat_categories.values()):
+            csv_headers.append(stat_name)
+            csv_headers.append(f"{stat_name}_Rank")
+
         # Write to CSV
         with open(output_file, 'w', newline='', encoding='utf-8-sig') as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=[
-                'Rank', 'Team Name', 'Manager', 'Wins', 'Losses', 'Ties', 
-                'Win %', 'Points For', 'Points Against', 'Playoff Seed'
-            ])
+            writer = csv.DictWriter(csvfile, fieldnames=csv_headers)
             writer.writeheader()
-            
-            # standings is a list of team dicts
-            for team in standings:
-                outcome = team.get('outcome_totals', {})
-                team_key = team.get('team_key', '')
-                
-                # Get manager name from teams_dict
-                manager_name = ''
-                if team_key in teams_dict:
-                    team_info = teams_dict[team_key]
-                    # Manager info might be in 'manager' or 'managers' field
-                    if 'manager' in team_info:
-                        manager_info = team_info['manager']
-                        if isinstance(manager_info, dict):
-                            manager_name = manager_info.get('nickname', '')
-                        else:
-                            manager_name = str(manager_info)
-                    elif 'managers' in team_info:
-                        managers = team_info['managers']
-                        if isinstance(managers, list) and len(managers) > 0:
-                            first_manager = managers[0]
-                            if isinstance(first_manager, dict):
-                                manager_name = first_manager.get('nickname', first_manager.get('manager', {}).get('nickname', ''))
-                
-                writer.writerow({
+
+            for team in teams_data:
+                row = {
                     'Rank': team.get('rank', ''),
                     'Team Name': team.get('name', ''),
-                    'Manager': manager_name,
-                    'Wins': outcome.get('wins', ''),
-                    'Losses': outcome.get('losses', ''),
-                    'Ties': outcome.get('ties', ''),
-                    'Win %': outcome.get('percentage', ''),
+                    'Manager': team.get('manager', ''),
+                    'Wins': team.get('wins', ''),
+                    'Losses': team.get('losses', ''),
+                    'Ties': team.get('ties', ''),
+                    'Win %': team.get('win_pct', ''),
                     'Points For': team.get('points_for', ''),
                     'Points Against': team.get('points_against', ''),
                     'Playoff Seed': team.get('playoff_seed', '')
-                })
-        
-        print(f"✅ Successfully exported standings to {output_file}\n")
-        
-        # Clean up temp OAuth file
-        try:
-            temp_oauth_file.unlink()
-        except:
-            pass
-        
+                }
+
+                # Add stat values and ranks
+                for stat_name in sorted(stat_categories.values()):
+                    row[stat_name] = team.get(stat_name, '')
+                    row[f"{stat_name}_Rank"] = team.get(f"{stat_name}_Rank", '')
+
+                writer.writerow(row)
+
+        print(f"✅ Successfully exported standings with category stats to {output_file}\n")
+
     except Exception as e:
         print(f"❌ Error exporting standings: {e}")
         traceback.print_exc()
-        
-        # Clean up temp OAuth file even on error
-        try:
-            temp_oauth_file = Path(__file__).parent / "data" / "temp_oauth.json"
-            if temp_oauth_file.exists():
-                temp_oauth_file.unlink()
-        except:
-            pass
 
 
 def export_players_to_csv(league_key, output_file=None):
@@ -463,7 +561,7 @@ def export_players_to_csv(league_key, output_file=None):
                 f"https://fantasysports.yahooapis.com/fantasy/v2/"
                 f"leagues;league_keys={league_key}/players;start={start};count=25;sort=PTS;sort_type=season;"
                 f"out=ownership,info,starting_status,percent_started,percent_owned,draft_analysis/"
-                f"stats;type=season;season={season};extra_stat_ids=18,23,26,27,29,30,34"
+                f"stats;type=season;season={season};extra_stat_ids=18,19,22,23,25,26,27,29,30,31,32,34"
             )
             
             print(f"  Batch {batch_num + 1}/40: Fetching players {start}-{start+24}...")
@@ -596,11 +694,14 @@ def export_players_to_csv(league_key, output_file=None):
     # Process players and write to CSV
     print(f"\nWriting to CSV: {output_file}")
     print(f"  Note: Free agents won't have Draft Round/Pick data (not drafted in your league)")
+    print(f"        Games Played = GP for skaters, GS (Games Started) for goalies")
     print(f"        Points = Goals + Assists (calculated)")
     print(f"        Save % = Saves / (Saves + GA) (calculated)")
+    print(f"        Fan Pts/GP = Fantasy Points / GP (or GS for goalies) (calculated)")
     
     csv_headers = [
         'Player Name',
+        'Player ID',  # Yahoo Player Key
         'Position',
         'NHL Team',
         'Fantasy Points',
@@ -614,7 +715,7 @@ def export_players_to_csv(league_key, output_file=None):
         'ADP',  # Average Draft Position
         'Pct Drafted',  # Percent Drafted
         # Skater stats
-        'Games Played',
+        'Games Played',  # GP for skaters, GS (Games Started) for goalies
         'Goals',
         'Assists',
         'Points',
@@ -629,7 +730,9 @@ def export_players_to_csv(league_key, output_file=None):
         'GA',
         'Shutouts',
         # Ownership
-        'Pct Owned'
+        'Pct Owned',
+        # Performance
+        'Fan Pts/GP'  # Fantasy Points per Game (or per GS for goalies)
     ]
     
     players_with_stats = 0
@@ -640,6 +743,9 @@ def export_players_to_csv(league_key, output_file=None):
         writer.writeheader()
         
         for idx, player in enumerate(all_players, 1):
+            # Extract player key (Yahoo Player ID)
+            player_key = getattr(player, 'player_key', '')
+
             # Extract player name
             player_name = "Unknown"
             if hasattr(player, 'name'):
@@ -648,12 +754,15 @@ def export_players_to_csv(league_key, output_file=None):
                     player_name = decode_if_bytes(name.get('full', 'Unknown'))
                 else:
                     player_name = decode_if_bytes(getattr(name, 'full', 'Unknown'))
-            
+
             # Extract position
             position = decode_if_bytes(getattr(player, 'display_position',
                        getattr(player, 'primary_position',
                        getattr(player, 'position_type', '-'))))
-            
+
+            # Check if player is a goalie
+            is_goalie = 'G' in str(position).upper()
+
             # Extract NHL team
             nhl_team = decode_if_bytes(getattr(player, 'editorial_team_abbr', '-'))
             
@@ -704,7 +813,7 @@ def export_players_to_csv(league_key, output_file=None):
             # Skater stats
             goals = assists = points = pim = sog = hits = blocks = None
             # Goalie stats
-            wins = saves = save_pct = ga = shutouts = games_played = None
+            wins = saves = save_pct = ga = shutouts = games_played = games_started = None
             
             # Try to get stats from player_stats (season stats)
             if hasattr(player, 'player_stats') and player.player_stats:
@@ -717,10 +826,10 @@ def export_players_to_csv(league_key, output_file=None):
                             stat = stat_obj.stat
                         else:
                             stat = stat_obj
-                        
+
                         stat_id = str(getattr(stat, 'stat_id', ''))
                         value = getattr(stat, 'value', None)
-                        
+
                         # Try to convert value to number
                         try:
                             value = float(value) if value and value != '-' else None
@@ -743,9 +852,11 @@ def export_players_to_csv(league_key, output_file=None):
                             hits = value
                         elif stat_id in ['32', 'BLK']:  # Blocks
                             blocks = value
-                        elif stat_id in ['29', 'GP']:  # Games Played
+                        elif stat_id in ['29', 'GP']:  # Games Played (skaters)
                             games_played = value
                         # Goalie stats
+                        elif stat_id in ['18', '30', 'GS']:  # Games Started (goalies) - stat_id 18 or 30
+                            games_started = value
                         elif stat_id in ['19', 'W']:  # Wins
                             wins = value
                         elif stat_id in ['25', 'SV']:  # Saves
@@ -769,7 +880,15 @@ def export_players_to_csv(league_key, output_file=None):
             if saves is not None and ga is not None and (saves + ga) > 0:
                 save_pct = saves / (saves + ga)
             # If we don't have both stats, save_pct stays None
-            
+
+            # For GP column: use Games Started for goalies, Games Played for skaters
+            gp_value = games_started if is_goalie and games_started is not None else games_played
+
+            # Calculate Fantasy Points per Game (or per GS for goalies)
+            fan_pts_per_gp = None
+            if fantasy_points is not None and gp_value is not None and gp_value > 0:
+                fan_pts_per_gp = fantasy_points / gp_value
+
             # Extract CURRENT ownership (from XML - reflects trades/waivers)
             current_team = '-'
             current_owner = '-'
@@ -788,7 +907,7 @@ def export_players_to_csv(league_key, output_file=None):
                         current_owner = teams_dict[owner_team_key]['manager']
             
             # Get DRAFTED team info from YOUR league (original draft)
-            draft_info = draft_dict.get(getattr(player, 'player_key', None), {})
+            draft_info = draft_dict.get(player_key, {})
             draft_round = draft_info.get('round', '-')
             draft_pick = draft_info.get('pick', '-')
             drafted_team = '-'
@@ -807,6 +926,7 @@ def export_players_to_csv(league_key, output_file=None):
             # Write row (use empty string instead of '-' for missing values)
             writer.writerow({
                 'Player Name': player_name,
+                'Player ID': player_key,
                 'Position': position,
                 'NHL Team': nhl_team,
                 'Fantasy Points': fantasy_points if fantasy_points is not None else '',
@@ -819,8 +939,8 @@ def export_players_to_csv(league_key, output_file=None):
                 # Draft Analysis (Yahoo aggregate across all leagues)
                 'ADP': adp if adp is not None else '',
                 'Pct Drafted': pct_drafted if pct_drafted is not None else '',
-                # Skater stats
-                'Games Played': games_played if games_played is not None else '',
+                # Skater stats (GP shows GS for goalies)
+                'Games Played': gp_value if gp_value is not None else '',
                 'Goals': goals if goals is not None else '',
                 'Assists': assists if assists is not None else '',
                 'Points': points if points is not None else '',
@@ -835,7 +955,9 @@ def export_players_to_csv(league_key, output_file=None):
                 'GA': ga if ga is not None else '',
                 'Shutouts': shutouts if shutouts is not None else '',
                 # Ownership
-                'Pct Owned': pct_owned if pct_owned is not None else ''
+                'Pct Owned': pct_owned if pct_owned is not None else '',
+                # Performance
+                'Fan Pts/GP': f"{fan_pts_per_gp:.2f}" if fan_pts_per_gp is not None else ''
             })
     
     print(f"\n✅ Successfully exported {len(all_players)} players to {output_file}")
