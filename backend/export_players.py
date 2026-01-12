@@ -358,43 +358,15 @@ def export_standings_to_csv(league_key, output_file):
 
                 teams_data.append(team_data)
 
-        # Calculate rankings for each stat category
-        print("  Calculating category rankings...")
-
-        # Stats where lower is better
-        lower_is_better = ['GAA', 'Goals Against Average']
-
-        for stat_name in stat_categories.values():
-            # Determine sort direction based on stat type
-            reverse_sort = stat_name not in lower_is_better
-
-            # Get teams with this stat, handling empty/missing values
-            teams_with_stat = []
-            for t in teams_data:
-                value = t.get(stat_name, 0)
-                try:
-                    numeric_value = float(value or 0)
-                except (ValueError, TypeError):
-                    numeric_value = 0
-                teams_with_stat.append((t, numeric_value))
-
-            # Sort teams (descending for most stats, ascending for GAA)
-            teams_with_stat.sort(key=lambda x: x[1], reverse=reverse_sort)
-
-            # Assign ranks
-            for rank, (team, value) in enumerate(teams_with_stat, 1):
-                team[f"{stat_name}_Rank"] = rank
-
         # Build CSV headers dynamically
         csv_headers = [
             'Rank', 'Team Name', 'Manager', 'Wins', 'Losses', 'Ties',
             'Win %', 'Points For', 'Points Against', 'Playoff Seed'
         ]
 
-        # Add stat categories and their ranks
+        # Add stat categories
         for stat_name in sorted(stat_categories.values()):
             csv_headers.append(stat_name)
-            csv_headers.append(f"{stat_name}_Rank")
 
         # Write to CSV
         with open(output_file, 'w', newline='', encoding='utf-8-sig') as csvfile:
@@ -415,10 +387,9 @@ def export_standings_to_csv(league_key, output_file):
                     'Playoff Seed': team.get('playoff_seed', '')
                 }
 
-                # Add stat values and ranks
+                # Add stat values
                 for stat_name in sorted(stat_categories.values()):
                     row[stat_name] = team.get(stat_name, '')
-                    row[f"{stat_name}_Rank"] = team.get(f"{stat_name}_Rank", '')
 
                 writer.writerow(row)
 

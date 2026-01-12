@@ -37,7 +37,7 @@ python export_players.py 465.l.34948 --output my_league_2025.csv
 
 This generates two CSV files:
 - `<league_key>_analysis.csv` - Comprehensive player data (500+ players)
-- `<league_key>_standings.csv` - League standings with head-to-head category stats and rankings
+- `<league_key>_standings.csv` - League standings with head-to-head category stats
 
 ### Backend Web Server (Optional)
 
@@ -91,7 +91,7 @@ Register your app at [Yahoo Developer Network](https://developer.yahoo.com/apps/
    - Player stats (Goals, Assists, Points, PIM, SOG, Hits, Blocks, Wins, Saves, etc.)
    - Ownership data (current team vs drafted team - tracks trades)
    - Yahoo's aggregate draft data (ADP, % drafted across all leagues)
-   - League standings with category breakdowns and rankings
+   - League standings with category breakdowns
 3. **Exports to CSV** with all enriched data ready for Google Sheets analysis
 4. **Also exports standings** with head-to-head category stats to a separate CSV file
 
@@ -103,8 +103,7 @@ Register your app at [Yahoo Developer Network](https://developer.yahoo.com/apps/
 - Calculates derived stats (Points = G+A, Save % = SV/(SV+GA))
 - Position-aware stat selection (GS for goalies, GP for skaters)
 - Includes Yahoo Player ID for easy lookups and VLOOKUP operations
-- Dynamically detects league stat categories and calculates rankings
-- Handles "lower is better" stats (GAA) with reverse ranking
+- Dynamically detects league stat categories from league settings
 - Season detection via game ID mapping (e.g., "465" → 2025 NHL season)
 
 **Player Analysis CSV Columns:**
@@ -113,11 +112,11 @@ Player Name, Player ID (Yahoo Player Key), Position, NHL Team, Fantasy Points, C
 **Standings CSV Columns:**
 Rank, Team Name, Manager, Wins, Losses, Ties, Win %, Points For, Points Against, Playoff Seed, [Dynamic Stat Categories]
 
-For each stat category enabled in your league (e.g., Goals, Assists, Points, PIM, SOG, Hits, Blocks, Wins, Saves, Save %, GAA, Shutouts), the CSV includes:
-- The stat value for each team
-- The rank (1st, 2nd, 3rd, etc.) for that category
+For each stat category enabled in your league (e.g., Goals, Assists, Points, PIM, SOG, Hits, Blocks, Wins, Saves, Save %, GAA, Shutouts), the CSV includes the raw stat value for each team.
 
-Example additional columns: `Goals`, `Goals_Rank`, `Assists`, `Assists_Rank`, `Points`, `Points_Rank`, etc.
+Example additional columns: `A`, `BLK`, `G`, `GA`, `HIT`, `PIM`, `SHO`, `SOG`, `SV`, `W`
+
+Rankings can be calculated in Google Sheets by sorting or using RANK functions.
 
 See `backend/EXPORT_PLAYERS.md` for detailed documentation.
 
