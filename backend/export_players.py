@@ -359,7 +359,7 @@ def export_standings_to_csv(league_key, output_file):
                 teams_data.append(team_data)
 
         # Build CSV headers organized by position
-        # Categorize stats as skater or goalie stats
+        # Order: Skater stats first, then Goalie stats
         skater_stats = ['G', 'A', 'PIM', 'SOG', 'HIT', 'BLK']
         goalie_stats = ['W', 'GA', 'SV', 'SHO']
 
@@ -368,13 +368,11 @@ def export_standings_to_csv(league_key, output_file):
             'Win %', 'Points For', 'Points Against', 'Playoff Seed'
         ]
 
-        # Add Skater stat columns
-        for stat in skater_stats:
-            csv_headers.append(f"Skater_{stat}")
+        # Add skater stats (no prefix)
+        csv_headers.extend(skater_stats)
 
-        # Add Goalie stat columns
-        for stat in goalie_stats:
-            csv_headers.append(f"Goalie_{stat}")
+        # Add goalie stats (no prefix)
+        csv_headers.extend(goalie_stats)
 
         # Write to CSV
         with open(output_file, 'w', newline='', encoding='utf-8-sig') as csvfile:
@@ -395,13 +393,9 @@ def export_standings_to_csv(league_key, output_file):
                     'Playoff Seed': team.get('playoff_seed', '')
                 }
 
-                # Add Skater stats
-                for stat in skater_stats:
-                    row[f"Skater_{stat}"] = team.get(stat, '')
-
-                # Add Goalie stats
-                for stat in goalie_stats:
-                    row[f"Goalie_{stat}"] = team.get(stat, '')
+                # Add skater and goalie stats (no prefix)
+                for stat in skater_stats + goalie_stats:
+                    row[stat] = team.get(stat, '')
 
                 writer.writerow(row)
 

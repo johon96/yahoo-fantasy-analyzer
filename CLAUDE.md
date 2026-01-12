@@ -110,13 +110,13 @@ Register your app at [Yahoo Developer Network](https://developer.yahoo.com/apps/
 Player Name, Player ID (Yahoo Player Key), Position, NHL Team, Fantasy Points, Current Team, Current Owner, Drafted Team, Drafted By, Draft Round, Draft Pick, ADP, Pct Drafted, Games Played (GP for skaters / GS for goalies), Goals, Assists, Points, PIM, SOG, Hits, Blocks, Wins, Saves, Save %, GA, Shutouts, Pct Owned
 
 **Standings CSV Columns:**
-Rank, Team Name, Manager, Wins, Losses, Ties, Win %, Points For, Points Against, Playoff Seed, **Skater Stats**, **Goalie Stats**
+Rank, Team Name, Manager, Wins, Losses, Ties, Win %, Points For, Points Against, Playoff Seed, G, A, PIM, SOG, HIT, BLK, W, GA, SV, SHO
 
-Stat categories are organized by position:
-- **Skater Stats:** Skater_G, Skater_A, Skater_PIM, Skater_SOG, Skater_HIT, Skater_BLK
-- **Goalie Stats:** Goalie_W, Goalie_GA, Goalie_SV, Goalie_SHO
+Stats are ordered by position (skaters first, then goalies):
+- **Skater Stats (columns 11-16):** G, A, PIM, SOG, HIT, BLK
+- **Goalie Stats (columns 17-20):** W, GA, SV, SHO
 
-This organization makes it easy to compare teams within each position group in Google Sheets.
+You can add merged header rows in Google Sheets to group them visually.
 
 See `backend/EXPORT_PLAYERS.md` for detailed documentation.
 
