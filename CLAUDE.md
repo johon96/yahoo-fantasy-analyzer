@@ -107,7 +107,7 @@ Register your app at [Yahoo Developer Network](https://developer.yahoo.com/apps/
 - Season detection via game ID mapping (e.g., "465" → 2025 NHL season)
 
 **Player Analysis CSV Columns:**
-Player Name, Player ID (Yahoo Player Key), Position, NHL Team, Fantasy Points, Current Team, Current Owner, Drafted Team, Drafted By, Draft Round, Draft Pick, ADP, Pct Drafted, Games Played (GP for skaters / GS for goalies), Goals, Assists, Points, PIM, SOG, Hits, Blocks, Wins, Saves, Save %, GA, Shutouts, Pct Owned
+Player Name, Position, NHL Team, Fantasy Points, Current Team, Current Owner, Drafted Team, Drafted By, Draft Round, Draft Pick, ADP, Pct Drafted, Games Played (GP for skaters / GS for goalies), Goals, Assists, Points, PIM, SOG, Hits, Blocks, Wins, Saves, Save %, GA, Shutouts, Pct Owned, Fan Pts/GP, Player ID (Yahoo Player Key)
 
 **Standings CSV Columns:**
 Rank, Team Name, Manager, Wins, Losses, Ties, Win %, Points For, Points Against, Playoff Seed, G, A, PIM, SOG, HIT, BLK, W, GA, SV, SHO

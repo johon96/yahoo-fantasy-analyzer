@@ -692,7 +692,6 @@ def export_players_to_csv(league_key, output_file=None):
     
     csv_headers = [
         'Player Name',
-        'Player ID',  # Yahoo Player Key
         'Position',
         'NHL Team',
         'Fantasy Points',
@@ -723,7 +722,8 @@ def export_players_to_csv(league_key, output_file=None):
         # Ownership
         'Pct Owned',
         # Performance
-        'Fan Pts/GP'  # Fantasy Points per Game (or per GS for goalies)
+        'Fan Pts/GP',  # Fantasy Points per Game (or per GS for goalies)
+        'Player ID'  # Yahoo Player Key - last column for VLOOKUP reference
     ]
     
     players_with_stats = 0
