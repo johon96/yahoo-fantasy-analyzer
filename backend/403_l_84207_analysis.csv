@@ -1,4 +1,4 @@
-﻿Player Name,Position,NHL Team,Fantasy Points,Current Team,Current Owner,Drafted Team,Drafted By,Draft Round,Draft Pick,ADP,Pct Drafted,Goals,Assists,Points,PIM,SOG,Hits,Blocks,Games Played,Wins,Saves,Save %,GA,Shutouts,Pct Owned
+﻿Player Name,Position,NHL Team,Fantasy Points,Current Team,Current Owner,Drafted Team,Drafted By,Draft Round,Draft Pick,ADP,Pct Drafted,Games Played,Goals,Assists,Points,PIM,SOG,Hits,Blocks,Wins,Saves,Save %,GA,Shutouts,Pct Owned
 Connor McDavid,C,EDM,367.5,Mitchell's Team,Mitchell,Mitchell's Team,Mitchell,1,1,1.4,1.0,,,,,,,,,,,,,,100.0
 Auston Matthews,C,TOR,313.9,DubJ,John,DubJ,John,1,6,6.5,1.0,,,,,,,,,,,,,,100.0
 Leon Draisaitl,"C,LW",EDM,301.3,Double Ogre Time,Jesse,Double Ogre Time,Jesse,1,4,3.3,1.0,,,,,,,,,,,,,,100.0
@@ -85,7 +85,7 @@ Dominik Kubalik,"LW,RW",OTT,183.5,,,Cam's Mustard Tigers,Cameron,13,99,133.0,1.0
 Tomas Hertl,"C,LW",VGK,182.5,DubJ,John,Miller Time,Ross,22,170,144.8,0.99,,,,,,,,,,,,,,74.0
 Nino Niederreiter,"LW,RW",WPG,182.4,Double Ogre Time,Jesse,,,,,,,,,,,,,,,,,,,,61.0
 Mathew Barzal,C,NYI,182.1,conor's Team,conor,conor's Team,conor,9,66,88.9,1.0,,,,,,,,,,,,,,85.0
-Tristan Jarry,G,PIT,181.0,,,Cam's Mustard Tigers,Cameron,17,131,62.0,1.0,,,,,,,,,,,,,,83.0
+Tristan Jarry,G,EDM,181.0,,,Cam's Mustard Tigers,Cameron,17,131,62.0,1.0,,,,,,,,,,,,,,83.0
 Blake Wheeler,"C,RW",NYR,180.9,Miller Time,Ross,DubJ,John,5,38,35.7,1.0,,,,,,,,,,,,,,90.0
 Jason Robertson,LW,DAL,180.7,Left Wing Lads,Ryan,,,,,,,,,,,,,,,,,,,,63.0
 Chris Kreider,LW,ANA,180.3,Cam's Mustard Tigers,Cameron,conor's Team,conor,16,127,122.9,0.99,,,,,,,,,,,,,,64.0
@@ -221,7 +221,7 @@ Nick Paul,"C,LW",TB,137.1,,,,,,,,,,,,,,,,,,,,,,3.0
 Mason Appleton,"C,RW",DET,136.9,,,,,,,,,,,,,,,,,,,,,,3.0
 Erik Cernak,D,TB,136.6,Mitchell's Team,Mitchell,Cam's Mustard Tigers,Cameron,22,174,164.3,0.52,,,,,,,,,,,,,,28.0
 Yegor Sharangovich,"C,LW,RW",CGY,136.6,conor's Team,conor,,,,,,,,,,,,,,,,,,,,15.0
-Quinn Hughes,D,VAN,136.6,,,Mitchell's Team,Mitchell,14,112,72.4,1.0,,,,,,,,,,,,,,90.0
+Quinn Hughes,D,MIN,136.6,,,Mitchell's Team,Mitchell,14,112,72.4,1.0,,,,,,,,,,,,,,90.0
 Brett Pesce,D,NJ,136.2,,,,,,,,,,,,,,,,,,,,,,21.0
 Joonas Donskoi,"LW,RW",SEA,136.0,,,,,,,,,,,,,,,,,,,,,,19.0
 Tomas Tatar,"LW,RW",NJ,136.0,,,Miller Time,Ross,13,103,148.9,0.93,,,,,,,,,,,,,,47.0
@@ -253,7 +253,7 @@ Jesper Bratt,"LW,RW",NJ,130.0,,,,,,,,,,,,,,,,,,,,,,11.0
 Adam Pelech,D,NYI,129.9,,,,,,,,,,,,,,,,,,,,,,2.0
 Nic Dowd,"C,RW",WSH,129.8,,,,,,,,,,,,,,,,,,,,,,5.0
 Cal Petersen,G,MIN,129.6,,,,,,,167.7,0.02,,,,,,,,,,,,,,23.0
-Phillip Danault,C,LA,129.3,,,,,,,173.9,0.07,,,,,,,,,,,,,,17.0
+Phillip Danault,C,MTL,129.3,,,,,,,173.9,0.07,,,,,,,,,,,,,,17.0
 Ryan Lindgren,D,SEA,129.2,,,,,,,,,,,,,,,,,,,,,,7.0
 Rasmus Dahlin,D,BUF,129.0,conor's Team,conor,DubJ,John,11,86,97.0,1.0,,,,,,,,,,,,,,62.0
 Sean Monahan,C,CBJ,129.0,,,Cam's Mustard Tigers,Cameron,15,115,138.8,0.99,,,,,,,,,,,,,,50.0
@@ -286,7 +286,7 @@ Duncan Keith,D,EDM,121.1,,,,,,,168.5,0.17,,,,,,,,,,,,,,18.0
 Alexander Romanov,D,NYI,121.1,,,,,,,165.1,0.08,,,,,,,,,,,,,,9.0
 Ryan Suter,D,STL,121.1,,,Goonsquad,Johnathan,18,140,142.9,0.99,,,,,,,,,,,,,,32.0
 Oliver Wahlstrom,RW,SJ,121.0,,,,,,,,,,,,,,,,,,,,,,3.0
-Kevin Rooney,"C,LW",UTA,120.8,,,,,,,,,,,,,,,,,,,,,,1.0
+Kevin Rooney,"C,LW",NJ,120.8,,,,,,,,,,,,,,,,,,,,,,1.0
 Justin Schultz,D,SEA,120.6,,,,,,,164.4,0.02,,,,,,,,,,,,,,23.0
 Kailer Yamamoto,RW,UTA,119.9,Goonsquad,Johnathan,Goonsquad,Johnathan,12,92,98.6,1.0,,,,,,,,,,,,,,39.0
 Brady Skjei,D,NSH,119.8,,,,,,,,,,,,,,,,,,,,,,3.0
@@ -397,7 +397,7 @@ Jonathan Bernier,G,NJ,100.4,,,,,,,,,,,,,,,,,,,,,,16.0
 Andrew Cogliano,LW,COL,100.4,,,,,,,,,,,,,,,,,,,,,,
 Colin Miller,D,WPG,100.4,,,,,,,,,,,,,,,,,,,,,,1.0
 Brian Elliott,G,TB,100.2,Double Ogre Time,Jesse,,,,,,,,,,,,,,,,,,,,29.0
-Carl Grundstrom,"LW,RW",SJ,100.2,,,,,,,,,,,,,,,,,,,,,,
+Carl Grundstrom,"LW,RW",PHI,100.2,,,,,,,,,,,,,,,,,,,,,,
 Yakov Trenin,LW,MIN,99.8,,,,,,,,,,,,,,,,,,,,,,
 Max Jones,LW,EDM,99.7,,,,,,,,,,,,,,,,,,,,,,
 Tyler Pitlick,"LW,RW",MIN,99.7,,,,,,,,,,,,,,,,,,,,,,1.0
@@ -431,7 +431,7 @@ Austin Watson,"LW,RW",DET,96.5,,,,,,,,,,,,,,,,,,,,,,2.0
 Erik Gudbranson,D,CBJ,96.2,,,,,,,,,,,,,,,,,,,,,,2.0
 Jake Evans,"C,RW",MTL,96.0,,,,,,,,,,,,,,,,,,,,,,
 Noah Hanifin,D,VGK,95.8,,,,,,,,,,,,,,,,,,,,,,3.0
-Samuel Blais,"LW,RW",TOR,95.6,,,,,,,,,,,,,,,,,,,,,,1.0
+Samuel Blais,"LW,RW",MTL,95.6,,,,,,,,,,,,,,,,,,,,,,1.0
 Dylan DeMelo,D,WPG,95.2,,,,,,,,,,,,,,,,,,,,,,1.0
 Trevor Lewis,"C,RW",LA,94.9,,,,,,,,,,,,,,,,,,,,,,
 Pekka Rinne,G,NSH,94.4,,,,,,,164.2,0.14,,,,,,,,,,,,,,16.0
@@ -453,7 +453,7 @@ Pat Maroon,"LW,RW",CHI,91.8,,,,,,,,,,,,,,,,,,,,,,3.0
 Andy Greene,D,NYI,91.5,,,,,,,,,,,,,,,,,,,,,,1.0
 Jake DeBrusk,"LW,RW",VAN,91.5,,,,,,,164.1,0.05,,,,,,,,,,,,,,5.0
 Tyler Motte,"LW,RW",FLA,91.2,DubJ,John,,,,,,,,,,,,,,,,,,,,7.0
-Robby Fabbri,"C,LW,RW",PIT,91.1,,,,,,,,,,,,,,,,,,,,,,4.0
+Robby Fabbri,"C,LW,RW",STL,91.1,,,,,,,,,,,,,,,,,,,,,,4.0
 Nicolas Roy,"C,RW",TOR,90.5,,,,,,,,,,,,,,,,,,,,,,
 Robin Lehner,G,VGK,90.2,Cam's Mustard Tigers,Cameron,Cam's Mustard Tigers,Cameron,8,62,35.5,1.0,,,,,,,,,,,,,,86.0
 Victor Rask,C,SEA,90.1,,,,,,,,,,,,,,,,,,,,,,1.0
@@ -474,7 +474,7 @@ Danton Heinen,"LW,RW",PIT,85.7,,,,,,,,,,,,,,,,,,,,,,
 Ryan Murray,D,EDM,85.5,,,,,,,,,,,,,,,,,,,,,,
 Richard Panik,"LW,RW",NYI,85.5,,,,,,,,,,,,,,,,,,,,,,1.0
 Dante Fabbro,D,CBJ,84.7,,,,,,,,,,,,,,,,,,,,,,1.0
-Alexandre Texier,"C,LW",STL,84.7,,,,,,,,,,,,,,,,,,,,,,2.0
+Alexandre Texier,"C,LW",MTL,84.7,,,,,,,,,,,,,,,,,,,,,,2.0
 Tage Thompson,"LW,RW",BUF,84.6,,,,,,,,,,,,,,,,,,,,,,1.0
 Ryan Reaves,RW,SJ,83.8,,,,,,,164.3,0.08,,,,,,,,,,,,,,6.0
 Adin Hill,G,VGK,83.8,DubJ,John,,,,,,,,,,,,,,,,,,,,12.0
@@ -503,11 +503,11 @@ Sam Gagner,"LW,RW",CAR,77.8,,,,,,,,,,,,,,,,,,,,,,1.0
 Haydn Fleury,D,WPG,77.0,,,,,,,,,,,,,,,,,,,,,,
 Kyle Clifford,LW,TOR,76.9,,,,,,,,,,,,,,,,,,,,,,
 Jordan Oesterle,D,NSH,76.8,,,,,,,,,,,,,,,,,,,,,,1.0
-Mason Marchment,LW,SEA,76.4,,,,,,,,,,,,,,,,,,,,,,
+Mason Marchment,LW,CBJ,76.4,,,,,,,,,,,,,,,,,,,,,,
 Bobby Ryan,"LW,RW",DET,76.4,,,,,,,,,,,,,,,,,,,,,,3.0
 Andrej Sekera,D,DAL,75.8,,,,,,,,,,,,,,,,,,,,,,
 Robert Bortuzzo,D,UTA,75.5,,,,,,,,,,,,,,,,,,,,,,1.0
-Brett Kulak,D,EDM,75.1,,,,,,,,,,,,,,,,,,,,,,
+Brett Kulak,D,PIT,75.1,,,,,,,,,,,,,,,,,,,,,,
 Dominik Kahun,"LW,RW",EDM,75.1,,,,,,,,,,,,,,,,,,,,,,2.0
 Andreas Johnsson,"LW,RW",PIT,74.9,,,,,,,,,,,,,,,,,,,,,,1.0
 Brandon Sutter,"C,RW",VAN,74.9,,,,,,,,,,,,,,,,,,,,,,2.0
@@ -528,8 +528,8 @@ Vladimir Tarasenko,RW,MIN,72.5,Left Wing Lads,Ryan,DubJ,John,23,182,163.1,0.41,,
 Devin Shore,"C,LW",MIN,72.4,,,,,,,,,,,,,,,,,,,,,,
 Alexander Volkov,RW,TB,72.3,,,,,,,,,,,,,,,,,,,,,,
 Ryan Dzingel,"LW,RW",SJ,72.3,,,,,,,,,,,,,,,,,,,,,,1.0
-David Kampf,"C,RW",TOR,72.3,,,,,,,,,,,,,,,,,,,,,,1.0
-Troy Stecher,D,EDM,72.1,,,,,,,,,,,,,,,,,,,,,,1.0
+David Kampf,"C,RW",VAN,72.3,,,,,,,,,,,,,,,,,,,,,,1.0
+Troy Stecher,D,TOR,72.1,,,,,,,,,,,,,,,,,,,,,,1.0
 Evan Rodrigues,"C,RW",FLA,71.9,,,,,,,,,,,,,,,,,,,,,,
 Rocco Grimaldi,"LW,RW",CAR,71.9,,,,,,,,,,,,,,,,,,,,,,
 Jack Eichel,C,VGK,71.9,,,Miller Time,Ross,1,7,7.6,1.0,,,,,,,,,,,,,,62.0
@@ -553,7 +553,7 @@ Sami Vatanen,D,NJ,67.9,,,,,,,,,,,,,,,,,,,,,,1.0
 Ryan Lomberg,LW,CGY,67.8,,,,,,,,,,,,,,,,,,,,,,
 Braden Holtby,G,DAL,67.6,,,Mitchell's Team,Mitchell,24,192,106.8,1.0,,,,,,,,,,,,,,44.0
 Drake Caggiula,"LW,RW",EDM,67.6,,,,,,,,,,,,,,,,,,,,,,
-Carter Hart,G,PHI,67.4,,,Goonsquad,Johnathan,7,53,31.0,1.0,,,,,,,,,,,,,,51.0
+Carter Hart,G,VGK,67.4,,,Goonsquad,Johnathan,7,53,31.0,1.0,,,,,,,,,,,,,,51.0
 Sam Steel,C,DAL,67.3,,,,,,,,,,,,,,,,,,,,,,1.0
 Jan Rutta,D,SJ,67.2,,,,,,,,,,,,,,,,,,,,,,
 Jacob Larsson,D,OTT,66.7,,,,,,,,,,,,,,,,,,,,,,
@@ -670,7 +670,7 @@ Dylan Coghlan,D,VGK,43.9,,,,,,,,,,,,,,,,,,,,,,
 Dustin Tokarski,G,CAR,43.8,,,,,,,,,,,,,,,,,,,,,,5.0
 Wade Allison,RW,PHI,43.3,,,,,,,,,,,,,,,,,,,,,,
 Alex Formenton,LW,OTT,43.2,,,,,,,,,,,,,,,,,,,,,,
-Frederick Gaudreau,C,SEA,43.2,,,,,,,,,,,,,,,,,,,,,,
+Freddy Gaudreau,C,SEA,43.2,,,,,,,,,,,,,,,,,,,,,,
 Ian Mitchell,D,DET,43.2,,,,,,,,,,,,,,,,,,,,,,
 Robert Thomas,"C,RW",STL,42.7,,,,,,,167.5,0.03,,,,,,,,,,,,,,3.0
 Steven Kampfer,D,ARI,42.3,,,,,,,,,,,,,,,,,,,,,,
@@ -783,7 +783,7 @@ Max McCormick,LW,SEA,18.7,,,,,,,,,,,,,,,,,,,,,,
 Will Borgen,D,NYR,18.4,,,,,,,,,,,,,,,,,,,,,,
 Jeremy Davies,D,VGK,18.3,,,,,,,,,,,,,,,,,,,,,,
 Jacob de la Rose,"C,LW",STL,18.2,,,,,,,,,,,,,,,,,,,,,,
-Zac Jones,D,BUF,18.2,,,,,,,,,,,,,,,,,,,,,,
+Zachary Jones,D,BUF,18.2,,,,,,,,,,,,,,,,,,,,,,
 Luke Johnson,C,MIN,18.1,,,,,,,,,,,,,,,,,,,,,,
 Radim Zohorna,"C,LW",PIT,18.0,,,,,,,,,,,,,,,,,,,,,,
 Grigori Denisenko,LW,VGK,17.7,,,,,,,,,,,,,,,,,,,,,,1.0
@@ -833,7 +833,7 @@ Troy Grosenick,G,MIN,11.2,,,,,,,,,,,,,,,,,,,,,,1.0
 Victor Soderstrom,D,BOS,11.0,,,,,,,,,,,,,,,,,,,,,,
 Andreas Borgman,D,TB,11.0,,,,,,,,,,,,,,,,,,,,,,
 Dylan Sikura,"LW,RW",COL,10.8,,,,,,,,,,,,,,,,,,,,,,
-Joe Veleno,C,MTL,10.6,,,,,,,,,,,,,,,,,,,,,,1.0
+Joseph Veleno,C,MTL,10.6,,,,,,,,,,,,,,,,,,,,,,1.0
 Jalen Chatfield,D,CAR,10.5,,,,,,,,,,,,,,,,,,,,,,
 Gemel Smith,"C,LW",DET,10.3,,,,,,,,,,,,,,,,,,,,,,
 Taro Hirose,"LW,RW",DET,10.2,,,,,,,,,,,,,,,,,,,,,,
@@ -906,13 +906,13 @@ Christopher Gibson,G,SEA,5.0,,,,,,,,,,,,,,,,,,,,,,1.0
 Tyce Thompson,RW,NYI,4.9,,,,,,,,,,,,,,,,,,,,,,
 Ben Thomas,D,TB,4.9,,,,,,,,,,,,,,,,,,,,,,
 Peyton Krebs,C,BUF,4.9,,,,,,,,,,,,,,,,,,,,,,1.0
-Cayden Primeau,G,TOR,4.8,,,,,,,,,,,,,,,,,,,,,,2.0
+Cayden Primeau,G,CAR,4.8,,,,,,,,,,,,,,,,,,,,,,2.0
 Sonny Milano,LW,WSH,4.8,,,,,,,,,,,,,,,,,,,,,,
 Matt Kiersted,D,MIN,4.8,,,,,,,,,,,,,,,,,,,,,,
 Dominic Toninato,"C,LW",CHI,4.8,,,,,,,,,,,,,,,,,,,,,,
 Joachim Blichfeld,"LW,RW",SJ,4.8,,,,,,,,,,,,,,,,,,,,,,
 Adam Ruzicka,C,CGY,4.6,,,,,,,,,,,,,,,,,,,,,,
-Stuart Skinner,G,EDM,4.6,,,,,,,,,,,,,,,,,,,,,,
+Stuart Skinner,G,PIT,4.6,,,,,,,,,,,,,,,,,,,,,,
 Madison Bowey,D,NYR,4.5,,,,,,,,,,,,,,,,,,,,,,
 Justin Richards,C,CBJ,4.5,,,,,,,,,,,,,,,,,,,,,,
 Mitchell Stephens,C,SEA,4.3,,,,,,,,,,,,,,,,,,,,,,
@@ -1114,7 +1114,7 @@ Matthew Robertson,D,NYR,0.0,,,,,,,,,,,,,,,,,,,,,,
 Matt Boldy,LW,MIN,0.0,,,,,,,,,,,,,,,,,,,,,,
 Noel Hoefenmayer,D,EDM,0.0,,,,,,,,,,,,,,,,,,,,,,
 Samuel Fagemo,LW,WPG,0.0,,,,,,,,,,,,,,,,,,,,,,
-Vladislav Kolyachonok,D,DAL,0.0,,,,,,,,,,,,,,,,,,,,,,
+Vladislav Kolyachonok,D,BOS,0.0,,,,,,,,,,,,,,,,,,,,,,
 Dustin Wolf,G,CGY,0.0,,,,,,,,,,,,,,,,,,,,,,
 Dillon Hamaliuk,LW,SJ,0.0,,,,,,,,,,,,,,,,,,,,,,
 Tyler Madden,C,LA,0.0,,,,,,,,,,,,,,,,,,,,,,
@@ -1289,7 +1289,7 @@ Joel Teasdale,LW,TB,0.0,,,,,,,,,,,,,,,,,,,,,,
 Andrew Oglevie,C,BUF,0.0,,,,,,,,,,,,,,,,,,,,,,
 Aaron Luchuk,C,MTL,0.0,,,,,,,,,,,,,,,,,,,,,,
 Arvin Atwal,D,NSH,0.0,,,,,,,,,,,,,,,,,,,,,,
-Marco Rossi,C,MIN,0.0,,,,,,,,,,,,,,,,,,,,,,2.0
+Marco Rossi,C,VAN,0.0,,,,,,,,,,,,,,,,,,,,,,2.0
 Jack Quinn,RW,BUF,0.0,,,,,,,,,,,,,,,,,,,,,,1.0
 Matt Register,D,MIN,0.0,,,,,,,,,,,,,,,,,,,,,,
 Alexander Holtz,RW,VGK,0.0,,,,,,,,,,,,,,,,,,,,,,1.0
@@ -1355,7 +1355,7 @@ Gustav Olofsson,D,SEA,0.0,,,,,,,,,,,,,,,,,,,,,,
 Zach Nastasiuk,"C,RW",DET,0.0,,,,,,,,,,,,,,,,,,,,,,
 Carl Dahlstrom,D,TOR,0.0,,,,,,,,,,,,,,,,,,,,,,
 Philippe Desrosiers,G,MTL,0.0,,,,,,,,,,,,,,,,,,,,,,
-Spencer Martin,G,CAR,0.0,,,,,,,,,,,,,,,,,,,,,,
+Spencer Martin,G,NYR,0.0,,,,,,,,,,,,,,,,,,,,,,
 Nicholas Baptiste,RW,NSH,0.0,,,,,,,,,,,,,,,,,,,,,,
 Tyrell Goulbourne,LW,PHI,0.0,,,,,,,,,,,,,,,,,,,,,,
 Cole Cassels,C,VAN,0.0,,,,,,,,,,,,,,,,,,,,,,
