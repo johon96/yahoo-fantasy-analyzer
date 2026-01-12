@@ -667,9 +667,23 @@ def export_players_to_csv(league_key, output_file=None):
     if len(all_players) == 0:
         print("❌ No players found! Check your league key or try again.")
         return
-    
+
+    # Sort players by Fantasy Points (descending)
+    print(f"\nSorting {len(all_players)} players by Fantasy Points...")
+    def get_fantasy_points(player):
+        try:
+            if hasattr(player, 'player_points') and player.player_points:
+                total = getattr(player.player_points, 'total', None)
+                if total:
+                    return float(total)
+        except (ValueError, TypeError, AttributeError):
+            pass
+        return 0.0
+
+    all_players.sort(key=get_fantasy_points, reverse=True)
+
     # Process players and write to CSV
-    print(f"\nWriting to CSV: {output_file}")
+    print(f"Writing to CSV: {output_file}")
     print(f"  Note: Free agents won't have Draft Round/Pick data (not drafted in your league)")
     print(f"        Games Played = GP for skaters, GS (Games Started) for goalies")
     print(f"        Points = Goals + Assists (calculated)")
