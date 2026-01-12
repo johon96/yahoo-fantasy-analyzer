@@ -344,7 +344,7 @@ def export_standings_to_csv(league_key, output_file):
                     if points_against is not None:
                         team_data['points_against'] = points_against.text
 
-                # Extract team stats (category breakdown)
+                # Extract team stats (category totals)
                 team_stats_elem = team_elem.find('.//fantasy:team_stats', ns)
                 if team_stats_elem:
                     stats_elem = team_stats_elem.find('fantasy:stats', ns)
@@ -358,15 +358,23 @@ def export_standings_to_csv(league_key, output_file):
 
                 teams_data.append(team_data)
 
-        # Build CSV headers dynamically
+        # Build CSV headers organized by position
+        # Categorize stats as skater or goalie stats
+        skater_stats = ['G', 'A', 'PIM', 'SOG', 'HIT', 'BLK']
+        goalie_stats = ['W', 'GA', 'SV', 'SHO']
+
         csv_headers = [
             'Rank', 'Team Name', 'Manager', 'Wins', 'Losses', 'Ties',
             'Win %', 'Points For', 'Points Against', 'Playoff Seed'
         ]
 
-        # Add stat categories
-        for stat_name in sorted(stat_categories.values()):
-            csv_headers.append(stat_name)
+        # Add Skater stat columns
+        for stat in skater_stats:
+            csv_headers.append(f"Skater_{stat}")
+
+        # Add Goalie stat columns
+        for stat in goalie_stats:
+            csv_headers.append(f"Goalie_{stat}")
 
         # Write to CSV
         with open(output_file, 'w', newline='', encoding='utf-8-sig') as csvfile:
@@ -387,9 +395,13 @@ def export_standings_to_csv(league_key, output_file):
                     'Playoff Seed': team.get('playoff_seed', '')
                 }
 
-                # Add stat values
-                for stat_name in sorted(stat_categories.values()):
-                    row[stat_name] = team.get(stat_name, '')
+                # Add Skater stats
+                for stat in skater_stats:
+                    row[f"Skater_{stat}"] = team.get(stat, '')
+
+                # Add Goalie stats
+                for stat in goalie_stats:
+                    row[f"Goalie_{stat}"] = team.get(stat, '')
 
                 writer.writerow(row)
 

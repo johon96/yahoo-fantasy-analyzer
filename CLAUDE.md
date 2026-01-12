@@ -110,13 +110,13 @@ Register your app at [Yahoo Developer Network](https://developer.yahoo.com/apps/
 Player Name, Player ID (Yahoo Player Key), Position, NHL Team, Fantasy Points, Current Team, Current Owner, Drafted Team, Drafted By, Draft Round, Draft Pick, ADP, Pct Drafted, Games Played (GP for skaters / GS for goalies), Goals, Assists, Points, PIM, SOG, Hits, Blocks, Wins, Saves, Save %, GA, Shutouts, Pct Owned
 
 **Standings CSV Columns:**
-Rank, Team Name, Manager, Wins, Losses, Ties, Win %, Points For, Points Against, Playoff Seed, [Dynamic Stat Categories]
+Rank, Team Name, Manager, Wins, Losses, Ties, Win %, Points For, Points Against, Playoff Seed, **Skater Stats**, **Goalie Stats**
 
-For each stat category enabled in your league (e.g., Goals, Assists, Points, PIM, SOG, Hits, Blocks, Wins, Saves, Save %, GAA, Shutouts), the CSV includes the raw stat value for each team.
+Stat categories are organized by position:
+- **Skater Stats:** Skater_G, Skater_A, Skater_PIM, Skater_SOG, Skater_HIT, Skater_BLK
+- **Goalie Stats:** Goalie_W, Goalie_GA, Goalie_SV, Goalie_SHO
 
-Example additional columns: `A`, `BLK`, `G`, `GA`, `HIT`, `PIM`, `SHO`, `SOG`, `SV`, `W`
-
-Rankings can be calculated in Google Sheets by sorting or using RANK functions.
+This organization makes it easy to compare teams within each position group in Google Sheets.
 
 See `backend/EXPORT_PLAYERS.md` for detailed documentation.
 
