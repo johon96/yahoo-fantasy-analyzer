@@ -126,7 +126,7 @@ def upload_player_analysis(service, spreadsheet_id, csv_file, sheet_name="Player
         service.spreadsheets().values().update(
             spreadsheetId=spreadsheet_id,
             range=f"'{sheet_name}'!A1",
-            valueInputOption='RAW',
+            valueInputOption='USER_ENTERED',
             body=body
         ).execute()
 
@@ -221,7 +221,7 @@ def upload_standings(service, spreadsheet_id, csv_file, sheet_name="Standings"):
         service.spreadsheets().values().update(
             spreadsheetId=spreadsheet_id,
             range=f"'{sheet_name}'!A1",
-            valueInputOption='RAW',
+            valueInputOption='USER_ENTERED',
             body=body
         ).execute()
 

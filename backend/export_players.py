@@ -335,6 +335,7 @@ def export_standings_to_csv(league_key, output_file):
                         if ties is not None:
                             team_data['ties'] = ties.text
                         if percentage is not None:
+                            # Yahoo returns win percentage as 0-1, store as-is (will multiply by 100 on output)
                             team_data['win_pct'] = percentage.text
 
                     points_for = team_standings_elem.find('fantasy:points_for', ns)
@@ -418,11 +419,14 @@ def export_standings_to_csv(league_key, output_file):
                 return ''
 
             # Helper function to format decimals
-            def to_decimal(value, decimals=2):
+            def to_decimal(value, decimals=2, multiply_by_100=False):
                 """Format as decimal if not empty, otherwise return empty string."""
                 if value and value != '':
                     try:
-                        return f"{float(value):.{decimals}f}"
+                        num = float(value)
+                        if multiply_by_100:
+                            num *= 100
+                        return f"{num:.{decimals}f}"
                     except (ValueError, TypeError):
                         return value
                 return ''
@@ -436,7 +440,7 @@ def export_standings_to_csv(league_key, output_file):
                     to_int(team.get('wins', '')),
                     to_int(team.get('losses', '')),
                     to_int(team.get('ties', '')),
-                    to_decimal(team.get('win_pct', ''), 3),
+                    to_decimal(team.get('win_pct', ''), 1, multiply_by_100=True),
                     to_decimal(team.get('points_for', ''), 1),
                     to_decimal(team.get('points_against', ''), 1),
                     to_int(team.get('playoff_seed', ''))
@@ -530,7 +534,16 @@ def export_players_to_csv(league_key, output_file=None):
     
     # Extract season from league_key (first part is game_key which contains season)
     game_id = league_key.split('.')[0]
-    
+
+    # Map game_id to game_code for cleaner player IDs
+    game_code_map = {
+        "449": "nfl", "461": "nfl",
+        "465": "nhl", "427": "nhl",
+        "404": "mlb", "412": "mlb",
+        "428": "nba",
+    }
+    game_code = game_code_map.get(game_id, "nhl")
+
     # Yahoo game ID to season mapping
     GAME_SEASON_MAP = {
         "331": 2014, "346": 2015, "348": 2015, "352": 2015, "353": 2015,
@@ -745,8 +758,10 @@ def export_players_to_csv(league_key, output_file=None):
     print(f"  Note: Free agents won't have Draft Round/Pick data (not drafted in your league)")
     print(f"        Games Played = GP for skaters, GS (Games Started) for goalies")
     print(f"        Points = Goals + Assists (calculated)")
-    print(f"        Save % = Saves / (Saves + GA) (calculated)")
+    print(f"        Save % = Saves / (Saves + GA) * 100 (calculated, shown as 0-100)")
+    print(f"        Percentages (% Draft, % Own, SV%, Win %) shown as 0-100 instead of 0-1")
     print(f"        Fan Pts/GP = Fantasy Points / GP (or GS for goalies) (calculated)")
+    print(f"        Player IDs converted from game ID to game code (e.g., nhl.p.12345)")
     
     csv_headers = [
         'Player',
@@ -794,7 +809,14 @@ def export_players_to_csv(league_key, output_file=None):
         
         for idx, player in enumerate(all_players, 1):
             # Extract player key (Yahoo Player ID)
-            player_key = getattr(player, 'player_key', '')
+            original_player_key = getattr(player, 'player_key', '')
+            player_key = original_player_key
+
+            # Convert player_key from "465.p.12345" to "nhl.p.12345" for cleaner IDs
+            if player_key and '.' in player_key:
+                parts = player_key.split('.')
+                if len(parts) >= 3:
+                    player_key = f"{game_code}.{parts[1]}.{parts[2]}"
 
             # Extract player name
             player_name = "Unknown"
@@ -829,7 +851,8 @@ def export_players_to_csv(league_key, output_file=None):
                 try:
                     pct_drafted_val = getattr(player.draft_analysis, 'percent_drafted', None)
                     if pct_drafted_val and pct_drafted_val != '-':
-                        pct_drafted = float(pct_drafted_val)
+                        # Yahoo returns percentage as 0-1, multiply by 100 for display
+                        pct_drafted = float(pct_drafted_val) * 100
                 except (ValueError, TypeError, AttributeError):
                     pass
             
@@ -855,7 +878,8 @@ def export_players_to_csv(league_key, output_file=None):
                     else:
                         owned_val = getattr(player.percent_owned, 'value', None)
                     if owned_val and owned_val != '-':
-                        pct_owned = float(owned_val)
+                        # Yahoo returns percentage as 0-1, multiply by 100 for display
+                        pct_owned = float(owned_val) * 100
                 except (ValueError, TypeError, AttributeError):
                     pass
             
@@ -928,7 +952,8 @@ def export_players_to_csv(league_key, output_file=None):
             
             # Save % = Saves / (Saves + GA) for goalies
             if saves is not None and ga is not None and (saves + ga) > 0:
-                save_pct = saves / (saves + ga)
+                # Calculate as decimal (0-1) then multiply by 100 for display
+                save_pct = (saves / (saves + ga)) * 100
             # If we don't have both stats, save_pct stays None
 
             # For GP column: use Games Started for goalies, Games Played for skaters
@@ -957,7 +982,8 @@ def export_players_to_csv(league_key, output_file=None):
                         current_owner = teams_dict[owner_team_key]['manager']
             
             # Get DRAFTED team info from YOUR league (original draft)
-            draft_info = draft_dict.get(player_key, {})
+            # Use original_player_key (e.g., "465.p.12345") since draft_dict uses that format
+            draft_info = draft_dict.get(original_player_key, {})
             draft_round = draft_info.get('round', '-')
             draft_pick = draft_info.get('pick', '-')
             drafted_team = '-'
@@ -1009,7 +1035,7 @@ def export_players_to_csv(league_key, output_file=None):
                 'BLK': int_or_empty(blocks),
                 'W': int_or_empty(wins),
                 'SV': int_or_empty(saves),
-                'SV%': decimal_or_empty(save_pct, 3),
+                'SV%': decimal_or_empty(save_pct, 1),
                 'GA': int_or_empty(ga),
                 'SO': int_or_empty(shutouts),
                 '% Own': decimal_or_empty(pct_owned, 1),

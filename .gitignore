@@ -1,6 +1,5 @@
 # User tokens and credentials
-backend/data/user_tokens.json
-backend/data/temp_oauth.json
+backend/data/*.json
 
 # Environment variables
 .env
@@ -66,6 +65,9 @@ debug_*.xml
 *_test.csv
 temp_*.json
 
-# CSV exports (optional - uncomment if you don't want to commit CSVs)
-# *.csv
+# CSV exports - personalized league data
+*_analysis.csv
+*_standings.csv
+
+# Access Tokens
 
