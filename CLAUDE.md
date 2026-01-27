@@ -25,11 +25,20 @@ cd backend
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
-# Interactive mode - prompts you to choose from your leagues
-python export_players.py
-
-# Direct mode - specify league key
+# Interactive mode - prompts for upload after export (RECOMMENDED)
 python export_players.py 465.l.34948
+# After export, prompts: "Would you like to upload to Google Sheets? (y/n)"
+# If yes, asks for spreadsheet ID
+
+# One-command upload (no prompts)
+python export_players.py 465.l.34948 --spreadsheet-id YOUR_SPREADSHEET_ID
+
+# Export only (skip upload prompt)
+python export_players.py 465.l.34948 --no-upload
+
+# Interactive league selection
+python export_players.py
+# Lists your leagues, lets you choose, then prompts for upload
 
 # Custom output filename
 python export_players.py 465.l.34948 --output my_league_2025.csv
@@ -38,6 +47,8 @@ python export_players.py 465.l.34948 --output my_league_2025.csv
 This generates two CSV files:
 - `<league_key>_analysis.csv` - Comprehensive player data (500+ players)
 - `<league_key>_standings.csv` - League standings with head-to-head category stats
+
+By default, prompts to upload to Google Sheets after export (unless `--no-upload` is set).
 
 ### Backend Web Server (Optional)
 
@@ -107,16 +118,22 @@ Register your app at [Yahoo Developer Network](https://developer.yahoo.com/apps/
 - Season detection via game ID mapping (e.g., "465" → 2025 NHL season)
 
 **Player Analysis CSV Columns:**
-Player Name, Player ID (Yahoo Player Key), Position, NHL Team, Fantasy Points, Current Team, Current Owner, Drafted Team, Drafted By, Draft Round, Draft Pick, ADP, Pct Drafted, Games Played (GP for skaters / GS for goalies), Goals, Assists, Points, PIM, SOG, Hits, Blocks, Wins, Saves, Save %, GA, Shutouts, Pct Owned
+Player Name, Position, NHL Team, Fantasy Points, Current Team, Current Owner, Drafted Team, Drafted By, Draft Round, Draft Pick, ADP, Pct Drafted, Games Played (GP for skaters / GS for goalies), Goals, Assists, Points, PIM, SOG, Hits, Blocks, Wins, Saves, Save %, GA, Shutouts, Pct Owned, Fan Pts/GP, Player ID (Yahoo Player Key)
 
-**Standings CSV Columns:**
-Rank, Team Name, Manager, Wins, Losses, Ties, Win %, Points For, Points Against, Playoff Seed, G, A, PIM, SOG, HIT, BLK, W, GA, SV, SHO
+**Standings CSV Format:**
+The standings CSV uses a 3-row header structure ready for Google Sheets:
+- **Row 1:** Category headers ("Skaters", "Goalies") - merged across Records + Totals
+- **Row 2:** Sub-headers ("Records", "Totals") for each category
+- **Row 3:** Column names (Rank, Team Name, Manager, Wins, Losses, etc.)
 
-Stats are ordered by position (skaters first, then goalies):
-- **Skater Stats (columns 11-16):** G, A, PIM, SOG, HIT, BLK
-- **Goalie Stats (columns 17-20):** W, GA, SV, SHO
+**Column Structure:**
+- Team Info (10 columns): Rank, Team Name, Manager, Wins, Losses, Ties, Win %, Points For, Points Against, Playoff Seed
+- Skater Records (6 columns): G, A, PIM, SOG, HIT, BLK - empty, for manual entry
+- Skater Totals (6 columns): G, A, PIM, SOG, HIT, BLK - actual season totals
+- Goalie Records (4 columns): W, GA, SV, SHO - empty, for manual entry
+- Goalie Totals (4 columns): W, GA, SV, SHO - actual season totals
 
-You can add merged header rows in Google Sheets to group them visually.
+The upload script automatically merges the header cells and applies formatting when uploading to Google Sheets.
 
 See `backend/EXPORT_PLAYERS.md` for detailed documentation.
 
@@ -260,6 +277,34 @@ Backend looks up user by guid and uses their access token for Yahoo API calls.
 
 ## Common Tasks
 
+### Adding Python Dependencies
+
+**IMPORTANT:** When adding a new Python package to the project:
+
+1. Install it in your virtual environment:
+   ```bash
+   pip install package-name
+   ```
+
+2. **Always add it to `requirements.txt`** with a pinned version:
+   ```bash
+   pip freeze | grep package-name >> requirements.txt
+   ```
+
+   Or manually add it with version:
+   ```
+   package-name==1.2.3
+   ```
+
+3. This ensures other developers and deployment environments have the same dependencies
+
+Example: When we added Google Sheets support, we added:
+```
+google-auth==2.34.0
+google-auth-oauthlib==1.2.1
+google-api-python-client==2.149.0
+```
+
 ### Exporting data for a new league
 
 ```bash
@@ -338,16 +383,32 @@ YFPY has extensive documentation. Key methods used:
 
 ### Running the CSV Export
 
-**Interactive mode** (recommended for first-time use):
+**Interactive mode** (recommended):
 ```bash
 cd backend
-python export_players.py
-# Authenticates, lists all your leagues, lets you choose
+python export_players.py 465.l.34948
+
+# After export completes, you'll be prompted:
+# Would you like to upload to Google Sheets? (y/n): y
+# Enter your Google Sheets spreadsheet ID: YOUR_SPREADSHEET_ID
 ```
 
-**Direct mode** (when you know the league key):
+**One-command upload** (no prompts):
 ```bash
-python export_players.py 465.l.34948 --output my_analysis.csv
+python export_players.py 465.l.34948 --spreadsheet-id YOUR_SPREADSHEET_ID
+```
+
+**League selection** (choose from all your leagues):
+```bash
+python export_players.py
+# Lists all your leagues, lets you choose, then prompts for upload
+```
+
+**Export only** (skip upload prompt):
+```bash
+python export_players.py 465.l.34948 --no-upload
+# Or with custom filename:
+python export_players.py 465.l.34948 --output my_analysis.csv --no-upload
 ```
 
 The script automatically:
@@ -356,6 +417,21 @@ The script automatically:
 - Falls back to browser OAuth if no token exists
 - Fetches 500+ players with comprehensive stats
 - Exports two CSV files (player analysis + standings)
+- **Prompts to upload to Google Sheets** (unless `--no-upload` is set):
+  - If `--spreadsheet-id` provided: uploads automatically
+  - If not provided: asks "Would you like to upload?" and prompts for ID
+  - Detects season from league key (465 → 2025)
+  - Creates sheets named "2025 Players" and "2025 Standings"
+  - Applies merged headers, frozen rows, bold formatting
+  - Supports multiple seasons in one spreadsheet
+
+**Available arguments:**
+- `league_key` - Yahoo league key (e.g., 465.l.34948) - optional for interactive mode
+- `--output` - Custom output filename for player analysis CSV
+- `--spreadsheet-id` - Google Sheets spreadsheet ID (skips prompt if provided)
+- `--no-upload` - Skip upload prompt/upload entirely
+
+See `GOOGLE_SHEETS_SETUP.md` for Google Sheets setup instructions.
 
 ## Testing
 

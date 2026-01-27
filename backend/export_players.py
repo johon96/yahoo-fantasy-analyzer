@@ -254,7 +254,7 @@ def export_standings_to_csv(league_key, output_file):
 
         # Try both paths - stat_categories and stat_modifiers
         stat_modifiers = league_root.find('.//fantasy:stat_categories', ns)
-        if not stat_modifiers or len(list(stat_modifiers)) == 0:
+        if stat_modifiers is None or len(list(stat_modifiers)) == 0:
             stat_modifiers = league_root.find('.//fantasy:stat_modifiers', ns)
 
         if stat_modifiers is not None:
@@ -287,7 +287,7 @@ def export_standings_to_csv(league_key, output_file):
         # Parse teams and their stats
         teams_data = []
         teams_elem = standings_root.find('.//fantasy:teams', ns)
-        if teams_elem:
+        if teams_elem is not None:
             for team_elem in teams_elem.findall('fantasy:team', ns):
                 team_data = {}
 
@@ -312,7 +312,7 @@ def export_standings_to_csv(league_key, output_file):
 
                 # Extract team standings
                 team_standings_elem = team_elem.find('.//fantasy:team_standings', ns)
-                if team_standings_elem:
+                if team_standings_elem is not None:
                     rank_elem = team_standings_elem.find('fantasy:rank', ns)
                     if rank_elem is not None:
                         team_data['rank'] = rank_elem.text
@@ -335,6 +335,7 @@ def export_standings_to_csv(league_key, output_file):
                         if ties is not None:
                             team_data['ties'] = ties.text
                         if percentage is not None:
+                            # Yahoo returns win percentage as 0-1, store as-is (will multiply by 100 on output)
                             team_data['win_pct'] = percentage.text
 
                     points_for = team_standings_elem.find('fantasy:points_for', ns)
@@ -346,9 +347,9 @@ def export_standings_to_csv(league_key, output_file):
 
                 # Extract team stats (category totals)
                 team_stats_elem = team_elem.find('.//fantasy:team_stats', ns)
-                if team_stats_elem:
+                if team_stats_elem is not None:
                     stats_elem = team_stats_elem.find('fantasy:stats', ns)
-                    if stats_elem:
+                    if stats_elem is not None:
                         for stat in stats_elem.findall('fantasy:stat', ns):
                             stat_id = stat.find('fantasy:stat_id', ns)
                             value = stat.find('fantasy:value', ns)
@@ -358,44 +359,106 @@ def export_standings_to_csv(league_key, output_file):
 
                 teams_data.append(team_data)
 
-        # Build CSV headers organized by position
-        # Order: Skater stats first, then Goalie stats
+        # Build CSV with 3-row header structure matching Google Sheets format
+        # Row 1: Empty cells, then "Skaters", then "Goalies"
+        # Row 2: Empty cells, then "Records"/"Totals" for Skaters, then "Records"/"Totals" for Goalies
+        # Row 3: Actual column names
+
         skater_stats = ['G', 'A', 'PIM', 'SOG', 'HIT', 'BLK']
         goalie_stats = ['W', 'GA', 'SV', 'SHO']
 
-        csv_headers = [
-            'Rank', 'Team Name', 'Manager', 'Wins', 'Losses', 'Ties',
-            'Win %', 'Points For', 'Points Against', 'Playoff Seed'
-        ]
-
-        # Add skater stats (no prefix)
-        csv_headers.extend(skater_stats)
-
-        # Add goalie stats (no prefix)
-        csv_headers.extend(goalie_stats)
-
-        # Write to CSV
+        # Write to CSV with manual header rows
         with open(output_file, 'w', newline='', encoding='utf-8-sig') as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=csv_headers)
-            writer.writeheader()
+            writer = csv.writer(csvfile)
 
+            # ROW 1: Category headers (Skaters, Goalies)
+            row1 = ['', '', '', '', '', '', '', '', '', '']  # 10 empty cells for team info
+            row1.extend(['', '', '', '', '', ''])  # 6 empty for Skater Records
+            row1.append('Skaters')  # First Skater Total column
+            row1.extend(['', '', '', '', ''])  # Remaining 5 Skater Totals
+            row1.extend(['', '', '', ''])  # 4 empty for Goalie Records
+            row1.append('Goalies')  # First Goalie Total column
+            row1.extend(['', '', ''])  # Remaining 3 Goalie Totals
+            writer.writerow(row1)
+
+            # ROW 2: Sub-headers (Records, Totals)
+            row2 = ['', '', '', '', '', '', '', '', '', '']  # 10 empty cells for team info
+            row2.append('Records')  # Skater Records
+            row2.extend(['', '', '', '', ''])  # Remaining 5 Skater Records
+            row2.append('Totals')  # Skater Totals
+            row2.extend(['', '', '', '', ''])  # Remaining 5 Skater Totals
+            row2.append('Records')  # Goalie Records
+            row2.extend(['', '', ''])  # Remaining 3 Goalie Records
+            row2.append('Totals')  # Goalie Totals
+            row2.extend(['', '', ''])  # Remaining 3 Goalie Totals
+            writer.writerow(row2)
+
+            # ROW 3: Column names
+            row3 = [
+                'Rank', 'Team Name', 'Manager', 'Wins', 'Losses', 'Ties',
+                'Win %', 'Points For', 'Points Against', 'Playoff Seed'
+            ]
+            # Skater Records columns (6)
+            row3.extend(skater_stats)
+            # Skater Totals columns (6)
+            row3.extend(skater_stats)
+            # Goalie Records columns (4)
+            row3.extend(goalie_stats)
+            # Goalie Totals columns (4)
+            row3.extend(goalie_stats)
+            writer.writerow(row3)
+
+            # Helper function to convert to int if value exists
+            def to_int(value):
+                """Convert to int if not empty, otherwise return empty string."""
+                if value and value != '':
+                    try:
+                        return int(float(value))
+                    except (ValueError, TypeError):
+                        return value
+                return ''
+
+            # Helper function to format decimals
+            def to_decimal(value, decimals=2, multiply_by_100=False):
+                """Format as decimal if not empty, otherwise return empty string."""
+                if value and value != '':
+                    try:
+                        num = float(value)
+                        if multiply_by_100:
+                            num *= 100
+                        return f"{num:.{decimals}f}"
+                    except (ValueError, TypeError):
+                        return value
+                return ''
+
+            # DATA ROWS
             for team in teams_data:
-                row = {
-                    'Rank': team.get('rank', ''),
-                    'Team Name': team.get('name', ''),
-                    'Manager': team.get('manager', ''),
-                    'Wins': team.get('wins', ''),
-                    'Losses': team.get('losses', ''),
-                    'Ties': team.get('ties', ''),
-                    'Win %': team.get('win_pct', ''),
-                    'Points For': team.get('points_for', ''),
-                    'Points Against': team.get('points_against', ''),
-                    'Playoff Seed': team.get('playoff_seed', '')
-                }
+                row = [
+                    to_int(team.get('rank', '')),
+                    team.get('name', ''),
+                    team.get('manager', ''),
+                    to_int(team.get('wins', '')),
+                    to_int(team.get('losses', '')),
+                    to_int(team.get('ties', '')),
+                    to_decimal(team.get('win_pct', ''), 1, multiply_by_100=True),
+                    to_decimal(team.get('points_for', ''), 1),
+                    to_decimal(team.get('points_against', ''), 1),
+                    to_int(team.get('playoff_seed', ''))
+                ]
 
-                # Add skater and goalie stats (no prefix)
-                for stat in skater_stats + goalie_stats:
-                    row[stat] = team.get(stat, '')
+                # Skater Records (empty - 6 columns)
+                row.extend(['', '', '', '', '', ''])
+
+                # Skater Totals (actual data - 6 columns) - all integers
+                for stat in skater_stats:
+                    row.append(to_int(team.get(stat, '')))
+
+                # Goalie Records (empty - 4 columns)
+                row.extend(['', '', '', ''])
+
+                # Goalie Totals (actual data - 4 columns) - all integers
+                for stat in goalie_stats:
+                    row.append(to_int(team.get(stat, '')))
 
                 writer.writerow(row)
 
@@ -471,7 +534,16 @@ def export_players_to_csv(league_key, output_file=None):
     
     # Extract season from league_key (first part is game_key which contains season)
     game_id = league_key.split('.')[0]
-    
+
+    # Map game_id to game_code for cleaner player IDs
+    game_code_map = {
+        "449": "nfl", "461": "nfl",
+        "465": "nhl", "427": "nhl",
+        "404": "mlb", "412": "mlb",
+        "428": "nba",
+    }
+    game_code = game_code_map.get(game_id, "nhl")
+
     # Yahoo game ID to season mapping
     GAME_SEASON_MAP = {
         "331": 2014, "346": 2015, "348": 2015, "352": 2015, "353": 2015,
@@ -505,26 +577,25 @@ def export_players_to_csv(league_key, output_file=None):
     # Current ownership comes from the 'ownership' field in player XML (reflects trades/waivers)
     # Drafted team comes from draft_dict
     
-    # Fetch ALL players (top 500 by fantasy points) using direct API call
-    print("\nFetching top 500 players sorted by fantasy points...")
+    # Fetch ALL players (top 1500 by fantasy points) using direct API call
+    print("\nFetching player data (up to 1500 players, in batches of 25)...")
     all_players = []  # Build player list
-    
+
     # Get access token
     access_token = None
     if hasattr(yfpy_query, 'oauth') and hasattr(yfpy_query.oauth, 'access_token'):
         access_token = yfpy_query.oauth.access_token
-    
+
     if not access_token:
         print("  ⚠️  No access token found, trying to use auth module...")
         sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'app'))
         from auth import get_valid_access_token
         access_token = get_valid_access_token()
-    
+
     headers = {'Authorization': f'Bearer {access_token}'}
-    
+
     # Yahoo API returns max 25 players per call, so we need to paginate
-    # Fetch 20 batches of 25 to get 500 total (top players sorted by fantasy points)
-    print(f"  Fetching players in batches (sorted by fantasy points)...")
+    # Fetch 60 batches of 25 to get 1500 total (top players sorted by fantasy points)
     
     try:
         added_count = 0
@@ -541,7 +612,7 @@ def export_players_to_csv(league_key, output_file=None):
                 f"stats;type=season;season={season};extra_stat_ids=18,19,22,23,25,26,27,29,30,31,32,34"
             )
             
-            print(f"  Batch {batch_num + 1}/40: Fetching players {start}-{start+24}...")
+            print(f"  Fetching players {start}-{start+24}... (batch {batch_num + 1}/60)")
             response = requests.get(api_url, headers=headers)
             
             if response.status_code != 200:
@@ -687,43 +758,46 @@ def export_players_to_csv(league_key, output_file=None):
     print(f"  Note: Free agents won't have Draft Round/Pick data (not drafted in your league)")
     print(f"        Games Played = GP for skaters, GS (Games Started) for goalies")
     print(f"        Points = Goals + Assists (calculated)")
-    print(f"        Save % = Saves / (Saves + GA) (calculated)")
+    print(f"        Save % = Saves / (Saves + GA) * 100 (calculated, shown as 0-100)")
+    print(f"        Percentages (% Draft, % Own, SV%, Win %) shown as 0-100 instead of 0-1")
     print(f"        Fan Pts/GP = Fantasy Points / GP (or GS for goalies) (calculated)")
+    print(f"        Player IDs converted from game ID to game code (e.g., nhl.p.12345)")
     
     csv_headers = [
-        'Player Name',
-        'Player ID',  # Yahoo Player Key
-        'Position',
-        'NHL Team',
-        'Fantasy Points',
-        'Current Team',  # From ownership (trades/waivers)
-        'Current Owner',
-        'Drafted Team',  # Original draft team
-        'Drafted By',
-        'Draft Round',
-        'Draft Pick',
+        'Player',
+        'Pos',
+        'Team',
+        'Rank',
+        'Fan Pts',  # Fantasy Points
+        'Cur Team',  # Current Team (trades/waivers)
+        'Owner',
+        'Draft Team',
+        'Draft Owner',
+        'Rd',  # Draft Round
+        'Pick',  # Draft Pick
         # Draft Analysis (Yahoo aggregate across all leagues)
-        'ADP',  # Average Draft Position
-        'Pct Drafted',  # Percent Drafted
+        'ADP',
+        '% Draft',  # Percent Drafted
         # Skater stats
-        'Games Played',  # GP for skaters, GS (Games Started) for goalies
-        'Goals',
-        'Assists',
-        'Points',
+        'GP',  # GP for skaters, GS for goalies
+        'G',
+        'A',
+        'P',  # Points
         'PIM',
         'SOG',
-        'Hits',
-        'Blocks',
+        'HIT',
+        'BLK',
         # Goalie stats
-        'Wins',
-        'Saves',
-        'Save %',
+        'W',
+        'SV',
+        'SV%',
         'GA',
-        'Shutouts',
+        'SO',
         # Ownership
-        'Pct Owned',
+        '% Own',
         # Performance
-        'Fan Pts/GP'  # Fantasy Points per Game (or per GS for goalies)
+        'Fan Pts/GP',  # Fantasy Points per Game
+        'ID'  # Yahoo Player Key
     ]
     
     players_with_stats = 0
@@ -735,7 +809,14 @@ def export_players_to_csv(league_key, output_file=None):
         
         for idx, player in enumerate(all_players, 1):
             # Extract player key (Yahoo Player ID)
-            player_key = getattr(player, 'player_key', '')
+            original_player_key = getattr(player, 'player_key', '')
+            player_key = original_player_key
+
+            # Convert player_key from "465.p.12345" to "nhl.p.12345" for cleaner IDs
+            if player_key and '.' in player_key:
+                parts = player_key.split('.')
+                if len(parts) >= 3:
+                    player_key = f"{game_code}.{parts[1]}.{parts[2]}"
 
             # Extract player name
             player_name = "Unknown"
@@ -770,7 +851,8 @@ def export_players_to_csv(league_key, output_file=None):
                 try:
                     pct_drafted_val = getattr(player.draft_analysis, 'percent_drafted', None)
                     if pct_drafted_val and pct_drafted_val != '-':
-                        pct_drafted = float(pct_drafted_val)
+                        # Yahoo returns percentage as 0-1, multiply by 100 for display
+                        pct_drafted = float(pct_drafted_val) * 100
                 except (ValueError, TypeError, AttributeError):
                     pass
             
@@ -796,7 +878,8 @@ def export_players_to_csv(league_key, output_file=None):
                     else:
                         owned_val = getattr(player.percent_owned, 'value', None)
                     if owned_val and owned_val != '-':
-                        pct_owned = float(owned_val)
+                        # Yahoo returns percentage as 0-1, multiply by 100 for display
+                        pct_owned = float(owned_val) * 100
                 except (ValueError, TypeError, AttributeError):
                     pass
             
@@ -869,7 +952,8 @@ def export_players_to_csv(league_key, output_file=None):
             
             # Save % = Saves / (Saves + GA) for goalies
             if saves is not None and ga is not None and (saves + ga) > 0:
-                save_pct = saves / (saves + ga)
+                # Calculate as decimal (0-1) then multiply by 100 for display
+                save_pct = (saves / (saves + ga)) * 100
             # If we don't have both stats, save_pct stays None
 
             # For GP column: use Games Started for goalies, Games Played for skaters
@@ -898,7 +982,8 @@ def export_players_to_csv(league_key, output_file=None):
                         current_owner = teams_dict[owner_team_key]['manager']
             
             # Get DRAFTED team info from YOUR league (original draft)
-            draft_info = draft_dict.get(player_key, {})
+            # Use original_player_key (e.g., "465.p.12345") since draft_dict uses that format
+            draft_info = draft_dict.get(original_player_key, {})
             draft_round = draft_info.get('round', '-')
             draft_pick = draft_info.get('pick', '-')
             drafted_team = '-'
@@ -914,41 +999,47 @@ def export_players_to_csv(league_key, output_file=None):
             else:
                 players_without_stats += 1
             
+            # Helper function to format integer stats (no decimal points)
+            def int_or_empty(value):
+                """Convert to int if not None, otherwise return empty string."""
+                return int(value) if value is not None else ''
+
+            # Helper function to format decimal stats
+            def decimal_or_empty(value, decimals=2):
+                """Format as decimal if not None, otherwise return empty string."""
+                return f"{float(value):.{decimals}f}" if value is not None else ''
+
             # Write row (use empty string instead of '-' for missing values)
             writer.writerow({
-                'Player Name': player_name,
-                'Player ID': player_key,
-                'Position': position,
-                'NHL Team': nhl_team,
-                'Fantasy Points': fantasy_points if fantasy_points is not None else '',
-                'Current Team': current_team if current_team != '-' else '',
-                'Current Owner': current_owner if current_owner != '-' else '',
-                'Drafted Team': drafted_team if drafted_team != '-' else '',
-                'Drafted By': drafted_by if drafted_by != '-' else '',
-                'Draft Round': draft_round if draft_round != '-' else '',
-                'Draft Pick': draft_pick if draft_pick != '-' else '',  # Actual pick in YOUR league
-                # Draft Analysis (Yahoo aggregate across all leagues)
-                'ADP': adp if adp is not None else '',
-                'Pct Drafted': pct_drafted if pct_drafted is not None else '',
-                # Skater stats (GP shows GS for goalies)
-                'Games Played': gp_value if gp_value is not None else '',
-                'Goals': goals if goals is not None else '',
-                'Assists': assists if assists is not None else '',
-                'Points': points if points is not None else '',
-                'PIM': pim if pim is not None else '',
-                'SOG': sog if sog is not None else '',
-                'Hits': hits if hits is not None else '',
-                'Blocks': blocks if blocks is not None else '',
-                # Goalie stats
-                'Wins': wins if wins is not None else '',
-                'Saves': saves if saves is not None else '',
-                'Save %': save_pct if save_pct is not None else '',
-                'GA': ga if ga is not None else '',
-                'Shutouts': shutouts if shutouts is not None else '',
-                # Ownership
-                'Pct Owned': pct_owned if pct_owned is not None else '',
-                # Performance
-                'Fan Pts/GP': f"{fan_pts_per_gp:.2f}" if fan_pts_per_gp is not None else ''
+                'Player': player_name,
+                'ID': player_key,
+                'Pos': position,
+                'Team': nhl_team,
+                'Rank': idx,
+                'Fan Pts': decimal_or_empty(fantasy_points),
+                'Cur Team': current_team if current_team != '-' else '',
+                'Owner': current_owner if current_owner != '-' else '',
+                'Draft Team': drafted_team if drafted_team != '-' else '',
+                'Draft Owner': drafted_by if drafted_by != '-' else '',
+                'Rd': int_or_empty(draft_round) if draft_round != '-' else '',
+                'Pick': int_or_empty(draft_pick) if draft_pick != '-' else '',
+                'ADP': decimal_or_empty(adp, 1),
+                '% Draft': decimal_or_empty(pct_drafted, 1),
+                'GP': int_or_empty(gp_value),
+                'G': int_or_empty(goals),
+                'A': int_or_empty(assists),
+                'P': int_or_empty(points),
+                'PIM': int_or_empty(pim),
+                'SOG': int_or_empty(sog),
+                'HIT': int_or_empty(hits),
+                'BLK': int_or_empty(blocks),
+                'W': int_or_empty(wins),
+                'SV': int_or_empty(saves),
+                'SV%': decimal_or_empty(save_pct, 1),
+                'GA': int_or_empty(ga),
+                'SO': int_or_empty(shutouts),
+                '% Own': decimal_or_empty(pct_owned, 1),
+                'Fan Pts/GP': decimal_or_empty(fan_pts_per_gp, 2)
             })
     
     print(f"\n✅ Successfully exported {len(all_players)} players to {output_file}")
@@ -961,27 +1052,109 @@ def export_players_to_csv(league_key, output_file=None):
     export_standings_to_csv(league_key, standings_file)
 
 
+def upload_to_google_sheets(league_key, spreadsheet_id):
+    """Upload exported CSVs to Google Sheets."""
+    try:
+        # Import upload functions
+        from upload_to_sheets import (
+            get_sheets_service,
+            upload_player_analysis,
+            upload_standings,
+            get_season_from_league_key
+        )
+
+        # Detect season from league key
+        season, game_id = get_season_from_league_key(league_key)
+
+        # Generate CSV file names
+        safe_league_key = league_key.replace('.', '_')
+        analysis_csv = f"{safe_league_key}_analysis.csv"
+        standings_csv = f"{safe_league_key}_standings.csv"
+
+        # Generate sheet names based on season
+        players_sheet_name = f"{season} Players"
+        standings_sheet_name = f"{season} Standings"
+
+        print(f"\n{'='*60}")
+        print("Uploading to Google Sheets")
+        print(f"{'='*60}")
+        print(f"Season: {season} (Game ID: {game_id})")
+        print(f"Spreadsheet ID: {spreadsheet_id}")
+        print(f"Target sheets: '{players_sheet_name}' and '{standings_sheet_name}'")
+
+        # Get Google Sheets service
+        service = get_sheets_service()
+
+        # Upload both sheets
+        upload_player_analysis(service, spreadsheet_id, analysis_csv, sheet_name=players_sheet_name)
+        upload_standings(service, spreadsheet_id, standings_csv, sheet_name=standings_sheet_name)
+
+        print(f"\n✅ Upload complete!")
+        print(f"View your spreadsheet: https://docs.google.com/spreadsheets/d/{spreadsheet_id}")
+
+    except ImportError as e:
+        print(f"\n⚠️  Google Sheets upload failed: Missing dependencies")
+        print(f"    Run: pip install google-auth google-api-python-client")
+    except FileNotFoundError as e:
+        print(f"\n⚠️  Google Sheets upload failed: {e}")
+        print(f"    Make sure credentials are set up at: backend/data/google_sheets_credentials.json")
+        print(f"    See GOOGLE_SHEETS_SETUP.md for instructions")
+    except Exception as e:
+        print(f"\n⚠️  Google Sheets upload failed: {e}")
+        print(f"    See GOOGLE_SHEETS_SETUP.md for troubleshooting")
+
+
 if __name__ == "__main__":
-    # Check if league_key was provided as argument
-    if len(sys.argv) >= 2:
+    import argparse
+
+    # Parse arguments
+    parser = argparse.ArgumentParser(
+        description='Export Yahoo Fantasy league data to CSV (and optionally upload to Google Sheets)',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Interactive mode (choose from your leagues)
+  python export_players.py
+
+  # Direct mode with league key
+  python export_players.py 465.l.34948
+
+  # Export and upload to Google Sheets
+  python export_players.py 465.l.34948 --spreadsheet-id 15eH6iapchiEcYtvU8nK8rFA6pC7SixYU5RnM1NtTLLg
+
+  # Export only (skip upload even if spreadsheet-id is set)
+  python export_players.py 465.l.34948 --no-upload
+        """
+    )
+    parser.add_argument('league_key', nargs='?', help='Yahoo league key (e.g., 465.l.34948)')
+    parser.add_argument('--output', help='Custom output filename for player analysis CSV')
+    parser.add_argument('--spreadsheet-id', help='Google Sheets spreadsheet ID for automatic upload')
+    parser.add_argument('--no-upload', action='store_true', help='Skip Google Sheets upload (even if spreadsheet-id is provided)')
+
+    args = parser.parse_args()
+
+    # Determine which league to export
+    league_key = None
+
+    if args.league_key:
         # Direct mode: use provided league key
-        league_key = sys.argv[1]
-        export_players_to_csv(league_key)
+        league_key = args.league_key
+        export_players_to_csv(league_key, output_file=args.output)
     else:
         # Interactive mode: let user choose from their leagues
         print("\n" + "="*60)
         print("Yahoo Fantasy Player & Standings Export Tool")
         print("="*60)
-        
+
         # Initialize YFPY with a temporary league to get user's leagues
         # We'll use a dummy league key just to authenticate
         print("\nAuthenticating with Yahoo...")
-        
+
         # Import settings and auth
         sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'app'))
         from config import settings
         from auth import get_authenticated_user
-        
+
         # Get authenticated user (handles first-time OAuth if needed)
         try:
             user = get_authenticated_user()
@@ -989,18 +1162,18 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"❌ Authentication failed: {e}")
             sys.exit(1)
-        
+
         if not access_token:
             print("❌ Failed to authenticate. Please check your credentials.")
             sys.exit(1)
-        
+
         print("✅ Authenticated successfully!\n")
-        
+
         # Initialize YFPY with NHL game (465) to fetch user's leagues
         # Set required environment variables for YFPY
         os.environ['YAHOO_CONSUMER_KEY'] = settings.yahoo_client_id
         os.environ['YAHOO_CONSUMER_SECRET'] = settings.yahoo_client_secret
-        
+
         # Create YFPY query object (no specific league needed for fetching user leagues)
         # Use minimal parameters - we just need to authenticate to fetch leagues
         yfpy_query = YahooFantasySportsQuery(
@@ -1021,47 +1194,47 @@ if __name__ == "__main__":
             },
             browser_callback=False
         )
-        
+
         # Fetch user's leagues
         leagues = get_user_leagues(yfpy_query)
-        
+
         if not leagues:
             print("❌ No leagues found. Please check your account.")
             sys.exit(1)
-        
+
         # Display leagues
         print(f"\nFound {len(leagues)} leagues:\n")
         for idx, league in enumerate(leagues, 1):
             league_name = decode_if_bytes(getattr(league, 'name', 'Unknown'))
-            league_key = getattr(league, 'league_key', 'Unknown')
+            league_key_temp = getattr(league, 'league_key', 'Unknown')
             game_code = getattr(league, 'game_code', 'Unknown').upper()
             season = getattr(league, 'season', 'Unknown')
-            
+
             print(f"  {idx}. [{game_code} {season}] {league_name}")
-            print(f"     League Key: {league_key}")
-        
+            print(f"     League Key: {league_key_temp}")
+
         # Let user choose
         print()
         try:
             choice = input("Enter the number of the league to export (or 'q' to quit): ").strip()
-            
+
             if choice.lower() == 'q':
                 print("Exiting...")
                 sys.exit(0)
-            
+
             choice_num = int(choice)
             if 1 <= choice_num <= len(leagues):
                 selected_league = leagues[choice_num - 1]
                 league_key = getattr(selected_league, 'league_key')
                 league_name = decode_if_bytes(getattr(selected_league, 'name', 'Unknown'))
-                
+
                 print(f"\n{'='*60}")
                 print(f"Selected: {league_name}")
                 print(f"League Key: {league_key}")
                 print(f"{'='*60}\n")
-                
+
                 # Export the selected league
-                export_players_to_csv(league_key)
+                export_players_to_csv(league_key, output_file=args.output)
             else:
                 print(f"❌ Invalid choice. Please enter a number between 1 and {len(leagues)}.")
                 sys.exit(1)
@@ -1071,3 +1244,31 @@ if __name__ == "__main__":
         except KeyboardInterrupt:
             print("\n\nExiting...")
             sys.exit(0)
+
+    # After export, check if we should upload to Google Sheets
+    if league_key and not args.no_upload:
+        spreadsheet_id = args.spreadsheet_id
+
+        # If no spreadsheet ID provided, ask user
+        if not spreadsheet_id:
+            print(f"\n{'='*60}")
+            print("Google Sheets Upload")
+            print(f"{'='*60}")
+
+            try:
+                upload_choice = input("\nWould you like to upload to Google Sheets? (y/n): ").strip().lower()
+
+                if upload_choice in ['y', 'yes']:
+                    spreadsheet_id = input("Enter your Google Sheets spreadsheet ID: ").strip()
+
+                    if not spreadsheet_id:
+                        print("⚠️  No spreadsheet ID provided. Skipping upload.")
+                    else:
+                        upload_to_google_sheets(league_key, spreadsheet_id)
+                else:
+                    print("Skipping Google Sheets upload.")
+            except KeyboardInterrupt:
+                print("\n\nSkipping Google Sheets upload.")
+        else:
+            # Spreadsheet ID was provided via command line
+            upload_to_google_sheets(league_key, spreadsheet_id)
