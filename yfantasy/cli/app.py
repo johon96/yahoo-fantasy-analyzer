@@ -56,12 +56,14 @@ from yfantasy.cli.commands.league import league_app
 from yfantasy.cli.commands.roster import roster_app, lineup_app
 from yfantasy.cli.commands.optimize import optimize_app
 from yfantasy.cli.commands.waiver import waiver_app
+from yfantasy.cli.commands.trade import trade_app
 
 app.add_typer(league_app, name="league")
 app.add_typer(roster_app, name="roster")
 app.add_typer(lineup_app, name="lineup")
 app.add_typer(optimize_app, name="optimize")
 app.add_typer(waiver_app, name="waiver")
+app.add_typer(trade_app, name="trade")
 
 
 def main() -> None:
