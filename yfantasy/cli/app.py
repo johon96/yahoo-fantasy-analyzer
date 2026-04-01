@@ -53,8 +53,11 @@ def init() -> None:
 
 # Register sub-command groups
 from yfantasy.cli.commands.league import league_app
+from yfantasy.cli.commands.roster import roster_app, lineup_app
 
 app.add_typer(league_app, name="league")
+app.add_typer(roster_app, name="roster")
+app.add_typer(lineup_app, name="lineup")
 
 
 def main() -> None:
