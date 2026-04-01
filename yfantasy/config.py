@@ -2,10 +2,9 @@
 
 from __future__ import annotations
 
-import json
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Optional
+from typing import Optional
 
 # Use tomllib (stdlib 3.11+) with fallback
 try:
@@ -56,7 +55,8 @@ class Config:
         for section, kvs in self._data.items():
             lines.append(f"[{section}]")
             for k, v in kvs.items():
-                lines.append(f'{k} = "{v}"')
+                escaped = v.replace("\\", "\\\\").replace('"', '\\"')
+                lines.append(f'{k} = "{escaped}"')
             lines.append("")
         self._path.write_text("\n".join(lines))
 

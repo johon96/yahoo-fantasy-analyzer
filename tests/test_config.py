@@ -1,6 +1,5 @@
 """Tests for yfantasy config management."""
 
-import json
 from pathlib import Path
 from datetime import datetime
 from yfantasy.config import Config, _DEFAULT_CONFIG
