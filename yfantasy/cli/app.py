@@ -65,6 +65,9 @@ app.add_typer(optimize_app, name="optimize")
 app.add_typer(waiver_app, name="waiver")
 app.add_typer(trade_app, name="trade")
 
+from yfantasy.cli.commands.dashboard import dashboard_command
+app.command(name="dashboard")(dashboard_command)
+
 
 def main() -> None:
     app()
