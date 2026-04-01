@@ -51,6 +51,14 @@ def init() -> None:
     init_command()
 
 
+@app.command()
+def shell() -> None:
+    """Start interactive shell mode."""
+    from yfantasy.cli.shell import shell_command
+
+    shell_command()
+
+
 # Register sub-command groups
 from yfantasy.cli.commands.league import league_app
 from yfantasy.cli.commands.roster import roster_app, lineup_app
