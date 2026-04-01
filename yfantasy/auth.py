@@ -4,12 +4,16 @@ from __future__ import annotations
 
 import base64
 import logging
+import os
+import ssl
+import subprocess
+import tempfile
 import threading
 import webbrowser
 from datetime import datetime, timedelta
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from typing import Optional
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import parse_qs, urlencode, urlparse
 
 import requests
 
@@ -21,6 +25,31 @@ _AUTH_URL = "https://api.login.yahoo.com/oauth2/request_auth"
 _TOKEN_URL = "https://api.login.yahoo.com/oauth2/get_token"
 _USERINFO_URL = "https://api.login.yahoo.com/openid/v1/userinfo"
 _CALLBACK_PORT = 8765
+
+
+def _create_ssl_context() -> ssl.SSLContext:
+    """Create an SSL context with a throwaway self-signed cert for localhost."""
+    tmpdir = tempfile.mkdtemp()
+    certfile = os.path.join(tmpdir, "cert.pem")
+    keyfile = os.path.join(tmpdir, "key.pem")
+    try:
+        subprocess.run(
+            [
+                "openssl", "req", "-x509", "-newkey", "rsa:2048",
+                "-keyout", keyfile, "-out", certfile,
+                "-days", "1", "-nodes", "-subj", "/CN=localhost",
+            ],
+            capture_output=True,
+            check=True,
+        )
+        ctx = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+        ctx.load_cert_chain(certfile, keyfile)
+        return ctx
+    finally:
+        for f in (certfile, keyfile):
+            if os.path.exists(f):
+                os.unlink(f)
+        os.rmdir(tmpdir)
 
 
 class YahooAuth:
@@ -50,13 +79,14 @@ class YahooAuth:
     def run_oauth_flow(self) -> dict:
         """Run full OAuth2 browser flow. Returns token data dict."""
         client_id = self.config.get("auth", "client_id")
-        redirect_uri = f"http://localhost:{_CALLBACK_PORT}"
+        redirect_uri = f"https://localhost:{_CALLBACK_PORT}"
 
-        auth_url = (
-            f"{_AUTH_URL}?client_id={client_id}"
-            f"&redirect_uri={redirect_uri}"
-            f"&response_type=code"
-        )
+        params = urlencode({
+            "client_id": client_id,
+            "redirect_uri": redirect_uri,
+            "response_type": "code",
+        })
+        auth_url = f"{_AUTH_URL}?{params}"
 
         code = self._capture_auth_code(auth_url, redirect_uri)
         token_data = self._exchange_code(code, redirect_uri)
@@ -160,8 +190,18 @@ class YahooAuth:
                 pass  # Suppress request logs
 
         server = HTTPServer(("localhost", _CALLBACK_PORT), CallbackHandler)
+        server.socket = _create_ssl_context().wrap_socket(
+            server.socket, server_side=True
+        )
+        server.timeout = 5
+
         webbrowser.open(auth_url)
-        server.handle_request()
+
+        # Loop because failed TLS handshakes (self-signed cert) consume
+        # handle_request() calls without delivering actual HTTP requests.
+        deadline = datetime.now() + timedelta(seconds=300)
+        while not code_holder["code"] and datetime.now() < deadline:
+            server.handle_request()
         server.server_close()
 
         if not code_holder["code"]:
