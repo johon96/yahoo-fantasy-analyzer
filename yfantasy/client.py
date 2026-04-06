@@ -293,7 +293,12 @@ class YahooClient:
                 continue
             player = self._parse_player_from_json(player_data[0] if isinstance(player_data[0], list) else [player_data[0]])
             pos_obj = player_data[1].get("selected_position", [{}])
-            selected_pos = pos_obj[0].get("position", "BN") if isinstance(pos_obj, list) and pos_obj else "BN"
+            selected_pos = "BN"
+            if isinstance(pos_obj, list):
+                for entry in pos_obj:
+                    if isinstance(entry, dict) and "position" in entry:
+                        selected_pos = entry["position"]
+                        break
 
             roster_players.append(
                 RosterPlayer(
